@@ -1,0 +1,2350 @@
+Config file config/config.yaml is extended by additional config specified via the command line.
+# ================================================================================== #
+      _     _______          __      _____  __ _                 
+     | |   / ____\ \        / /\    / ____|/ _| |                
+     | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __  
+     | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /  
+     |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V /   
+     |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/    
+
+     kGWASflow: A Snakemake Workflow for k-mers Based GWAS                            
+                                                                                      
+     Date:            2023-11-17 17:38:53
+     Author:          Adnan Kivanc Corut
+     kGWASflow version:          v1.3
+     Snakemake version:          7.25.0
+     Python version:             3.11.6
+
+     Snakefile:          /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk
+     Base directory:     /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow
+     Working directory:  /xdisk/rpalaniv/cjperkins1/kgwasflow
+     Config files:       /xdisk/rpalaniv/cjperkins1/kgwasflow/config/config.yaml, config/config.yaml
+                                                                                      
+# ================================================================================== #
+
+     If you use kGWASflow, please cite:                                            
+
+     * Corut, A. K. & Wallace, J. G. kGWASflow: a modular, flexible,                   
+     and reproducible Snakemake workflow for k-mers-based GWAS.                        
+     bioRxiv (2023). https://doi.org/10.1101/2023.07.10.548365                         
+
+     * Voichek, Y., Weigel, D. Identifying genetic variants underlying                  
+     phenotypic variation in plants without complete genomes.                         
+     Nat Genet 52, 534–540 (2020). https://doi.org/10.1038/s41588-020-0612-7          
+
+# ================================================================================== #
+
+Unlocking working directory.
+Config file config/config.yaml is extended by additional config specified via the command line.
+# ================================================================================== #
+      _     _______          __      _____  __ _                 
+     | |   / ____\ \        / /\    / ____|/ _| |                
+     | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __  
+     | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /  
+     |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V /   
+     |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/    
+
+     kGWASflow: A Snakemake Workflow for k-mers Based GWAS                            
+                                                                                      
+     Date:            2023-11-17 17:38:54
+     Author:          Adnan Kivanc Corut
+     kGWASflow version:          v1.3
+     Snakemake version:          7.25.0
+     Python version:             3.11.6
+
+     Snakefile:          /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk
+     Base directory:     /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow
+     Working directory:  /xdisk/rpalaniv/cjperkins1/kgwasflow
+     Config files:       /xdisk/rpalaniv/cjperkins1/kgwasflow/config/config.yaml, config/config.yaml
+                                                                                      
+# ================================================================================== #
+
+     If you use kGWASflow, please cite:                                            
+
+     * Corut, A. K. & Wallace, J. G. kGWASflow: a modular, flexible,                   
+     and reproducible Snakemake workflow for k-mers-based GWAS.                        
+     bioRxiv (2023). https://doi.org/10.1101/2023.07.10.548365                         
+
+     * Voichek, Y., Weigel, D. Identifying genetic variants underlying                  
+     phenotypic variation in plants without complete genomes.                         
+     Nat Genet 52, 534–540 (2020). https://doi.org/10.1038/s41588-020-0612-7          
+
+# ================================================================================== #
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Singularity containers: ignored
+Job stats:
+job                              count    min threads    max threads
+-----------------------------  -------  -------------  -------------
+all                                  1              1              1
+combine_and_filter                   1              1              1
+create_kmers_table                   1              1              1
+create_symlink                     154              1              1
+download_kmersGWAS                   1              1              1
+extract_kmersGWAS                    1              1              1
+fastqc                             154              8              8
+generate_input_lists               154              1              1
+generate_kmers_kinship_matrix        1              1              1
+generate_kmers_list_paths            1              1              1
+generate_results_summary             1              1              1
+kmc_canonical                      154              8              8
+kmc_non_canonical                  154              8              8
+kmer_stats                           1              1              1
+merge_kmers                        154              8              8
+multiqc                              1              1              1
+plot_kmer_allele_counts              1              1              1
+run_kmers_gwas                       1              8              8
+total                              936              1              8
+
+Select jobs to execute...
+
+[Fri Nov 17 17:39:03 2023]
+Job 57: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183105_SRR7279686_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007181/CW1012_fastqc.zip
+
+[Fri Nov 17 17:39:03 2023]
+Job 67: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183136_SRR7279655_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007864/CW0056_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 17:44:00 2023]
+Finished job 67.
+1 of 936 steps (0.1%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:44:03 2023]
+Job 96: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183230_SRR7279561_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007992/CW0052_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 17:45:32 2023]
+Finished job 57.
+2 of 936 steps (0.2%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:45:32 2023]
+Job 139: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183073_SRR7279718_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV014516/CW0133_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 17:46:57 2023]
+Finished job 96.
+3 of 936 steps (0.3%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:46:57 2023]
+Job 108: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183249_SRR7279542_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008095/CW0073_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 17:50:50 2023]
+Finished job 139.
+4 of 936 steps (0.4%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:50 2023]
+Job 276: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008224/CW0010_1.fastq.gz, results/reads/BGV008224/CW0010_2.fastq.gz
+
+
+[Fri Nov 17 17:50:50 2023]
+Job 275: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008223/CW0034_1.fastq.gz, results/reads/BGV008223/CW0034_2.fastq.gz
+
+
+[Fri Nov 17 17:50:50 2023]
+Job 163: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006175/CW0083_2.fastq.gz, results/reads/BGV006175/CW0083_1.fastq.gz
+
+
+[Fri Nov 17 17:50:50 2023]
+Job 221: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007860/CW0085_2.fastq.gz, results/reads/BGV007860/CW0085_1.fastq.gz
+
+
+[Fri Nov 17 17:50:50 2023]
+Job 247: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007934/CW0021_1.fastq.gz, results/reads/BGV007934/CW0021_2.fastq.gz
+
+
+[Fri Nov 17 17:50:50 2023]
+Job 303: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV015727/CW0168_1.fastq.gz, results/reads/BGV015727/CW0168_2.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 191: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006865/CW0157_2.fastq.gz, results/reads/BGV006865/CW0157_1.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 220: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007857/CW0077_1.fastq.gz, results/reads/BGV007857/CW0077_2.fastq.gz
+
+[Fri Nov 17 17:50:51 2023]
+Finished job 276.
+5 of 936 steps (1%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 275.
+6 of 936 steps (1%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 163.
+7 of 936 steps (1%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 221.
+8 of 936 steps (1%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 247.
+9 of 936 steps (1%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 303.
+10 of 936 steps (1%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:51 2023]
+Job 190: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006859/CW0069_2.fastq.gz, results/reads/BGV006859/CW0069_1.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 246: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007933/CW0149_2.fastq.gz, results/reads/BGV007933/CW0149_1.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 219: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007854/CW0122_1.fastq.gz, results/reads/BGV007854/CW0122_2.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 305: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/LA0767/CW0165_2.fastq.gz, results/reads/LA0767/CW0165_1.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 777: Downloading kmersGWAS source code...
+Reason: Missing output files: scripts/external/kmers_gwas/v0.3-beta.zip
+
+Activating conda environment: .snakemake/conda/2552139212129fe0189830de51886e5d_
+
+[Fri Nov 17 17:50:51 2023]
+Job 302: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV015726/CW0109_1.fastq.gz, results/reads/BGV015726/CW0109_2.fastq.gz
+
+[Fri Nov 17 17:50:51 2023]
+Finished job 191.
+11 of 936 steps (1%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 220.
+12 of 936 steps (1%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 190.
+13 of 936 steps (1%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 246.
+14 of 936 steps (1%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 219.
+15 of 936 steps (2%) done
+[Fri Nov 17 17:50:51 2023]
+Finished job 305.
+16 of 936 steps (2%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:51 2023]
+Job 255: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008037/CW0119_1.fastq.gz, results/reads/BGV008037/CW0119_2.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 281: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV012613/CW0099_2.fastq.gz, results/reads/BGV012613/CW0099_1.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 299: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV014522/CW0018_2.fastq.gz, results/reads/BGV014522/CW0018_1.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 173: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006347/CW1035_1.fastq.gz, results/reads/BGV006347/CW1035_2.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 216: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007198/CW1031_2.fastq.gz, results/reads/BGV007198/CW1031_1.fastq.gz
+
+
+[Fri Nov 17 17:50:51 2023]
+Job 300: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV015380/CW1002_1.fastq.gz, results/reads/BGV015380/CW1002_2.fastq.gz
+
+[Fri Nov 17 17:50:52 2023]
+Finished job 302.
+17 of 936 steps (2%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 255.
+18 of 936 steps (2%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 281.
+19 of 936 steps (2%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 299.
+20 of 936 steps (2%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 173.
+21 of 936 steps (2%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:52 2023]
+Job 248: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007935/CW0125_2.fastq.gz, results/reads/BGV007935/CW0125_1.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 304: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV015734/CW0059_1.fastq.gz, results/reads/BGV015734/CW0059_2.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 192: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006867/CW0146_2.fastq.gz, results/reads/BGV006867/CW0146_1.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 164: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006225/CW0117_2.fastq.gz, results/reads/BGV006225/CW0117_1.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 253: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007992/CW0052_2.fastq.gz, results/reads/BGV007992/CW0052_1.fastq.gz
+
+[Fri Nov 17 17:50:52 2023]
+Finished job 216.
+22 of 936 steps (2%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 300.
+23 of 936 steps (2%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 248.
+24 of 936 steps (3%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 304.
+25 of 936 steps (3%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 192.
+26 of 936 steps (3%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:52 2023]
+Job 171: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006327/CW1032_2.fastq.gz, results/reads/BGV006327/CW1032_1.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 277: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008225/CW0093_1.fastq.gz, results/reads/BGV008225/CW0093_2.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 274: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008221/CW0132_1.fastq.gz, results/reads/BGV008221/CW0132_2.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 162: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006148/CW1024_2.fastq.gz, results/reads/BGV006148/CW1024_1.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 165: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006229/CW0075_2.fastq.gz, results/reads/BGV006229/CW0075_1.fastq.gz
+
+[Fri Nov 17 17:50:52 2023]
+Finished job 164.
+27 of 936 steps (3%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 253.
+28 of 936 steps (3%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 171.
+29 of 936 steps (3%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 277.
+30 of 936 steps (3%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 274.
+31 of 936 steps (3%) done
+[Fri Nov 17 17:50:52 2023]
+Finished job 162.
+32 of 936 steps (3%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:52 2023]
+Job 306: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/LA1712/CW0016_1.fastq.gz, results/reads/LA1712/CW0016_2.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 227: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007872/CW0121_2.fastq.gz, results/reads/BGV007872/CW0121_1.fastq.gz; Set of input files has changed since last execution
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 283: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV012615/CW0061_2.fastq.gz, results/reads/BGV012615/CW0061_1.fastq.gz
+
+
+[Fri Nov 17 17:50:52 2023]
+Job 170: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006235/CW0177_1.fastq.gz, results/reads/BGV006235/CW0177_2.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 193: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006881/CW0045_2.fastq.gz, results/reads/BGV006881/CW0045_1.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 218: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007366/CW1009_1.fastq.gz, results/reads/BGV007366/CW1009_2.fastq.gz
+
+[Fri Nov 17 17:50:53 2023]
+Finished job 165.
+33 of 936 steps (4%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 777.
+34 of 936 steps (4%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 306.
+35 of 936 steps (4%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 227.
+36 of 936 steps (4%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 283.
+37 of 936 steps (4%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 170.
+38 of 936 steps (4%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 193.
+39 of 936 steps (4%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:53 2023]
+Job 308: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/PI129033/CW0135_1.fastq.gz, results/reads/PI129033/CW0135_2.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 301: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV015382/CW1025_1.fastq.gz, results/reads/BGV015382/CW1025_2.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 245: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007931/CW0014_1.fastq.gz, results/reads/BGV007931/CW0014_2.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 249: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007936/CW0027_2.fastq.gz, results/reads/BGV007936/CW0027_1.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 776: Unzipping kmersGWAS source code...
+Reason: Missing output files: scripts/external/kmers_gwas/kmers_gwas.py, scripts/external/kmers_gwas/bin; Input files updated by another job: scripts/external/kmers_gwas/v0.3-beta.zip
+
+Activating conda environment: .snakemake/conda/2552139212129fe0189830de51886e5d_
+
+[Fri Nov 17 17:50:53 2023]
+Job 278: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008345/CW0180_1.fastq.gz, results/reads/BGV008345/CW0180_2.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 222: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007862/CW0115_1.fastq.gz, results/reads/BGV007862/CW0115_2.fastq.gz
+
+[Fri Nov 17 17:50:53 2023]
+Finished job 218.
+40 of 936 steps (4%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 308.
+41 of 936 steps (4%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 301.
+42 of 936 steps (4%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 245.
+43 of 936 steps (5%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 249.
+44 of 936 steps (5%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:53 2023]
+Job 311: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/PI487625/CW0103_1.fastq.gz, results/reads/PI487625/CW0103_2.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 252: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007990/CW0162_1.fastq.gz, results/reads/BGV007990/CW0162_2.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 186: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006806/CW0053_2.fastq.gz, results/reads/BGV006806/CW0053_1.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 298: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV014519/CW0051_1.fastq.gz, results/reads/BGV014519/CW0051_2.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 242: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007920/CW0042_2.fastq.gz, results/reads/BGV007920/CW0042_1.fastq.gz
+
+[Fri Nov 17 17:50:53 2023]
+Finished job 278.
+45 of 936 steps (5%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 222.
+46 of 936 steps (5%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 311.
+47 of 936 steps (5%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 252.
+48 of 936 steps (5%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 186.
+49 of 936 steps (5%) done
+[Fri Nov 17 17:50:53 2023]
+Finished job 298.
+50 of 936 steps (5%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:53 2023]
+Job 270: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008108/CW0178_2.fastq.gz, results/reads/BGV008108/CW0178_1.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 198: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006906/CW0020_2.fastq.gz, results/reads/BGV006906/CW0020_1.fastq.gz
+
+
+[Fri Nov 17 17:50:53 2023]
+Job 272: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008218/CW0029_1.fastq.gz, results/reads/BGV008218/CW0029_2.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 160: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV005895/CW0139_1.fastq.gz, results/reads/BGV005895/CW0139_2.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 258: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008051/CW0054_2.fastq.gz, results/reads/BGV008051/CW0054_1.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 174: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006353/CW1003_1.fastq.gz, results/reads/BGV006353/CW1003_2.fastq.gz
+
+[Fri Nov 17 17:50:54 2023]
+Finished job 242.
+51 of 936 steps (5%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 270.
+52 of 936 steps (6%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 198.
+53 of 936 steps (6%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 272.
+54 of 936 steps (6%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 160.
+55 of 936 steps (6%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 258.
+56 of 936 steps (6%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:54 2023]
+Job 199: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006907/CW0124_1.fastq.gz, results/reads/BGV006907/CW0124_2.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 310: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/PI406890/CW0131_1.fastq.gz, results/reads/PI406890/CW0131_2.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 214: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007181/CW1012_2.fastq.gz, results/reads/BGV007181/CW1012_1.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 175: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006363/CW1011_2.fastq.gz, results/reads/BGV006363/CW1011_1.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 231: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007894/CW0024_1.fastq.gz, results/reads/BGV007894/CW0024_2.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 287: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV012639/CW0039_1.fastq.gz, results/reads/BGV012639/CW0039_2.fastq.gz
+
+[Fri Nov 17 17:50:54 2023]
+Finished job 174.
+57 of 936 steps (6%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 199.
+58 of 936 steps (6%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 310.
+59 of 936 steps (6%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 214.
+60 of 936 steps (6%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 175.
+61 of 936 steps (7%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 231.
+62 of 936 steps (7%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:54 2023]
+Job 194: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006896/CW0088_2.fastq.gz, results/reads/BGV006896/CW0088_1.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 279: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008348/CW0058_1.fastq.gz, results/reads/BGV008348/CW0058_2.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 223: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007863/CW0049_1.fastq.gz, results/reads/BGV007863/CW0049_2.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 312: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/Tegucigalpa/CW0008_2.fastq.gz, results/reads/Tegucigalpa/CW0008_1.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 256: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008041/CW0055_2.fastq.gz, results/reads/BGV008041/CW0055_1.fastq.gz
+
+
+[Fri Nov 17 17:50:54 2023]
+Job 166: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006230/CW0019_1.fastq.gz, results/reads/BGV006230/CW0019_2.fastq.gz
+
+[Fri Nov 17 17:50:54 2023]
+Finished job 287.
+63 of 936 steps (7%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 194.
+64 of 936 steps (7%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 279.
+65 of 936 steps (7%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 223.
+66 of 936 steps (7%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 312.
+67 of 936 steps (7%) done
+[Fri Nov 17 17:50:54 2023]
+Finished job 256.
+68 of 936 steps (7%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:55 2023]
+Job 232: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007895/CW0065_1.fastq.gz, results/reads/BGV007895/CW0065_2.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 203: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006934/CW0129_2.fastq.gz, results/reads/BGV006934/CW0129_1.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 259: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008058/CW0181_1.fastq.gz, results/reads/BGV008058/CW0181_2.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 254: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008036/CW0159_2.fastq.gz, results/reads/BGV008036/CW0159_1.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 244: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007927/CW0176_1.fastq.gz, results/reads/BGV007927/CW0176_2.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 188: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006828/CW0164_1.fastq.gz, results/reads/BGV006828/CW0164_2.fastq.gz
+
+[Fri Nov 17 17:50:55 2023]
+Finished job 166.
+69 of 936 steps (7%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 232.
+70 of 936 steps (7%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 203.
+71 of 936 steps (8%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 259.
+72 of 936 steps (8%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 254.
+73 of 936 steps (8%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 244.
+74 of 936 steps (8%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:55 2023]
+Job 273: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008219/CW0155_1.fastq.gz, results/reads/BGV008219/CW0155_2.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 243: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007921/CW0107_1.fastq.gz, results/reads/BGV007921/CW0107_2.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 187: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006825/CW0082_1.fastq.gz, results/reads/BGV006825/CW0082_2.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 261: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008065/CW0028_2.fastq.gz, results/reads/BGV008065/CW0028_1.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 260: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008061/CW0038_2.fastq.gz, results/reads/BGV008061/CW0038_1.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 204: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007015/CW0145_2.fastq.gz, results/reads/BGV007015/CW0145_1.fastq.gz
+
+[Fri Nov 17 17:50:55 2023]
+Finished job 188.
+75 of 936 steps (8%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 273.
+76 of 936 steps (8%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 243.
+77 of 936 steps (8%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 187.
+78 of 936 steps (8%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 261.
+79 of 936 steps (8%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 260.
+80 of 936 steps (9%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:55 2023]
+Job 201: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006927/CW0161_2.fastq.gz, results/reads/BGV006927/CW0161_1.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 257: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008042/CW0126_1.fastq.gz, results/reads/BGV008042/CW0126_2.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 172: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006336/CW1028_1.fastq.gz, results/reads/BGV006336/CW1028_2.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 195: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006899/CW0076_1.fastq.gz, results/reads/BGV006899/CW0076_2.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 228: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007875/CW0095_2.fastq.gz, results/reads/BGV007875/CW0095_1.fastq.gz
+
+
+[Fri Nov 17 17:50:55 2023]
+Job 197: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006904/CW0084_2.fastq.gz, results/reads/BGV006904/CW0084_1.fastq.gz
+
+[Fri Nov 17 17:50:55 2023]
+Finished job 204.
+81 of 936 steps (9%) done
+[Fri Nov 17 17:50:55 2023]
+Finished job 776.
+82 of 936 steps (9%) done
+Removing temporary output scripts/external/kmers_gwas/v0.3-beta.zip.
+[Fri Nov 17 17:50:56 2023]
+Finished job 201.
+83 of 936 steps (9%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 257.
+84 of 936 steps (9%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 172.
+85 of 936 steps (9%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 195.
+86 of 936 steps (9%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 228.
+87 of 936 steps (9%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:56 2023]
+Job 271: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008189/CW0156_2.fastq.gz, results/reads/BGV008189/CW0156_1.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 159: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV004584/CW0151_1.fastq.gz, results/reads/BGV004584/CW0151_2.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 241: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007918/CW0113_1.fastq.gz, results/reads/BGV007918/CW0113_2.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 177: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006454/CW1023_2.fastq.gz, results/reads/BGV006454/CW1023_1.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 233: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007899/CW0102_2.fastq.gz, results/reads/BGV007899/CW0102_1.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 289: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV013134/CW0166_1.fastq.gz, results/reads/BGV013134/CW0166_2.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 206: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007023/CW0137_1.fastq.gz, results/reads/BGV007023/CW0137_2.fastq.gz
+
+[Fri Nov 17 17:50:56 2023]
+Finished job 197.
+88 of 936 steps (9%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 271.
+89 of 936 steps (10%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 159.
+90 of 936 steps (10%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 241.
+91 of 936 steps (10%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 177.
+92 of 936 steps (10%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 233.
+93 of 936 steps (10%) done
+[Fri Nov 17 17:50:56 2023]
+Finished job 289.
+94 of 936 steps (10%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:56 2023]
+Job 297: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV014518/CW0179_2.fastq.gz, results/reads/BGV014518/CW0179_1.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 185: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006792/CW0064_1.fastq.gz, results/reads/BGV006792/CW0064_2.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 307: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/LA2309/CW0063_2.fastq.gz, results/reads/LA2309/CW0063_1.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 207: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007109/CW1039_2.fastq.gz, results/reads/BGV007109/CW1039_1.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 263: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008070/CW0011_1.fastq.gz, results/reads/BGV008070/CW0011_2.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 251: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007989/CW0043_1.fastq.gz, results/reads/BGV007989/CW0043_2.fastq.gz
+
+
+[Fri Nov 17 17:50:56 2023]
+Job 269: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008106/CW0169_2.fastq.gz, results/reads/BGV008106/CW0169_1.fastq.gz
+
+[Fri Nov 17 17:50:57 2023]
+Finished job 206.
+95 of 936 steps (10%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 297.
+96 of 936 steps (10%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 185.
+97 of 936 steps (10%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 307.
+98 of 936 steps (10%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 207.
+99 of 936 steps (11%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 263.
+100 of 936 steps (11%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 251.
+101 of 936 steps (11%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:57 2023]
+Job 176: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006370/CW1037_2.fastq.gz, results/reads/BGV006370/CW1037_1.fastq.gz
+
+
+[Fri Nov 17 17:50:57 2023]
+Job 285: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV012626/CW0062_1.fastq.gz, results/reads/BGV012626/CW0062_2.fastq.gz
+
+
+[Fri Nov 17 17:50:57 2023]
+Job 229: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007876/CW0112_1.fastq.gz, results/reads/BGV007876/CW0112_2.fastq.gz
+
+
+[Fri Nov 17 17:50:57 2023]
+Job 200: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006910/CW0163_2.fastq.gz, results/reads/BGV006910/CW0163_1.fastq.gz
+
+
+[Fri Nov 17 17:50:57 2023]
+Job 202: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006931/CW0120_1.fastq.gz, results/reads/BGV006931/CW0120_2.fastq.gz
+
+
+[Fri Nov 17 17:50:57 2023]
+Job 286: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV012627/CW0071_1.fastq.gz, results/reads/BGV012627/CW0071_2.fastq.gz
+
+
+[Fri Nov 17 17:50:57 2023]
+Job 230: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007878/CW0079_2.fastq.gz, results/reads/BGV007878/CW0079_1.fastq.gz
+
+[Fri Nov 17 17:50:57 2023]
+Finished job 269.
+102 of 936 steps (11%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 176.
+103 of 936 steps (11%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 285.
+104 of 936 steps (11%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 229.
+105 of 936 steps (11%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 200.
+106 of 936 steps (11%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 202.
+107 of 936 steps (11%) done
+[Fri Nov 17 17:50:57 2023]
+Finished job 286.
+108 of 936 steps (12%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:57 2023]
+Job 288: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV012640/CW0153_2.fastq.gz, results/reads/BGV012640/CW0153_1.fastq.gz
+
+
+[Fri Nov 17 17:50:57 2023]
+Job 178: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006457/CW1022_2.fastq.gz, results/reads/BGV006457/CW1022_1.fastq.gz
+
+
+[Fri Nov 17 17:50:57 2023]
+Job 234: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007900/CW0101_1.fastq.gz, results/reads/BGV007900/CW0101_2.fastq.gz
+
+
+[Fri Nov 17 17:50:57 2023]
+Job 290: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV013161/CW0040_1.fastq.gz, results/reads/BGV013161/CW0040_2.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 196: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006901/CW0086_2.fastq.gz, results/reads/BGV006901/CW0086_1.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 205: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007017/CW0154_1.fastq.gz, results/reads/BGV007017/CW0154_2.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 262: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008067/CW0141_1.fastq.gz, results/reads/BGV008067/CW0141_2.fastq.gz
+
+[Fri Nov 17 17:50:58 2023]
+Finished job 230.
+109 of 936 steps (12%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 288.
+110 of 936 steps (12%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 178.
+111 of 936 steps (12%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 234.
+112 of 936 steps (12%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 290.
+113 of 936 steps (12%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 196.
+114 of 936 steps (12%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 205.
+115 of 936 steps (12%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:58 2023]
+Job 213: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007169/CW1007_2.fastq.gz, results/reads/BGV007169/CW1007_1.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 265: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008095/CW0073_1.fastq.gz, results/reads/BGV008095/CW0073_2.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 209: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007149/CW1021_2.fastq.gz, results/reads/BGV007149/CW1021_1.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 282: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV012614/CW0144_1.fastq.gz, results/reads/BGV012614/CW0144_2.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 181: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006767/CW0098_2.fastq.gz, results/reads/BGV006767/CW0098_1.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 179: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006478/CW1030_1.fastq.gz, results/reads/BGV006478/CW1030_2.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 237: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007908/CW0148_1.fastq.gz, results/reads/BGV007908/CW0148_2.fastq.gz
+
+[Fri Nov 17 17:50:58 2023]
+Finished job 262.
+116 of 936 steps (12%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 213.
+117 of 936 steps (12%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 265.
+118 of 936 steps (13%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 209.
+119 of 936 steps (13%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 282.
+120 of 936 steps (13%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 181.
+121 of 936 steps (13%) done
+[Fri Nov 17 17:50:58 2023]
+Finished job 179.
+122 of 936 steps (13%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:58 2023]
+Job 215: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007194/CW1013_1.fastq.gz, results/reads/BGV007194/CW1013_2.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 210: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007151/CW1005_1.fastq.gz, results/reads/BGV007151/CW1005_2.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 266: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008096/CW0118_1.fastq.gz, results/reads/BGV008096/CW0118_2.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 250: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007981/CW0106_2.fastq.gz, results/reads/BGV007981/CW0106_1.fastq.gz
+
+
+[Fri Nov 17 17:50:58 2023]
+Job 180: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006753/CW0074_2.fastq.gz, results/reads/BGV006753/CW0074_1.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 169: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006234/CW0023_2.fastq.gz, results/reads/BGV006234/CW0023_1.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 293: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV014508/CW0091_2.fastq.gz, results/reads/BGV014508/CW0091_1.fastq.gz
+
+[Fri Nov 17 17:50:59 2023]
+Finished job 237.
+123 of 936 steps (13%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 215.
+124 of 936 steps (13%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 210.
+125 of 936 steps (13%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 266.
+126 of 936 steps (13%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 250.
+127 of 936 steps (14%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 180.
+128 of 936 steps (14%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 169.
+129 of 936 steps (14%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:59 2023]
+Job 235: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007901/CW0143_2.fastq.gz, results/reads/BGV007901/CW0143_1.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 292: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV013945/CW0160_2.fastq.gz, results/reads/BGV013945/CW0160_1.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 238: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007909/CW0094_2.fastq.gz, results/reads/BGV007909/CW0094_1.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 294: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV014514/CW0167_2.fastq.gz, results/reads/BGV014514/CW0167_1.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 226: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007871/CW0130_2.fastq.gz, results/reads/BGV007871/CW0130_1.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 291: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV013175/CW0097_1.fastq.gz, results/reads/BGV013175/CW0097_2.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 309: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/PI129088/CW0096_2.fastq.gz, results/reads/PI129088/CW0096_1.fastq.gz
+
+[Fri Nov 17 17:50:59 2023]
+Finished job 293.
+130 of 936 steps (14%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 292.
+131 of 936 steps (14%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 235.
+132 of 936 steps (14%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 238.
+133 of 936 steps (14%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 294.
+134 of 936 steps (14%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 226.
+135 of 936 steps (14%) done
+[Fri Nov 17 17:50:59 2023]
+Finished job 291.
+136 of 936 steps (15%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:50:59 2023]
+Job 224: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007864/CW0056_2.fastq.gz, results/reads/BGV007864/CW0056_1.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 280: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008354/CW0174_1.fastq.gz, results/reads/BGV008354/CW0174_2.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 161: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV005912/CW0123_1.fastq.gz, results/reads/BGV005912/CW0123_2.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 217: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007339/CW1026_1.fastq.gz, results/reads/BGV007339/CW1026_2.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 167: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006231/CW0048_1.fastq.gz, results/reads/BGV006231/CW0048_2.fastq.gz
+
+
+[Fri Nov 17 17:50:59 2023]
+Job 236: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007902/CW0012_2.fastq.gz, results/reads/BGV007902/CW0012_1.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 189: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006852/CW0108_1.fastq.gz, results/reads/BGV006852/CW0108_2.fastq.gz
+
+[Fri Nov 17 17:51:00 2023]
+Finished job 309.
+137 of 936 steps (15%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 224.
+138 of 936 steps (15%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 280.
+139 of 936 steps (15%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 161.
+140 of 936 steps (15%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 217.
+141 of 936 steps (15%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 167.
+142 of 936 steps (15%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:51:00 2023]
+Job 295: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV014515/CW0080_1.fastq.gz, results/reads/BGV014515/CW0080_2.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 225: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007865/CW0090_1.fastq.gz, results/reads/BGV007865/CW0090_2.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 268: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008100/CW0047_2.fastq.gz, results/reads/BGV008100/CW0047_1.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 212: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007161/CW1029_1.fastq.gz, results/reads/BGV007161/CW1029_2.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 184: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006777/CW0060_1.fastq.gz, results/reads/BGV006777/CW0060_2.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 240: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007911/CW0140_1.fastq.gz, results/reads/BGV007911/CW0140_2.fastq.gz
+
+[Fri Nov 17 17:51:00 2023]
+Finished job 189.
+143 of 936 steps (15%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 236.
+144 of 936 steps (15%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 295.
+145 of 936 steps (15%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 225.
+146 of 936 steps (16%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 268.
+147 of 936 steps (16%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 212.
+148 of 936 steps (16%) done
+[Fri Nov 17 17:51:00 2023]
+Finished job 184.
+149 of 936 steps (16%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:51:00 2023]
+Job 208: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007111/CW1000_1.fastq.gz, results/reads/BGV007111/CW1000_2.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 264: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008077/CW0087_1.fastq.gz, results/reads/BGV008077/CW0087_2.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 168: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006232/CW0104_1.fastq.gz, results/reads/BGV006232/CW0104_2.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 182: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006768/CW0111_2.fastq.gz, results/reads/BGV006768/CW0111_1.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 296: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV014516/CW0133_1.fastq.gz, results/reads/BGV014516/CW0133_2.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 267: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV008098/CW0089_1.fastq.gz, results/reads/BGV008098/CW0089_2.fastq.gz
+
+
+[Fri Nov 17 17:51:00 2023]
+Job 211: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007152/CW1027_2.fastq.gz, results/reads/BGV007152/CW1027_1.fastq.gz
+
+[Fri Nov 17 17:51:01 2023]
+Finished job 240.
+150 of 936 steps (16%) done
+[Fri Nov 17 17:51:01 2023]
+Finished job 208.
+151 of 936 steps (16%) done
+[Fri Nov 17 17:51:01 2023]
+Finished job 264.
+152 of 936 steps (16%) done
+[Fri Nov 17 17:51:01 2023]
+Finished job 168.
+153 of 936 steps (16%) done
+[Fri Nov 17 17:51:01 2023]
+Finished job 182.
+154 of 936 steps (16%) done
+[Fri Nov 17 17:51:01 2023]
+Finished job 296.
+155 of 936 steps (17%) done
+[Fri Nov 17 17:51:01 2023]
+Finished job 267.
+156 of 936 steps (17%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:51:01 2023]
+Job 183: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV006775/CW1018_1.fastq.gz, results/reads/BGV006775/CW1018_2.fastq.gz
+
+
+[Fri Nov 17 17:51:01 2023]
+Job 284: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV012625/CW0022_1.fastq.gz, results/reads/BGV012625/CW0022_2.fastq.gz
+
+
+[Fri Nov 17 17:51:01 2023]
+Job 239: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007910/CW0081_2.fastq.gz, results/reads/BGV007910/CW0081_1.fastq.gz
+
+[Fri Nov 17 17:51:01 2023]
+Finished job 211.
+157 of 936 steps (17%) done
+[Fri Nov 17 17:51:01 2023]
+Finished job 183.
+158 of 936 steps (17%) done
+[Fri Nov 17 17:51:01 2023]
+Finished job 284.
+159 of 936 steps (17%) done
+Select jobs to execute...
+[Fri Nov 17 17:51:01 2023]
+Finished job 239.
+160 of 936 steps (17%) done
+
+[Fri Nov 17 17:51:01 2023]
+Job 142: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183272_SRR7279519_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV014522/CW0018_fastqc.zip
+
+Select jobs to execute...
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 17:55:07 2023]
+Finished job 142.
+161 of 936 steps (17%) done
+
+[Fri Nov 17 17:55:07 2023]
+Job 31: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183145_SRR7279646_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006828/CW0164_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 17:55:52 2023]
+Finished job 108.
+162 of 936 steps (17%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:55:52 2023]
+Job 34: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183151_SRR7279640_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006865/CW0157_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 17:58:49 2023]
+Finished job 34.
+163 of 936 steps (17%) done
+Select jobs to execute...
+
+[Fri Nov 17 17:58:49 2023]
+Job 146: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183296_SRR7279495_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV015727/CW0168_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:02:31 2023]
+Finished job 146.
+164 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:02:31 2023]
+Job 62: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183137_SRR7279654_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007854/CW0122_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:04:05 2023]
+Finished job 62.
+165 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:04:05 2023]
+Job 4: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183310_SRR7279481_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV005912/CW0123_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:05:36 2023]
+Finished job 31.
+166 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:05:36 2023]
+Job 35: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183144_SRR7279647_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006867/CW0146_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:08:08 2023]
+Finished job 4.
+167 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:08:08 2023]
+Job 147: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183267_SRR7279524_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV015734/CW0059_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:08:54 2023]
+Finished job 35.
+168 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:08:54 2023]
+Job 15: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183124_SRR7279667_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006336/CW1028_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:11:50 2023]
+Finished job 15.
+169 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:11:50 2023]
+Job 119: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183244_SRR7279547_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008224/CW0010_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:12:15 2023]
+Finished job 147.
+170 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:12:15 2023]
+Job 115: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183258_SRR7279533_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008218/CW0029_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:13:10 2023]
+Finished job 115.
+171 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:13:10 2023]
+Job 148: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183289_SRR7279502_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/LA0767/CW0165_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:17:19 2023]
+Finished job 148.
+172 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:17:19 2023]
+Job 120: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183184_SRR7279607_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008225/CW0093_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:19:29 2023]
+Finished job 119.
+173 of 936 steps (18%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:19:29 2023]
+Job 13: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183123_SRR7279668_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006235/CW0177_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:26:02 2023]
+Finished job 120.
+174 of 936 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:26:02 2023]
+Job 117: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183190_SRR7279601_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008221/CW0132_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:27:06 2023]
+Finished job 13.
+175 of 936 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:27:06 2023]
+Job 90: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183219_SRR7279572_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007934/CW0021_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:28:02 2023]
+Finished job 117.
+176 of 936 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:28:02 2023]
+Job 114: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183254_SRR7279537_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008189/CW0156_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:28:55 2023]
+Finished job 114.
+177 of 936 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:28:55 2023]
+Job 30: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183206_SRR7279585_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006825/CW0082_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:31:57 2023]
+Finished job 90.
+178 of 936 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:31:57 2023]
+Job 86: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183212_SRR7279579_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007921/CW0107_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:34:20 2023]
+Finished job 30.
+179 of 936 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:34:20 2023]
+Job 143: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183095_SRR7279696_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV015380/CW1002_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:36:51 2023]
+Finished job 86.
+180 of 936 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:36:52 2023]
+Job 87: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183183_SRR7279608_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007927/CW0176_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:39:19 2023]
+Finished job 143.
+181 of 936 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:39:19 2023]
+Job 118: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183217_SRR7279574_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008223/CW0034_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:40:57 2023]
+Finished job 87.
+182 of 936 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:40:57 2023]
+Job 63: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183131_SRR7279660_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007857/CW0077_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:43:18 2023]
+Finished job 118.
+183 of 936 steps (20%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:43:18 2023]
+Job 92: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183200_SRR7279591_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007936/CW0027_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:43:48 2023]
+Finished job 63.
+184 of 936 steps (20%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:43:48 2023]
+Job 64: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183138_SRR7279653_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007860/CW0085_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:45:45 2023]
+Finished job 92.
+185 of 936 steps (20%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:45:45 2023]
+Job 93: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183198_SRR7279593_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007981/CW0106_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:47:06 2023]
+Finished job 64.
+186 of 936 steps (20%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:47:06 2023]
+Job 6: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183282_SRR7279509_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006175/CW0083_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:47:57 2023]
+Finished job 93.
+187 of 936 steps (20%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:47:57 2023]
+Job 121: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183220_SRR7279571_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008345/CW0180_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:51:48 2023]
+Finished job 6.
+188 of 936 steps (20%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:51:48 2023]
+Job 38: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183149_SRR7279642_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006899/CW0076_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:53:09 2023]
+Finished job 121.
+189 of 936 steps (20%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:53:09 2023]
+Job 150: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183128_SRR7279663_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/LA2309/CW0063_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 18:55:22 2023]
+Finished job 38.
+190 of 936 steps (20%) done
+Select jobs to execute...
+
+[Fri Nov 17 18:55:22 2023]
+Job 32: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183180_SRR7279611_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006852/CW0108_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:02:39 2023]
+Finished job 150.
+191 of 936 steps (20%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:02:39 2023]
+Job 122: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183158_SRR7279633_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008348/CW0058_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:02:50 2023]
+Finished job 32.
+192 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:02:50 2023]
+Job 39: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183146_SRR7279645_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006901/CW0086_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:04:53 2023]
+Finished job 39.
+193 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:04:53 2023]
+Job 151: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183246_SRR7279545_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/PI129033/CW0135_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:09:12 2023]
+Finished job 122.
+194 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:09:12 2023]
+Job 123: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183215_SRR7279576_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008354/CW0174_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:11:13 2023]
+Finished job 151.
+195 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:11:13 2023]
+Job 152: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183292_SRR7279499_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/PI129088/CW0096_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:13:39 2023]
+Finished job 152.
+196 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:13:39 2023]
+Job 12: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183305_SRR7279486_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006234/CW0023_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:14:43 2023]
+Finished job 123.
+197 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:14:43 2023]
+Job 124: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183245_SRR7279546_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV012613/CW0099_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:18:25 2023]
+Finished job 12.
+198 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:18:25 2023]
+Job 97: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183196_SRR7279595_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008036/CW0159_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:18:29 2023]
+Finished job 124.
+199 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:18:29 2023]
+Job 69: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183080_SRR7279711_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007871/CW0130_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:20:27 2023]
+Finished job 97.
+200 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:20:28 2023]
+Job 125: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183248_SRR7279543_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV012614/CW0144_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:21:18 2023]
+Finished job 69.
+201 of 936 steps (21%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:21:18 2023]
+Job 42: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183166_SRR7279625_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006907/CW0124_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:30:07 2023]
+Finished job 42.
+202 of 936 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:30:08 2023]
+Job 154: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183133_SRR7279658_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/PI487625/CW0103_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:30:27 2023]
+Finished job 125.
+203 of 936 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:30:27 2023]
+Job 9: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183280_SRR7279511_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006230/CW0019_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:35:43 2023]
+Finished job 154.
+204 of 936 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:35:43 2023]
+Job 126: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183239_SRR7279552_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV012615/CW0061_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:36:21 2023]
+Finished job 9.
+205 of 936 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:36:21 2023]
+Job 144: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183093_SRR7279698_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV015382/CW1025_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:38:35 2023]
+Finished job 144.
+206 of 936 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:38:35 2023]
+Job 155: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183116_SRR7279675_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/Tegucigalpa/CW0008_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:39:50 2023]
+Finished job 126.
+207 of 936 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:39:50 2023]
+Job 71: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007875/CW0095_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:42:23 2023]
+Finished job 71.
+208 of 936 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:42:23 2023]
+Job 10: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183281_SRR7279510_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006231/CW0048_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:44:36 2023]
+Finished job 155.
+209 of 936 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:44:36 2023]
+Job 100: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183176_SRR7279615_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008042/CW0126_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:45:57 2023]
+Finished job 10.
+210 of 936 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:45:57 2023]
+Job 16: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183275_SRR7279516_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006347/CW1035_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:46:23 2023]
+Finished job 100.
+211 of 936 steps (23%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:46:23 2023]
+Job 72: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183154_SRR7279637_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007876/CW0112_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:49:54 2023]
+Finished job 16.
+212 of 936 steps (23%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:49:54 2023]
+Job 44: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183204_SRR7279587_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006927/CW0161_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:50:44 2023]
+Finished job 72.
+213 of 936 steps (23%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:50:44 2023]
+Job 128: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183240_SRR7279551_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV012626/CW0062_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:56:08 2023]
+Finished job 44.
+214 of 936 steps (23%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:56:08 2023]
+Job 101: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183169_SRR7279622_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008051/CW0054_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:56:28 2023]
+Finished job 128.
+215 of 936 steps (23%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:56:28 2023]
+Job 45: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183140_SRR7279651_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006931/CW0120_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 19:58:08 2023]
+Finished job 101.
+216 of 936 steps (23%) done
+Select jobs to execute...
+
+[Fri Nov 17 19:58:08 2023]
+Job 127: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183161_SRR7279630_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV012625/CW0022_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:03:36 2023]
+Finished job 127.
+217 of 936 steps (23%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:03:36 2023]
+Job 17: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183125_SRR7279666_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006353/CW1003_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:03:51 2023]
+Finished job 45.
+218 of 936 steps (23%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:03:51 2023]
+Job 73: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183069_SRR7279722_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007878/CW0079_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:04:31 2023]
+Finished job 17.
+219 of 936 steps (23%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:04:31 2023]
+Job 129: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183181_SRR7279610_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV012627/CW0071_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:09:14 2023]
+Finished job 73.
+220 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:09:14 2023]
+Job 3: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183300_SRR7279491_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV005895/CW0139_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:10:01 2023]
+Finished job 129.
+221 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:10:01 2023]
+Job 60: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183070_SRR7279721_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007339/CW1026_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:12:24 2023]
+Finished job 60.
+222 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:12:25 2023]
+Job 116: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183182_SRR7279609_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008219/CW0155_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:13:01 2023]
+Finished job 3.
+223 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:13:01 2023]
+Job 145: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183293_SRR7279498_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV015726/CW0109_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:14:56 2023]
+Finished job 145.
+224 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:14:56 2023]
+Job 74: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183100_SRR7279691_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007894/CW0024_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:19:31 2023]
+Finished job 116.
+225 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:19:31 2023]
+Job 130: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183236_SRR7279555_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV012639/CW0039_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:23:53 2023]
+Finished job 74.
+226 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:23:53 2023]
+Job 47: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183142_SRR7279649_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007015/CW0145_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:28:18 2023]
+Finished job 47.
+227 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:28:18 2023]
+Job 103: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183171_SRR7279620_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008061/CW0038_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:28:38 2023]
+Finished job 130.
+228 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:28:38 2023]
+Job 18: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183211_SRR7279580_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006363/CW1011_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:30:27 2023]
+Finished job 103.
+229 of 936 steps (24%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:30:27 2023]
+Job 19: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183208_SRR7279583_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006370/CW1037_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:31:40 2023]
+Finished job 18.
+230 of 936 steps (25%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:31:40 2023]
+Job 75: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183101_SRR7279690_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007895/CW0065_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:37:45 2023]
+Finished job 19.
+231 of 936 steps (25%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:37:46 2023]
+Job 131: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183186_SRR7279605_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV012640/CW0153_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:38:22 2023]
+Finished job 75.
+232 of 936 steps (25%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:38:22 2023]
+Job 102: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183277_SRR7279514_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008058/CW0181_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:41:43 2023]
+Finished job 131.
+233 of 936 steps (25%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:41:43 2023]
+Job 104: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183075_SRR7279716_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008065/CW0028_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:44:59 2023]
+Finished job 102.
+234 of 936 steps (25%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:44:59 2023]
+Job 41: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183224_SRR7279567_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006906/CW0020_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:47:41 2023]
+Finished job 104.
+235 of 936 steps (25%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:47:41 2023]
+Job 153: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183271_SRR7279520_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/PI406890/CW0131_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:49:26 2023]
+Finished job 153.
+236 of 936 steps (25%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:49:26 2023]
+Job 48: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183250_SRR7279541_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007017/CW0154_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:53:45 2023]
+Finished job 48.
+237 of 936 steps (25%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:53:45 2023]
+Job 27: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183197_SRR7279594_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006777/CW0060_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 20:57:49 2023]
+Finished job 41.
+238 of 936 steps (25%) done
+Select jobs to execute...
+
+[Fri Nov 17 20:57:49 2023]
+Job 83: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183159_SRR7279632_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007911/CW0140_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:00:27 2023]
+Finished job 27.
+239 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:00:27 2023]
+Job 132: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183221_SRR7279570_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV013134/CW0166_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:00:46 2023]
+Finished job 83.
+240 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:00:46 2023]
+Job 111: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183201_SRR7279590_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008100/CW0047_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:02:17 2023]
+Finished job 132.
+241 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:02:17 2023]
+Job 20: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183126_SRR7279665_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006454/CW1023_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:07:14 2023]
+Finished job 20.
+242 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:07:14 2023]
+Job 133: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183242_SRR7279549_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV013161/CW0040_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:11:23 2023]
+Finished job 133.
+243 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:11:23 2023]
+Job 140: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183266_SRR7279525_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV014518/CW0179_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:11:51 2023]
+Finished job 111.
+244 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:11:51 2023]
+Job 70: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183210_SRR7279581_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007872/CW0121_fastqc.zip; Set of input files has changed since last execution
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:15:20 2023]
+Finished job 140.
+245 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:15:20 2023]
+Job 113: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183141_SRR7279650_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008108/CW0178_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:16:06 2023]
+Finished job 70.
+246 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:16:06 2023]
+Job 77: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183120_SRR7279671_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007900/CW0101_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:21:49 2023]
+Finished job 77.
+247 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:21:49 2023]
+Job 50: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183108_SRR7279683_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007109/CW1039_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:26:42 2023]
+Finished job 50.
+248 of 936 steps (26%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:26:42 2023]
+Job 21: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183285_SRR7279506_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006457/CW1022_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:26:59 2023]
+Finished job 113.
+249 of 936 steps (27%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:26:59 2023]
+Job 106: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183162_SRR7279629_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV008070/CW0011_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:33:58 2023]
+Finished job 106.
+250 of 936 steps (27%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:33:58 2023]
+Job 84: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183252_SRR7279539_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007918/CW0113_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:34:14 2023]
+Finished job 21.
+251 of 936 steps (27%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:34:14 2023]
+Job 43: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183143_SRR7279648_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006910/CW0163_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Nov 17 21:37:54 2023]
+Finished job 84.
+252 of 936 steps (27%) done
+Select jobs to execute...
+
+[Fri Nov 17 21:37:54 2023]
+Job 28: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183085_SRR7279706_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV006792/CW0064_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+Nov 17 21:38:59.105969  6972 slurmstepd   0x2ac616a83700: error: *** JOB 8585243 ON r1u10n1 CANCELLED AT 2023-11-17T21:38:59 DUE TO TIME LIMIT ***

@@ -1,0 +1,3 @@
+WorkflowError in file /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/Snakefile, line 13:
+Workflow defines configfile config/config.yaml but it is not present or accessible (full checked path: /xdisk/rpalaniv/cjperkins1/kgwasflow/config/config/config.yaml).
+  File "/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/Snakefile", line 13, in <module>

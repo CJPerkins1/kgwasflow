@@ -1,0 +1,1037 @@
+
+               
+     _     _______          __      _____  __ _               
+    | |   / ____\ \        / /\    / ____|/ _| |              
+    | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __
+    | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /
+    |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V / 
+    |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/  
+    
+    kGWASflow: A Snakemake Workflow for k-mers Based GWAS
+    
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499534_SRR3050972_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499534_SRR3050972_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499534_SRR3050972_1.fastq.gz to results/reads/C00026419/C00026419_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499534_SRR3050972_2.fastq.gz to results/reads/C00026419/C00026419_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499646_SRR3051084_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499646_SRR3051084_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499646_SRR3051084_1.fastq.gz to results/reads/c02492_93/c02492_93_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499478_SRR3050916_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499478_SRR3050916_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499478_SRR3050916_1.fastq.gz to results/reads/C00026360/C00026360_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499647_SRR3051085_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499647_SRR3051085_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499647_SRR3051085_1.fastq.gz to results/reads/c02492_94/c02492_94_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499478_SRR3050916_2.fastq.gz to results/reads/C00026360/C00026360_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499646_SRR3051084_2.fastq.gz to results/reads/c02492_93/c02492_93_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499479_SRR3050917_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499479_SRR3050917_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499479_SRR3050917_1.fastq.gz to results/reads/C00026361/C00026361_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499647_SRR3051085_2.fastq.gz to results/reads/c02492_94/c02492_94_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499535_SRR3050973_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499535_SRR3050973_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499535_SRR3050973_1.fastq.gz to results/reads/C00026420/C00026420_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499535_SRR3050973_2.fastq.gz to results/reads/C00026420/C00026420_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499479_SRR3050917_2.fastq.gz to results/reads/C00026361/C00026361_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499645_SRR3051083_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499645_SRR3051083_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499645_SRR3051083_1.fastq.gz to results/reads/c02492_92/c02492_92_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499407_SRR3050845_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499407_SRR3050845_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499407_SRR3050845_1.fastq.gz to results/reads/C00022105/C00022105_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499645_SRR3051083_2.fastq.gz to results/reads/c02492_92/c02492_92_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499407_SRR3050845_2.fastq.gz to results/reads/C00022105/C00022105_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499644_SRR3051082_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499644_SRR3051082_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499644_SRR3051082_1.fastq.gz to results/reads/c02492_91/c02492_91_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499644_SRR3051082_2.fastq.gz to results/reads/c02492_91/c02492_91_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499480_SRR3050918_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499480_SRR3050918_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499480_SRR3050918_1.fastq.gz to results/reads/C00026362/C00026362_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499536_SRR3050974_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499536_SRR3050974_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499536_SRR3050974_1.fastq.gz to results/reads/C00026421/C00026421_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499575_SRR3051013_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499575_SRR3051013_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499575_SRR3051013_1.fastq.gz to results/reads/C00026461/C00026461_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499480_SRR3050918_2.fastq.gz to results/reads/C00026362/C00026362_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499536_SRR3050974_2.fastq.gz to results/reads/C00026421/C00026421_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499575_SRR3051013_2.fastq.gz to results/reads/C00026461/C00026461_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499481_SRR3050919_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499481_SRR3050919_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499481_SRR3050919_1.fastq.gz to results/reads/C00026363/C00026363_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499537_SRR3050975_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499537_SRR3050975_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499537_SRR3050975_1.fastq.gz to results/reads/C00026422/C00026422_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499481_SRR3050919_2.fastq.gz to results/reads/C00026363/C00026363_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499576_SRR3051014_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499576_SRR3051014_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499576_SRR3051014_1.fastq.gz to results/reads/C00026462/C00026462_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499537_SRR3050975_2.fastq.gz to results/reads/C00026422/C00026422_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499576_SRR3051014_2.fastq.gz to results/reads/C00026462/C00026462_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499573_SRR3051011_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499573_SRR3051011_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499573_SRR3051011_1.fastq.gz to results/reads/C00026459/C00026459_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499573_SRR3051011_2.fastq.gz to results/reads/C00026459/C00026459_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499538_SRR3050976_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499538_SRR3050976_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499538_SRR3050976_1.fastq.gz to results/reads/C00026423/C00026423_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499577_SRR3051015_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499577_SRR3051015_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499577_SRR3051015_1.fastq.gz to results/reads/C00026504/C00026504_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499538_SRR3050976_2.fastq.gz to results/reads/C00026423/C00026423_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499482_SRR3050920_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499482_SRR3050920_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499531_SRR3050969_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499531_SRR3050969_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499531_SRR3050969_1.fastq.gz to results/reads/C00026416/C00026416_1.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499482_SRR3050920_1.fastq.gz to results/reads/C00026364/C00026364_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499577_SRR3051015_2.fastq.gz to results/reads/C00026504/C00026504_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499531_SRR3050969_2.fastq.gz to results/reads/C00026416/C00026416_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499482_SRR3050920_2.fastq.gz to results/reads/C00026364/C00026364_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499483_SRR3050921_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499483_SRR3050921_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499483_SRR3050921_1.fastq.gz to results/reads/C00026365/C00026365_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499483_SRR3050921_2.fastq.gz to results/reads/C00026365/C00026365_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499578_SRR3051016_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499578_SRR3051016_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499475_SRR3050913_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499475_SRR3050913_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499578_SRR3051016_1.fastq.gz to results/reads/C00026505/C00026505_1.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499475_SRR3050913_1.fastq.gz to results/reads/C00026357/C00026357_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499578_SRR3051016_2.fastq.gz to results/reads/C00026505/C00026505_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499475_SRR3050913_2.fastq.gz to results/reads/C00026357/C00026357_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499409_SRR3050847_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499409_SRR3050847_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499409_SRR3050847_1.fastq.gz to results/reads/C00022107/C00022107_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499408_SRR3050846_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499408_SRR3050846_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499539_SRR3050977_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499539_SRR3050977_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499408_SRR3050846_1.fastq.gz to results/reads/C00022106/C00022106_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499643_SRR3051081_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499643_SRR3051081_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499539_SRR3050977_1.fastq.gz to results/reads/C00026424/C00026424_1.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499643_SRR3051081_1.fastq.gz to results/reads/c02492_90/c02492_90_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499409_SRR3050847_2.fastq.gz to results/reads/C00022107/C00022107_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499408_SRR3050846_2.fastq.gz to results/reads/C00022106/C00022106_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499539_SRR3050977_2.fastq.gz to results/reads/C00026424/C00026424_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499643_SRR3051081_2.fastq.gz to results/reads/c02492_90/c02492_90_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499582_SRR3051020_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499582_SRR3051020_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499582_SRR3051020_1.fastq.gz to results/reads/C00026509/C00026509_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499582_SRR3051020_2.fastq.gz to results/reads/C00026509/C00026509_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499566_SRR3051004_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499566_SRR3051004_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499566_SRR3051004_1.fastq.gz to results/reads/C00026452/C00026452_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499518_SRR3050956_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499518_SRR3050956_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499518_SRR3050956_1.fastq.gz to results/reads/C00026401/C00026401_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499518_SRR3050956_2.fastq.gz to results/reads/C00026401/C00026401_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499566_SRR3051004_2.fastq.gz to results/reads/C00026452/C00026452_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499495_SRR3050933_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499495_SRR3050933_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499495_SRR3050933_1.fastq.gz to results/reads/C00026378/C00026378_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499495_SRR3050933_2.fastq.gz to results/reads/C00026378/C00026378_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499461_SRR3050899_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499461_SRR3050899_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499461_SRR3050899_1.fastq.gz to results/reads/C00026342/C00026342_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499461_SRR3050899_2.fastq.gz to results/reads/C00026342/C00026342_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499533_SRR3050971_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499533_SRR3050971_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499533_SRR3050971_1.fastq.gz to results/reads/C00026418/C00026418_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499533_SRR3050971_2.fastq.gz to results/reads/C00026418/C00026418_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499583_SRR3051021_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499583_SRR3051021_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499583_SRR3051021_1.fastq.gz to results/reads/C00026510/C00026510_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499583_SRR3051021_2.fastq.gz to results/reads/C00026510/C00026510_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499635_SRR3051073_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499635_SRR3051073_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499635_SRR3051073_1.fastq.gz to results/reads/c02492_67/c02492_67_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499462_SRR3050900_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499462_SRR3050900_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499462_SRR3050900_1.fastq.gz to results/reads/C00026343/C00026343_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499635_SRR3051073_2.fastq.gz to results/reads/c02492_67/c02492_67_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499630_SRR3051068_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499630_SRR3051068_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499630_SRR3051068_1.fastq.gz to results/reads/c02492_57/c02492_57_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499462_SRR3050900_2.fastq.gz to results/reads/C00026343/C00026343_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499630_SRR3051068_2.fastq.gz to results/reads/c02492_57/c02492_57_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499414_SRR3050852_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499414_SRR3050852_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499414_SRR3050852_1.fastq.gz to results/reads/C00022112/C00022112_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499414_SRR3050852_2.fastq.gz to results/reads/C00022112/C00022112_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499494_SRR3050932_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499494_SRR3050932_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499494_SRR3050932_1.fastq.gz to results/reads/C00026377/C00026377_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499517_SRR3050955_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499517_SRR3050955_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499517_SRR3050955_1.fastq.gz to results/reads/C00026400/C00026400_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499494_SRR3050932_2.fastq.gz to results/reads/C00026377/C00026377_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499517_SRR3050955_2.fastq.gz to results/reads/C00026400/C00026400_2.fastq.gz
+Archive:  scripts/external/kmers_gwas/v0.3-beta.zip
+   creating: scripts/external/kmers_gwas/bin/
+  inflating: scripts/external/kmers_gwas/bin/emma_kinship_kmers  
+  inflating: scripts/external/kmers_gwas/bin/histogram_KMC_kmers_counts  
+  inflating: scripts/external/kmers_gwas/bin/kmers_add_strand_information  
+  inflating: scripts/external/kmers_gwas/bin/associate_kmers  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499584_SRR3051022_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499584_SRR3051022_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499584_SRR3051022_1.fastq.gz to results/reads/C00026511/C00026511_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/bin/associate_snps  
+  inflating: scripts/external/kmers_gwas/bin/emma_kinship  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499584_SRR3051022_2.fastq.gz to results/reads/C00026511/C00026511_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499516_SRR3050954_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499516_SRR3050954_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/bin/filter_kmers  Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499516_SRR3050954_1.fastq.gz to results/reads/C00026399/C00026399_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499550_SRR3050988_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499550_SRR3050988_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499550_SRR3050988_1.fastq.gz to results/reads/C00026435/C00026435_1.fastq.gz
+
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499520_SRR3050958_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499520_SRR3050958_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499520_SRR3050958_1.fastq.gz to results/reads/C00026403/C00026403_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/bin/kmers_table_to_bed  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499520_SRR3050958_2.fastq.gz to results/reads/C00026403/C00026403_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499516_SRR3050954_2.fastq.gz to results/reads/C00026399/C00026399_2.fastq.gz
+
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499550_SRR3050988_2.fastq.gz to results/reads/C00026435/C00026435_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499629_SRR3051067_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499629_SRR3051067_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499629_SRR3051067_1.fastq.gz to results/reads/c02492_56/c02492_56_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/bin/build_kmers_table  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499629_SRR3051067_2.fastq.gz to results/reads/c02492_56/c02492_56_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/bin/list_kmers_found_in_multiple_samples  
+   creating: scripts/external/kmers_gwas/build/
+  inflating: scripts/external/kmers_gwas/build/kmc_file.d  
+  inflating: scripts/external/kmers_gwas/build/kmc_file.o  
+  inflating: scripts/external/kmers_gwas/build/kmer_api.d  
+  inflating: scripts/external/kmers_gwas/build/kmer_api.o  
+  inflating: scripts/external/kmers_gwas/build/mmer.d  
+  inflating: scripts/external/kmers_gwas/build/mmer.o  
+  inflating: scripts/external/kmers_gwas/build/best_associations_heap.d  
+  inflating: scripts/external/kmers_gwas/build/best_associations_heap.o  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499572_SRR3051010_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499572_SRR3051010_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499572_SRR3051010_1.fastq.gz to results/reads/C00026458/C00026458_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/build/kmer_general.d  
+  inflating: scripts/external/kmers_gwas/build/kmer_general.o  
+  inflating: scripts/external/kmers_gwas/build/kmers_merge_multiple_databaes.d  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499411_SRR3050849_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499411_SRR3050849_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499411_SRR3050849_1.fastq.gz to results/reads/C00022109/C00022109_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499572_SRR3051010_2.fastq.gz to results/reads/C00026458/C00026458_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/build/kmers_merge_multiple_databaes.o  
+  inflating: scripts/external/kmers_gwas/build/kmers_multiple_databases.d  
+  inflating: scripts/external/kmers_gwas/build/kmers_multiple_databases.o  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499411_SRR3050849_2.fastq.gz to results/reads/C00022109/C00022109_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/build/kmers_single_database.d  
+  inflating: scripts/external/kmers_gwas/build/kmers_single_database.o  
+  inflating: scripts/external/kmers_gwas/build/snps_multiple_databases.d  
+  inflating: scripts/external/kmers_gwas/build/snps_multiple_databases.o  
+   creating: scripts/external/kmers_gwas/examples/
+   creating: scripts/external/kmers_gwas/examples/flowering_time_arabidopsis/
+  inflating: scripts/external/kmers_gwas/examples/flowering_time_arabidopsis/FT10.pheno  
+  inflating: scripts/external/kmers_gwas/examples/flowering_time_arabidopsis/run_example.sh  
+   creating: scripts/external/kmers_gwas/examples/resistence_e_coli/
+  inflating: scripts/external/kmers_gwas/examples/resistence_e_coli/resistence.pheno  
+  inflating: scripts/external/kmers_gwas/examples/resistence_e_coli/run_example.sh  
+   creating: scripts/external/kmers_gwas/external_programs/
+  inflating: scripts/external/kmers_gwas/external_programs/gemma_0_96  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499460_SRR3050898_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499460_SRR3050898_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499460_SRR3050898_1.fastq.gz to results/reads/C00026341/C00026341_1.fastq.gz
+
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499496_SRR3050934_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499496_SRR3050934_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499496_SRR3050934_1.fastq.gz to results/reads/C00026379/C00026379_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499460_SRR3050898_2.fastq.gz to results/reads/C00026341/C00026341_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/external_programs/kmc_v3  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499580_SRR3051018_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499580_SRR3051018_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499580_SRR3051018_1.fastq.gz to results/reads/C00026507/C00026507_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499496_SRR3050934_2.fastq.gz to results/reads/C00026379/C00026379_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499416_SRR3050854_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499416_SRR3050854_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499416_SRR3050854_1.fastq.gz to results/reads/C00022114/C00022114_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499580_SRR3051018_2.fastq.gz to results/reads/C00026507/C00026507_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499416_SRR3050854_2.fastq.gz to results/reads/C00022114/C00022114_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499463_SRR3050901_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499463_SRR3050901_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499463_SRR3050901_1.fastq.gz to results/reads/C00026344/C00026344_1.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/
+ extracting: scripts/external/kmers_gwas/include/.gitignore  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499463_SRR3050901_2.fastq.gz to results/reads/C00026344/C00026344_2.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/CTPL/
+  inflating: scripts/external/kmers_gwas/include/CTPL/.git  
+  inflating: scripts/external/kmers_gwas/include/CTPL/LICENSE  
+  inflating: scripts/external/kmers_gwas/include/CTPL/README.md  
+  inflating: scripts/external/kmers_gwas/include/CTPL/ctpl.h  
+  inflating: scripts/external/kmers_gwas/include/CTPL/ctpl_stl.h  
+  inflating: scripts/external/kmers_gwas/include/CTPL/example.cpp  
+   creating: scripts/external/kmers_gwas/include/KMC/
+  inflating: scripts/external/kmers_gwas/include/KMC/.git  
+  inflating: scripts/external/kmers_gwas/include/KMC/.gitattributes  
+  inflating: scripts/external/kmers_gwas/include/KMC/.gitignore  
+  inflating: scripts/external/kmers_gwas/include/KMC/API.pdf  
+  inflating: scripts/external/kmers_gwas/include/KMC/README.md  
+   creating: scripts/external/kmers_gwas/include/KMC/doc/
+   creating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/complex.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/filter_operation.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/intro.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/kmc_tools.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/simple.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/transform.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/usage.tex  
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_api/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmc_file.cpp  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499628_SRR3051066_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499628_SRR3051066_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499476_SRR3050914_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499476_SRR3050914_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499476_SRR3050914_1.fastq.gz to results/reads/C00026358/C00026358_1.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499628_SRR3051066_1.fastq.gz to results/reads/c02492_55/c02492_55_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmc_file.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmer_api.cpp  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499515_SRR3050953_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499515_SRR3050953_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499515_SRR3050953_1.fastq.gz to results/reads/C00026398/C00026398_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499628_SRR3051066_2.fastq.gz to results/reads/c02492_55/c02492_55_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499476_SRR3050914_2.fastq.gz to results/reads/C00026358/C00026358_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmer_api.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmer_defs.h  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499515_SRR3050953_2.fastq.gz to results/reads/C00026398/C00026398_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/mmer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/mmer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/stdafx.h  
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_dump/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/kmc_dump.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/kmc_dump.vcxproj  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/nc_utils.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/nc_utils.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/stdafx.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/stdafx.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/targetver.h  
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/kmc_dump_sample.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/kmc_dump_sample.vcxproj  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/stdafx.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/stdafx.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/targetver.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499497_SRR3050935_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499497_SRR3050935_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499497_SRR3050935_1.fastq.gz to results/reads/C00026380/C00026380_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools.pdf  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499497_SRR3050935_2.fastq.gz to results/reads/C00026380/C00026380_2.fastq.gz
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_tools/
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499565_SRR3051003_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499565_SRR3051003_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499565_SRR3051003_1.fastq.gz to results/reads/C00026451/C00026451_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/bundle.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499574_SRR3051012_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499574_SRR3051012_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499574_SRR3051012_1.fastq.gz to results/reads/C00026460/C00026460_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499574_SRR3051012_2.fastq.gz to results/reads/C00026460/C00026460_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/check_kmer.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499565_SRR3051003_2.fastq.gz to results/reads/C00026451/C00026451_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/config.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499571_SRR3051009_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499571_SRR3051009_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499571_SRR3051009_1.fastq.gz to results/reads/C00026457/C00026457_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/defs.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499571_SRR3051009_2.fastq.gz to results/reads/C00026457/C00026457_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/develop.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/dump_writer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/expression_node.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_filter.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_filter.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_reader.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_writer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_writer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/histogram_writer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc1_db_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc1_db_writer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc2_db_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_header.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_header.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_tools.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_tools.vcxproj  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_tools.vcxproj.filters  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmer.h  
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/bzlib.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/bzlib_private.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libbz2.1.0.5.dylib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libbz2.a  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499541_SRR3050979_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499541_SRR3050979_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499541_SRR3050979_1.fastq.gz to results/reads/C00026426/C00026426_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499541_SRR3050979_2.fastq.gz to results/reads/C00026426/C00026426_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libbzip2.lib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libz.1.2.5.dylib  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499529_SRR3050967_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499529_SRR3050967_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499529_SRR3050967_1.fastq.gz to results/reads/C00026414/C00026414_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libz.a  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499529_SRR3050967_2.fastq.gz to results/reads/C00026414/C00026414_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/zconf.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/zlib.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/zlibstat.lib  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499473_SRR3050911_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499473_SRR3050911_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499473_SRR3050911_1.fastq.gz to results/reads/C00026355/C00026355_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499473_SRR3050911_2.fastq.gz to results/reads/C00026355/C00026355_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/meta_oper.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/nc_utils.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/nc_utils.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499642_SRR3051080_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499642_SRR3051080_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499642_SRR3051080_1.fastq.gz to results/reads/c02492_88/c02492_88_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/operations.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499642_SRR3051080_2.fastq.gz to results/reads/c02492_88/c02492_88_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/output_parser.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/parameters_parser.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/parameters_parser.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/parser.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/parser.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/percent_progress.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/percent_progress.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/queues.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/stdafx.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/stdafx.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/targetver.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/thread_watch.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/thread_watch.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/timer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/tokenizer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/tokenizer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter.sln  
+   creating: scripts/external/kmers_gwas/include/KMC/kmer_counter/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bam_utils.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/binary_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_merger.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_reader.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_sorter.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_subbin.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_uncompactor.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_writer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_writer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/cpu_info.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/cpu_info.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/defs.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/develop.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/develop.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/fastq_reader.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/fastq_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/first_dispatch.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/intr_copy.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499530_SRR3050968_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499530_SRR3050968_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499530_SRR3050968_1.fastq.gz to results/reads/C00026415/C00026415_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_collector.cpp  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499530_SRR3050968_2.fastq.gz to results/reads/C00026415/C00026415_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_collector.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_completer.cpp  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499474_SRR3050912_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499474_SRR3050912_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499474_SRR3050912_1.fastq.gz to results/reads/C00026356/C00026356_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_completer.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499474_SRR3050912_2.fastq.gz to results/reads/C00026356/C00026356_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_sorter.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499570_SRR3051008_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499570_SRR3051008_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499570_SRR3051008_1.fastq.gz to results/reads/C00026456/C00026456_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_storer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_storer.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499570_SRR3051008_2.fastq.gz to results/reads/C00026456/C00026456_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmc.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499532_SRR3050970_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499532_SRR3050970_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499532_SRR3050970_1.fastq.gz to results/reads/C00026417/C00026417_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499532_SRR3050970_2.fastq.gz to results/reads/C00026417/C00026417_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer_counter.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer_counter.vcxproj  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499410_SRR3050848_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499410_SRR3050848_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499410_SRR3050848_1.fastq.gz to results/reads/C00022108/C00022108_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer_counter.vcxproj.filters  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kxmer_set.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499410_SRR3050848_2.fastq.gz to results/reads/C00022108/C00022108_2.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/bzlib.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/bzlib_private.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499542_SRR3050980_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499542_SRR3050980_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499542_SRR3050980_1.fastq.gz to results/reads/C00026427/C00026427_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libbz2.1.0.5.dylib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libbz2.a  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499542_SRR3050980_2.fastq.gz to results/reads/C00026427/C00026427_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libbzip2.lib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libz.1.2.5.dylib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libz.a  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/zconf.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/zlib.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/zlibstat.lib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/mem_disk_file.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/mem_disk_file.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/meta_oper.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/mmer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/mmer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/params.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/queues.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/percent_progress.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/radix.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_avx.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_avx2.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_impl.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_sse2.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_sse41.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/rev_byte.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/rev_byte.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/s_mapper.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/small_k_buf.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/small_sort.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/splitter.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/splitter.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/stdafx.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/stdafx.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/targetver.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/timer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/timer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/makefile  
+  inflating: scripts/external/kmers_gwas/include/KMC/makefile_mac  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499579_SRR3051017_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499579_SRR3051017_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499579_SRR3051017_1.fastq.gz to results/reads/C00026506/C00026506_1.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/cxxopts/
+  inflating: scripts/external/kmers_gwas/include/cxxopts/.git  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499579_SRR3051017_2.fastq.gz to results/reads/C00026506/C00026506_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/cxxopts/.gitignore  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/.travis.yml  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499581_SRR3051019_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499581_SRR3051019_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499581_SRR3051019_1.fastq.gz to results/reads/C00026508/C00026508_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/cxxopts/CHANGELOG.md  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499581_SRR3051019_2.fastq.gz to results/reads/C00026508/C00026508_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/cxxopts/CMakeLists.txt  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/INSTALL  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/LICENSE  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/README.md  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499543_SRR3050981_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499543_SRR3050981_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499543_SRR3050981_1.fastq.gz to results/reads/C00026428/C00026428_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/cxxopts/cxxopts-config.cmake.in  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499543_SRR3050981_2.fastq.gz to results/reads/C00026428/C00026428_2.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/cxxopts/include/
+  inflating: scripts/external/kmers_gwas/include/cxxopts/include/cxxopts.hpp  
+   creating: scripts/external/kmers_gwas/include/cxxopts/src/
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499641_SRR3051079_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499641_SRR3051079_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499641_SRR3051079_1.fastq.gz to results/reads/c02492_86/c02492_86_1.fastq.gz
+ extracting: scripts/external/kmers_gwas/include/cxxopts/src/.gitignore  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/src/CMakeLists.txt  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499641_SRR3051079_2.fastq.gz to results/reads/c02492_86/c02492_86_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/cxxopts/src/example.cpp  
+   creating: scripts/external/kmers_gwas/include/cxxopts/test/
+ extracting: scripts/external/kmers_gwas/include/cxxopts/test/.gitignore  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/CMakeLists.txt  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499412_SRR3050850_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499412_SRR3050850_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499412_SRR3050850_1.fastq.gz to results/reads/C00022110/C00022110_1.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/cxxopts/test/add-subdirectory-test/
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/add-subdirectory-test/CMakeLists.txt  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/catch.hpp  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499477_SRR3050915_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499477_SRR3050915_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499477_SRR3050915_1.fastq.gz to results/reads/C00026359/C00026359_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499412_SRR3050850_2.fastq.gz to results/reads/C00022110/C00022110_2.fastq.gz
+   creating: scripts/external/kmers_gwas/include/cxxopts/test/find-package-test/
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/find-package-test/CMakeLists.txt  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499477_SRR3050915_2.fastq.gz to results/reads/C00026359/C00026359_2.fastq.gz
+
+ extracting: scripts/external/kmers_gwas/include/cxxopts/test/link_a.cpp  
+ extracting: scripts/external/kmers_gwas/include/cxxopts/test/link_b.cpp  
+ extracting: scripts/external/kmers_gwas/include/cxxopts/test/main.cpp  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/options.cpp  
+   creating: scripts/external/kmers_gwas/include/sparsehash/
+  inflating: scripts/external/kmers_gwas/include/sparsehash/dense_hash_map  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/dense_hash_set  
+   creating: scripts/external/kmers_gwas/include/sparsehash/internal/
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/densehashtable.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/hashtable-common.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/libc_allocator_with_realloc.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/sparseconfig.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/sparsehashtable.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/sparse_hash_map  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/sparse_hash_set  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/sparsetable  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/template_util.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/type_traits.h  
+  inflating: scripts/external/kmers_gwas/kmers_gwas.py  
+  inflating: scripts/external/kmers_gwas/LICENSE  
+  inflating: scripts/external/kmers_gwas/Makefile  
+  inflating: scripts/external/kmers_gwas/manual.pdf  
+  inflating: scripts/external/kmers_gwas/README.md  
+   creating: scripts/external/kmers_gwas/src/
+   creating: scripts/external/kmers_gwas/src/R/
+  inflating: scripts/external/kmers_gwas/src/R/emma.R  
+  inflating: scripts/external/kmers_gwas/src/R/transform_and_permute_phenotypes.R  
+  inflating: scripts/external/kmers_gwas/src/associate_kmers.cpp  
+  inflating: scripts/external/kmers_gwas/src/associate_snps.cpp  
+   creating: scripts/external/kmers_gwas/src/awk/
+  inflating: scripts/external/kmers_gwas/src/awk/average_phenotypes.awk  
+  inflating: scripts/external/kmers_gwas/src/best_associations_heap.cpp  
+  inflating: scripts/external/kmers_gwas/src/best_associations_heap.h  
+  inflating: scripts/external/kmers_gwas/src/build_kmers_table.cpp  
+  inflating: scripts/external/kmers_gwas/src/emma_kinship.cpp  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499485_SRR3050923_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499485_SRR3050923_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499485_SRR3050923_1.fastq.gz to results/reads/C00026367/C00026367_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/src/emma_kinship_kmers.cpp  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499485_SRR3050923_2.fastq.gz to results/reads/C00026367/C00026367_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/src/filter_kmers.cpp  
+  inflating: scripts/external/kmers_gwas/src/histogram_KMC_kmers_counts.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmer_general.cpp  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499423_SRR3050861_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499423_SRR3050861_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499423_SRR3050861_1.fastq.gz to results/reads/C00022121/C00022121_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/src/kmer_general.h  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499423_SRR3050861_2.fastq.gz to results/reads/C00022121/C00022121_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/src/kmers_add_strand_information.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmers_merge_multiple_databaes.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmers_merge_multiple_databaes.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499555_SRR3050993_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499555_SRR3050993_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499555_SRR3050993_1.fastq.gz to results/reads/C00026440/C00026440_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/src/kmers_multiple_databases.cpp  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499555_SRR3050993_2.fastq.gz to results/reads/C00026440/C00026440_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/src/kmers_multiple_databases.h  
+  inflating: scripts/external/kmers_gwas/src/kmers_single_database.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmers_single_database.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499459_SRR3050897_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499459_SRR3050897_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499459_SRR3050897_1.fastq.gz to results/reads/C00026340/C00026340_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/src/kmers_table_to_bed.cpp  
+  inflating: scripts/external/kmers_gwas/src/list_kmers_found_in_multiple_samples.cpp  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499459_SRR3050897_2.fastq.gz to results/reads/C00026340/C00026340_2.fastq.gz
+
+   creating: scripts/external/kmers_gwas/src/py/
+  inflating: scripts/external/kmers_gwas/src/py/align_kinship_phenotype.py  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499591_SRR3051029_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499591_SRR3051029_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499591_SRR3051029_1.fastq.gz to results/reads/C00026518/C00026518_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/src/py/functions.py  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499591_SRR3051029_2.fastq.gz to results/reads/C00026518/C00026518_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/src/py/pipeline_parser.py  
+  inflating: scripts/external/kmers_gwas/src/snps_multiple_databases.cpp  
+  inflating: scripts/external/kmers_gwas/src/snps_multiple_databases.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499488_SRR3050926_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499488_SRR3050926_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499488_SRR3050926_1.fastq.gz to results/reads/C00026371/C00026371_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499488_SRR3050926_2.fastq.gz to results/reads/C00026371/C00026371_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499472_SRR3050910_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499472_SRR3050910_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499472_SRR3050910_1.fastq.gz to results/reads/C00026354/C00026354_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499472_SRR3050910_2.fastq.gz to results/reads/C00026354/C00026354_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499528_SRR3050966_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499528_SRR3050966_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499528_SRR3050966_1.fastq.gz to results/reads/C00026413/C00026413_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499528_SRR3050966_2.fastq.gz to results/reads/C00026413/C00026413_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499418_SRR3050856_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499418_SRR3050856_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499418_SRR3050856_1.fastq.gz to results/reads/C00022116/C00022116_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499418_SRR3050856_2.fastq.gz to results/reads/C00022116/C00022116_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499421_SRR3050859_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499421_SRR3050859_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499421_SRR3050859_1.fastq.gz to results/reads/C00022111/C00022111_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499421_SRR3050859_2.fastq.gz to results/reads/C00022111/C00022111_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499415_SRR3050853_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499415_SRR3050853_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499415_SRR3050853_1.fastq.gz to results/reads/C00022113/C00022113_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499415_SRR3050853_2.fastq.gz to results/reads/C00022113/C00022113_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499639_SRR3051077_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499639_SRR3051077_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499639_SRR3051077_1.fastq.gz to results/reads/c02492_77/c02492_77_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499639_SRR3051077_2.fastq.gz to results/reads/c02492_77/c02492_77_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499417_SRR3050855_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499417_SRR3050855_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499417_SRR3050855_1.fastq.gz to results/reads/C00022115/C00022115_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499417_SRR3050855_2.fastq.gz to results/reads/C00022115/C00022115_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499586_SRR3051024_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499586_SRR3051024_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499586_SRR3051024_1.fastq.gz to results/reads/C00026513/C00026513_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499586_SRR3051024_2.fastq.gz to results/reads/C00026513/C00026513_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499556_SRR3050994_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499556_SRR3050994_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499556_SRR3050994_1.fastq.gz to results/reads/C00026441/C00026441_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499556_SRR3050994_2.fastq.gz to results/reads/C00026441/C00026441_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499588_SRR3051026_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499588_SRR3051026_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499588_SRR3051026_1.fastq.gz to results/reads/C00026515/C00026515_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499588_SRR3051026_2.fastq.gz to results/reads/C00026515/C00026515_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499585_SRR3051023_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499585_SRR3051023_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499585_SRR3051023_1.fastq.gz to results/reads/C00026512/C00026512_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499585_SRR3051023_2.fastq.gz to results/reads/C00026512/C00026512_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499427_SRR3050865_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499427_SRR3050865_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499427_SRR3050865_1.fastq.gz to results/reads/C00022125/C00022125_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499427_SRR3050865_2.fastq.gz to results/reads/C00022125/C00022125_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499486_SRR3050924_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499486_SRR3050924_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499486_SRR3050924_1.fastq.gz to results/reads/C00026369/C00026369_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499486_SRR3050924_2.fastq.gz to results/reads/C00026369/C00026369_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499429_SRR3050867_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499429_SRR3050867_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499429_SRR3050867_1.fastq.gz to results/reads/C00022127/C00022127_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499429_SRR3050867_2.fastq.gz to results/reads/C00022127/C00022127_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499597_SRR3051035_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499597_SRR3051035_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499597_SRR3051035_1.fastq.gz to results/reads/C00026524/C00026524_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499597_SRR3051035_2.fastq.gz to results/reads/C00026524/C00026524_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499596_SRR3051034_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499596_SRR3051034_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499596_SRR3051034_1.fastq.gz to results/reads/C00026523/C00026523_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499596_SRR3051034_2.fastq.gz to results/reads/C00026523/C00026523_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499428_SRR3050866_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499428_SRR3050866_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499428_SRR3050866_1.fastq.gz to results/reads/C00022126/C00022126_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499428_SRR3050866_2.fastq.gz to results/reads/C00022126/C00022126_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499598_SRR3051036_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499598_SRR3051036_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499598_SRR3051036_1.fastq.gz to results/reads/C00026525/C00026525_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499598_SRR3051036_2.fastq.gz to results/reads/C00026525/C00026525_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499587_SRR3051025_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499587_SRR3051025_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499587_SRR3051025_1.fastq.gz to results/reads/C00026514/C00026514_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499587_SRR3051025_2.fastq.gz to results/reads/C00026514/C00026514_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499420_SRR3050858_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499420_SRR3050858_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499420_SRR3050858_1.fastq.gz to results/reads/C00022118/C00022118_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499420_SRR3050858_2.fastq.gz to results/reads/C00022118/C00022118_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499471_SRR3050909_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499471_SRR3050909_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499471_SRR3050909_1.fastq.gz to results/reads/C00026353/C00026353_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499527_SRR3050965_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499527_SRR3050965_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499527_SRR3050965_1.fastq.gz to results/reads/C00026412/C00026412_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499471_SRR3050909_2.fastq.gz to results/reads/C00026353/C00026353_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499527_SRR3050965_2.fastq.gz to results/reads/C00026412/C00026412_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499489_SRR3050927_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499489_SRR3050927_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499489_SRR3050927_1.fastq.gz to results/reads/C00026372/C00026372_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499489_SRR3050927_2.fastq.gz to results/reads/C00026372/C00026372_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499419_SRR3050857_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499419_SRR3050857_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499419_SRR3050857_1.fastq.gz to results/reads/C00022117/C00022117_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499419_SRR3050857_2.fastq.gz to results/reads/C00022117/C00022117_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499413_SRR3050851_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499413_SRR3050851_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499413_SRR3050851_1.fastq.gz to results/reads/C00022119/C00022119_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499413_SRR3050851_2.fastq.gz to results/reads/C00022119/C00022119_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499432_SRR3050870_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499432_SRR3050870_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499432_SRR3050870_1.fastq.gz to results/reads/C00026313/C00026313_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499432_SRR3050870_2.fastq.gz to results/reads/C00026313/C00026313_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499600_SRR3051038_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499600_SRR3051038_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499600_SRR3051038_1.fastq.gz to results/reads/C00026539/C00026539_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499600_SRR3051038_2.fastq.gz to results/reads/C00026539/C00026539_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499602_SRR3051040_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499602_SRR3051040_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499602_SRR3051040_1.fastq.gz to results/reads/C00026542/C00026542_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499602_SRR3051040_2.fastq.gz to results/reads/C00026542/C00026542_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499519_SRR3050957_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499519_SRR3050957_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499519_SRR3050957_1.fastq.gz to results/reads/C00026402/C00026402_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499519_SRR3050957_2.fastq.gz to results/reads/C00026402/C00026402_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499433_SRR3050871_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499433_SRR3050871_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499433_SRR3050871_1.fastq.gz to results/reads/C00026314/C00026314_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499433_SRR3050871_2.fastq.gz to results/reads/C00026314/C00026314_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499601_SRR3051039_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499601_SRR3051039_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499601_SRR3051039_1.fastq.gz to results/reads/C00026540/C00026540_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499601_SRR3051039_2.fastq.gz to results/reads/C00026540/C00026540_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499631_SRR3051069_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499631_SRR3051069_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499631_SRR3051069_1.fastq.gz to results/reads/c02492_58/c02492_58_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499631_SRR3051069_2.fastq.gz to results/reads/c02492_58/c02492_58_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499593_SRR3051031_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499593_SRR3051031_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499593_SRR3051031_1.fastq.gz to results/reads/C00026520/C00026520_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499593_SRR3051031_2.fastq.gz to results/reads/C00026520/C00026520_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499590_SRR3051028_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499590_SRR3051028_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499590_SRR3051028_1.fastq.gz to results/reads/C00026517/C00026517_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499590_SRR3051028_2.fastq.gz to results/reads/C00026517/C00026517_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499422_SRR3050860_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499422_SRR3050860_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499422_SRR3050860_1.fastq.gz to results/reads/C00022120/C00022120_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499422_SRR3050860_2.fastq.gz to results/reads/C00022120/C00022120_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499592_SRR3051030_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499592_SRR3051030_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499592_SRR3051030_1.fastq.gz to results/reads/C00026519/C00026519_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499592_SRR3051030_2.fastq.gz to results/reads/C00026519/C00026519_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499540_SRR3050978_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499540_SRR3050978_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499540_SRR3050978_1.fastq.gz to results/reads/C00026425/C00026425_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499540_SRR3050978_2.fastq.gz to results/reads/C00026425/C00026425_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499484_SRR3050922_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499484_SRR3050922_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499484_SRR3050922_1.fastq.gz to results/reads/C00026366/C00026366_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499484_SRR3050922_2.fastq.gz to results/reads/C00026366/C00026366_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499589_SRR3051027_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499589_SRR3051027_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499589_SRR3051027_1.fastq.gz to results/reads/C00026516/C00026516_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499589_SRR3051027_2.fastq.gz to results/reads/C00026516/C00026516_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499425_SRR3050863_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499425_SRR3050863_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499425_SRR3050863_1.fastq.gz to results/reads/C00022123/C00022123_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499425_SRR3050863_2.fastq.gz to results/reads/C00022123/C00022123_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499490_SRR3050928_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499490_SRR3050928_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499490_SRR3050928_1.fastq.gz to results/reads/C00026373/C00026373_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499490_SRR3050928_2.fastq.gz to results/reads/C00026373/C00026373_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499638_SRR3051076_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499638_SRR3051076_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499638_SRR3051076_1.fastq.gz to results/reads/c02492_74/c02492_74_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499638_SRR3051076_2.fastq.gz to results/reads/c02492_74/c02492_74_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499487_SRR3050925_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499487_SRR3050925_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499487_SRR3050925_1.fastq.gz to results/reads/C00026370/C00026370_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499487_SRR3050925_2.fastq.gz to results/reads/C00026370/C00026370_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499424_SRR3050862_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499424_SRR3050862_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499424_SRR3050862_1.fastq.gz to results/reads/C00022122/C00022122_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499424_SRR3050862_2.fastq.gz to results/reads/C00022122/C00022122_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499569_SRR3051007_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499569_SRR3051007_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499569_SRR3051007_1.fastq.gz to results/reads/C00026455/C00026455_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499569_SRR3051007_2.fastq.gz to results/reads/C00026455/C00026455_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499594_SRR3051032_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499594_SRR3051032_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499594_SRR3051032_1.fastq.gz to results/reads/C00026521/C00026521_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499594_SRR3051032_2.fastq.gz to results/reads/C00026521/C00026521_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499633_SRR3051071_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499633_SRR3051071_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499633_SRR3051071_1.fastq.gz to results/reads/c02492_61/c02492_61_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499633_SRR3051071_2.fastq.gz to results/reads/c02492_61/c02492_61_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499606_SRR3051044_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499606_SRR3051044_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499606_SRR3051044_1.fastq.gz to results/reads/C00026648/C00026648_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499606_SRR3051044_2.fastq.gz to results/reads/C00026648/C00026648_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499440_SRR3050878_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499440_SRR3050878_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499440_SRR3050878_1.fastq.gz to results/reads/C00026321/C00026321_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499440_SRR3050878_2.fastq.gz to results/reads/C00026321/C00026321_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499608_SRR3051046_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499608_SRR3051046_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499608_SRR3051046_1.fastq.gz to results/reads/C00026656/C00026656_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499608_SRR3051046_2.fastq.gz to results/reads/C00026656/C00026656_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499464_SRR3050902_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499464_SRR3050902_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499464_SRR3050902_1.fastq.gz to results/reads/C00026345/C00026345_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499464_SRR3050902_2.fastq.gz to results/reads/C00026345/C00026345_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499607_SRR3051045_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499607_SRR3051045_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499607_SRR3051045_1.fastq.gz to results/reads/C00026651/C00026651_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499607_SRR3051045_2.fastq.gz to results/reads/C00026651/C00026651_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499439_SRR3050877_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499439_SRR3050877_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499439_SRR3050877_1.fastq.gz to results/reads/C00026320/C00026320_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499439_SRR3050877_2.fastq.gz to results/reads/C00026320/C00026320_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499568_SRR3051006_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499568_SRR3051006_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499568_SRR3051006_1.fastq.gz to results/reads/C00026454/C00026454_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499568_SRR3051006_2.fastq.gz to results/reads/C00026454/C00026454_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499544_SRR3050982_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499544_SRR3050982_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499544_SRR3050982_1.fastq.gz to results/reads/C00026429/C00026429_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499544_SRR3050982_2.fastq.gz to results/reads/C00026429/C00026429_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499595_SRR3051033_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499595_SRR3051033_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499595_SRR3051033_1.fastq.gz to results/reads/C00026522/C00026522_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499595_SRR3051033_2.fastq.gz to results/reads/C00026522/C00026522_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499599_SRR3051037_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499599_SRR3051037_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499599_SRR3051037_1.fastq.gz to results/reads/C00026526/C00026526_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499599_SRR3051037_2.fastq.gz to results/reads/C00026526/C00026526_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499426_SRR3050864_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499426_SRR3050864_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499426_SRR3050864_1.fastq.gz to results/reads/C00022124/C00022124_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499426_SRR3050864_2.fastq.gz to results/reads/C00022124/C00022124_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499491_SRR3050929_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499491_SRR3050929_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499491_SRR3050929_1.fastq.gz to results/reads/C00026374/C00026374_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499491_SRR3050929_2.fastq.gz to results/reads/C00026374/C00026374_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499430_SRR3050868_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499430_SRR3050868_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499430_SRR3050868_1.fastq.gz to results/reads/C00022128/C00022128_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499430_SRR3050868_2.fastq.gz to results/reads/C00022128/C00022128_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499434_SRR3050872_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499434_SRR3050872_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499434_SRR3050872_1.fastq.gz to results/reads/C00026315/C00026315_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499434_SRR3050872_2.fastq.gz to results/reads/C00026315/C00026315_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499604_SRR3051042_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499604_SRR3051042_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499604_SRR3051042_1.fastq.gz to results/reads/C00026645/C00026645_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499604_SRR3051042_2.fastq.gz to results/reads/C00026645/C00026645_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499435_SRR3050873_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499435_SRR3050873_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499435_SRR3050873_1.fastq.gz to results/reads/C00026316/C00026316_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499435_SRR3050873_2.fastq.gz to results/reads/C00026316/C00026316_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499431_SRR3050869_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499431_SRR3050869_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499431_SRR3050869_1.fastq.gz to results/reads/C00022129/C00022129_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499431_SRR3050869_2.fastq.gz to results/reads/C00022129/C00022129_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499547_SRR3050985_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499547_SRR3050985_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499547_SRR3050985_1.fastq.gz to results/reads/C00026432/C00026432_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499547_SRR3050985_2.fastq.gz to results/reads/C00026432/C00026432_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499603_SRR3051041_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499603_SRR3051041_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499603_SRR3051041_1.fastq.gz to results/reads/C00026642/C00026642_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499603_SRR3051041_2.fastq.gz to results/reads/C00026642/C00026642_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499470_SRR3050908_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499470_SRR3050908_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499470_SRR3050908_1.fastq.gz to results/reads/C00026351/C00026351_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499470_SRR3050908_2.fastq.gz to results/reads/C00026351/C00026351_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499467_SRR3050905_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499467_SRR3050905_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499467_SRR3050905_1.fastq.gz to results/reads/C00026348/C00026348_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499467_SRR3050905_2.fastq.gz to results/reads/C00026348/C00026348_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499523_SRR3050961_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499523_SRR3050961_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499523_SRR3050961_1.fastq.gz to results/reads/C00026407/C00026407_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499523_SRR3050961_2.fastq.gz to results/reads/C00026407/C00026407_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499499_SRR3050937_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499499_SRR3050937_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499499_SRR3050937_1.fastq.gz to results/reads/C00026382/C00026382_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499499_SRR3050937_2.fastq.gz to results/reads/C00026382/C00026382_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499522_SRR3050960_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499522_SRR3050960_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499522_SRR3050960_1.fastq.gz to results/reads/C00026406/C00026406_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499522_SRR3050960_2.fastq.gz to results/reads/C00026406/C00026406_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499611_SRR3051049_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499611_SRR3051049_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499611_SRR3051049_1.fastq.gz to results/reads/C00026678/C00026678_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499611_SRR3051049_2.fastq.gz to results/reads/C00026678/C00026678_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499443_SRR3050881_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499443_SRR3050881_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499443_SRR3050881_1.fastq.gz to results/reads/C00026324/C00026324_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499443_SRR3050881_2.fastq.gz to results/reads/C00026324/C00026324_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499557_SRR3050995_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499557_SRR3050995_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499557_SRR3050995_1.fastq.gz to results/reads/C00026442/C00026442_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499557_SRR3050995_2.fastq.gz to results/reads/C00026442/C00026442_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499553_SRR3050991_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499553_SRR3050991_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499553_SRR3050991_1.fastq.gz to results/reads/C00026438/C00026438_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499553_SRR3050991_2.fastq.gz to results/reads/C00026438/C00026438_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499549_SRR3050987_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499549_SRR3050987_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499549_SRR3050987_1.fastq.gz to results/reads/C00026434/C00026434_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499549_SRR3050987_2.fastq.gz to results/reads/C00026434/C00026434_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499610_SRR3051048_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499610_SRR3051048_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499610_SRR3051048_1.fastq.gz to results/reads/C00026671/C00026671_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499610_SRR3051048_2.fastq.gz to results/reads/C00026671/C00026671_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499436_SRR3050874_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499436_SRR3050874_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499436_SRR3050874_1.fastq.gz to results/reads/C00026317/C00026317_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499436_SRR3050874_2.fastq.gz to results/reads/C00026317/C00026317_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499552_SRR3050990_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499552_SRR3050990_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499552_SRR3050990_1.fastq.gz to results/reads/C00026437/C00026437_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499552_SRR3050990_2.fastq.gz to results/reads/C00026437/C00026437_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499493_SRR3050931_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499493_SRR3050931_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499493_SRR3050931_1.fastq.gz to results/reads/C00026376/C00026376_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499493_SRR3050931_2.fastq.gz to results/reads/C00026376/C00026376_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499551_SRR3050989_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499551_SRR3050989_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499551_SRR3050989_1.fastq.gz to results/reads/C00026436/C00026436_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499551_SRR3050989_2.fastq.gz to results/reads/C00026436/C00026436_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499503_SRR3050941_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499503_SRR3050941_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499503_SRR3050941_1.fastq.gz to results/reads/C00026386/C00026386_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499503_SRR3050941_2.fastq.gz to results/reads/C00026386/C00026386_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499637_SRR3051075_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499637_SRR3051075_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499637_SRR3051075_1.fastq.gz to results/reads/c02492_69/c02492_69_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499637_SRR3051075_2.fastq.gz to results/reads/c02492_69/c02492_69_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499469_SRR3050907_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499469_SRR3050907_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499469_SRR3050907_1.fastq.gz to results/reads/C00026350/C00026350_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499469_SRR3050907_2.fastq.gz to results/reads/C00026350/C00026350_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499502_SRR3050940_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499502_SRR3050940_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499502_SRR3050940_1.fastq.gz to results/reads/C00026385/C00026385_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499502_SRR3050940_2.fastq.gz to results/reads/C00026385/C00026385_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499559_SRR3050997_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499559_SRR3050997_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499559_SRR3050997_1.fastq.gz to results/reads/C00026444/C00026444_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499559_SRR3050997_2.fastq.gz to results/reads/C00026444/C00026444_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499447_SRR3050885_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499447_SRR3050885_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499447_SRR3050885_1.fastq.gz to results/reads/C00026328/C00026328_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499447_SRR3050885_2.fastq.gz to results/reads/C00026328/C00026328_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499615_SRR3051053_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499615_SRR3051053_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499615_SRR3051053_1.fastq.gz to results/reads/c02492_10/c02492_10_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499615_SRR3051053_2.fastq.gz to results/reads/c02492_10/c02492_10_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499626_SRR3051064_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499626_SRR3051064_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499626_SRR3051064_1.fastq.gz to results/reads/c02492_50/c02492_50_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499626_SRR3051064_2.fastq.gz to results/reads/c02492_50/c02492_50_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499458_SRR3050896_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499458_SRR3050896_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499458_SRR3050896_1.fastq.gz to results/reads/C00026339/C00026339_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499458_SRR3050896_2.fastq.gz to results/reads/C00026339/C00026339_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499613_SRR3051051_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499613_SRR3051051_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499613_SRR3051051_1.fastq.gz to results/reads/C00026685/C00026685_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499613_SRR3051051_2.fastq.gz to results/reads/C00026685/C00026685_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499446_SRR3050884_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499446_SRR3050884_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499446_SRR3050884_1.fastq.gz to results/reads/C00026327/C00026327_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499446_SRR3050884_2.fastq.gz to results/reads/C00026327/C00026327_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499513_SRR3050951_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499513_SRR3050951_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499513_SRR3050951_1.fastq.gz to results/reads/C00026396/C00026396_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499513_SRR3050951_2.fastq.gz to results/reads/C00026396/C00026396_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499445_SRR3050883_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499445_SRR3050883_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499445_SRR3050883_1.fastq.gz to results/reads/C00026326/C00026326_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499445_SRR3050883_2.fastq.gz to results/reads/C00026326/C00026326_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499640_SRR3051078_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499640_SRR3051078_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499640_SRR3051078_1.fastq.gz to results/reads/c02492_7/c02492_7_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499640_SRR3051078_2.fastq.gz to results/reads/c02492_7/c02492_7_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499465_SRR3050903_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499465_SRR3050903_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499465_SRR3050903_1.fastq.gz to results/reads/C00026346/C00026346_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499465_SRR3050903_2.fastq.gz to results/reads/C00026346/C00026346_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499521_SRR3050959_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499521_SRR3050959_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499521_SRR3050959_1.fastq.gz to results/reads/C00026405/C00026405_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499521_SRR3050959_2.fastq.gz to results/reads/C00026405/C00026405_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499546_SRR3050984_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499546_SRR3050984_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499546_SRR3050984_1.fastq.gz to results/reads/C00026431/C00026431_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499546_SRR3050984_2.fastq.gz to results/reads/C00026431/C00026431_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499438_SRR3050876_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499438_SRR3050876_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499438_SRR3050876_1.fastq.gz to results/reads/C00026319/C00026319_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499438_SRR3050876_2.fastq.gz to results/reads/C00026319/C00026319_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499634_SRR3051072_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499634_SRR3051072_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499634_SRR3051072_1.fastq.gz to results/reads/c02492_65/c02492_65_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499634_SRR3051072_2.fastq.gz to results/reads/c02492_65/c02492_65_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499466_SRR3050904_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499466_SRR3050904_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499466_SRR3050904_1.fastq.gz to results/reads/C00026347/C00026347_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499466_SRR3050904_2.fastq.gz to results/reads/C00026347/C00026347_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499437_SRR3050875_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499437_SRR3050875_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499437_SRR3050875_1.fastq.gz to results/reads/C00026318/C00026318_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499437_SRR3050875_2.fastq.gz to results/reads/C00026318/C00026318_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499612_SRR3051050_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499612_SRR3051050_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499612_SRR3051050_1.fastq.gz to results/reads/C00026683/C00026683_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499612_SRR3051050_2.fastq.gz to results/reads/C00026683/C00026683_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499455_SRR3050893_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499455_SRR3050893_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499455_SRR3050893_1.fastq.gz to results/reads/C00026336/C00026336_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499455_SRR3050893_2.fastq.gz to results/reads/C00026336/C00026336_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499623_SRR3051061_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499623_SRR3051061_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499623_SRR3051061_1.fastq.gz to results/reads/c02492_31/c02492_31_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499623_SRR3051061_2.fastq.gz to results/reads/c02492_31/c02492_31_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499560_SRR3050998_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499560_SRR3050998_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499560_SRR3050998_1.fastq.gz to results/reads/C00026445/C00026445_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499560_SRR3050998_2.fastq.gz to results/reads/C00026445/C00026445_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499616_SRR3051054_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499616_SRR3051054_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499616_SRR3051054_1.fastq.gz to results/reads/c02492_13/c02492_13_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499616_SRR3051054_2.fastq.gz to results/reads/c02492_13/c02492_13_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499511_SRR3050949_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499511_SRR3050949_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499511_SRR3050949_1.fastq.gz to results/reads/C00026394/C00026394_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499511_SRR3050949_2.fastq.gz to results/reads/C00026394/C00026394_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499636_SRR3051074_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499636_SRR3051074_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499636_SRR3051074_1.fastq.gz to results/reads/c02492_68/c02492_68_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499636_SRR3051074_2.fastq.gz to results/reads/c02492_68/c02492_68_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499514_SRR3050952_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499514_SRR3050952_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499514_SRR3050952_1.fastq.gz to results/reads/C00026397/C00026397_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499514_SRR3050952_2.fastq.gz to results/reads/C00026397/C00026397_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499444_SRR3050882_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499444_SRR3050882_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499444_SRR3050882_1.fastq.gz to results/reads/C00026325/C00026325_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499444_SRR3050882_2.fastq.gz to results/reads/C00026325/C00026325_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499500_SRR3050938_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499500_SRR3050938_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499500_SRR3050938_1.fastq.gz to results/reads/C00026383/C00026383_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499500_SRR3050938_2.fastq.gz to results/reads/C00026383/C00026383_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499524_SRR3050962_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499524_SRR3050962_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499524_SRR3050962_1.fastq.gz to results/reads/C00026409/C00026409_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499524_SRR3050962_2.fastq.gz to results/reads/C00026409/C00026409_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499632_SRR3051070_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499632_SRR3051070_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499632_SRR3051070_1.fastq.gz to results/reads/c02492_59/c02492_59_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499632_SRR3051070_2.fastq.gz to results/reads/c02492_59/c02492_59_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499468_SRR3050906_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499468_SRR3050906_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499468_SRR3050906_1.fastq.gz to results/reads/C00026349/C00026349_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499468_SRR3050906_2.fastq.gz to results/reads/C00026349/C00026349_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499605_SRR3051043_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499605_SRR3051043_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499605_SRR3051043_1.fastq.gz to results/reads/C00026646/C00026646_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499605_SRR3051043_2.fastq.gz to results/reads/C00026646/C00026646_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499624_SRR3051062_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499624_SRR3051062_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499624_SRR3051062_1.fastq.gz to results/reads/c02492_37/c02492_37_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499624_SRR3051062_2.fastq.gz to results/reads/c02492_37/c02492_37_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499449_SRR3050887_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499449_SRR3050887_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499449_SRR3050887_1.fastq.gz to results/reads/C00026330/C00026330_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499449_SRR3050887_2.fastq.gz to results/reads/C00026330/C00026330_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499505_SRR3050943_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499505_SRR3050943_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499505_SRR3050943_1.fastq.gz to results/reads/C00026388/C00026388_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499505_SRR3050943_2.fastq.gz to results/reads/C00026388/C00026388_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499509_SRR3050947_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499509_SRR3050947_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499509_SRR3050947_1.fastq.gz to results/reads/C00026392/C00026392_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499509_SRR3050947_2.fastq.gz to results/reads/C00026392/C00026392_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499562_SRR3051000_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499562_SRR3051000_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499562_SRR3051000_1.fastq.gz to results/reads/C00026448/C00026448_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499562_SRR3051000_2.fastq.gz to results/reads/C00026448/C00026448_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499454_SRR3050892_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499454_SRR3050892_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499454_SRR3050892_1.fastq.gz to results/reads/C00026335/C00026335_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499454_SRR3050892_2.fastq.gz to results/reads/C00026335/C00026335_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499622_SRR3051060_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499622_SRR3051060_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499622_SRR3051060_1.fastq.gz to results/reads/c02492_29/c02492_29_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499622_SRR3051060_2.fastq.gz to results/reads/c02492_29/c02492_29_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499526_SRR3050964_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499526_SRR3050964_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499526_SRR3050964_1.fastq.gz to results/reads/C00026411/C00026411_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499526_SRR3050964_2.fastq.gz to results/reads/C00026411/C00026411_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499498_SRR3050936_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499498_SRR3050936_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499498_SRR3050936_1.fastq.gz to results/reads/C00026381/C00026381_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499498_SRR3050936_2.fastq.gz to results/reads/C00026381/C00026381_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499492_SRR3050930_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499492_SRR3050930_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499492_SRR3050930_1.fastq.gz to results/reads/C00026375/C00026375_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499492_SRR3050930_2.fastq.gz to results/reads/C00026375/C00026375_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499448_SRR3050886_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499448_SRR3050886_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499448_SRR3050886_1.fastq.gz to results/reads/C00026329/C00026329_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499448_SRR3050886_2.fastq.gz to results/reads/C00026329/C00026329_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499450_SRR3050888_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499450_SRR3050888_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499450_SRR3050888_1.fastq.gz to results/reads/C00026331/C00026331_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499450_SRR3050888_2.fastq.gz to results/reads/C00026331/C00026331_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499618_SRR3051056_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499618_SRR3051056_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499618_SRR3051056_1.fastq.gz to results/reads/c02492_19/c02492_19_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499618_SRR3051056_2.fastq.gz to results/reads/c02492_19/c02492_19_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499510_SRR3050948_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499510_SRR3050948_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499510_SRR3050948_1.fastq.gz to results/reads/C00026393/C00026393_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499510_SRR3050948_2.fastq.gz to results/reads/C00026393/C00026393_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499512_SRR3050950_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499512_SRR3050950_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499512_SRR3050950_1.fastq.gz to results/reads/C00026395/C00026395_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499512_SRR3050950_2.fastq.gz to results/reads/C00026395/C00026395_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499617_SRR3051055_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499617_SRR3051055_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499617_SRR3051055_1.fastq.gz to results/reads/c02492_14/c02492_14_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499617_SRR3051055_2.fastq.gz to results/reads/c02492_14/c02492_14_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499609_SRR3051047_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499609_SRR3051047_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499609_SRR3051047_1.fastq.gz to results/reads/C00026662/C00026662_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499609_SRR3051047_2.fastq.gz to results/reads/C00026662/C00026662_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499563_SRR3051001_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499563_SRR3051001_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499563_SRR3051001_1.fastq.gz to results/reads/C00026449/C00026449_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499563_SRR3051001_2.fastq.gz to results/reads/C00026449/C00026449_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499548_SRR3050986_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499548_SRR3050986_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499548_SRR3050986_1.fastq.gz to results/reads/C00026433/C00026433_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499548_SRR3050986_2.fastq.gz to results/reads/C00026433/C00026433_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499567_SRR3051005_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499567_SRR3051005_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499567_SRR3051005_1.fastq.gz to results/reads/C00026453/C00026453_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499567_SRR3051005_2.fastq.gz to results/reads/C00026453/C00026453_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499506_SRR3050944_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499506_SRR3050944_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499506_SRR3050944_1.fastq.gz to results/reads/C00026389/C00026389_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499506_SRR3050944_2.fastq.gz to results/reads/C00026389/C00026389_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499456_SRR3050894_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499456_SRR3050894_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499456_SRR3050894_1.fastq.gz to results/reads/C00026337/C00026337_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499456_SRR3050894_2.fastq.gz to results/reads/C00026337/C00026337_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499441_SRR3050879_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499441_SRR3050879_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499441_SRR3050879_1.fastq.gz to results/reads/C00026322/C00026322_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499441_SRR3050879_2.fastq.gz to results/reads/C00026322/C00026322_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499558_SRR3050996_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499558_SRR3050996_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499558_SRR3050996_1.fastq.gz to results/reads/C00026443/C00026443_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499558_SRR3050996_2.fastq.gz to results/reads/C00026443/C00026443_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499457_SRR3050895_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499457_SRR3050895_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499457_SRR3050895_1.fastq.gz to results/reads/C00026338/C00026338_1.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499625_SRR3051063_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499625_SRR3051063_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499625_SRR3051063_1.fastq.gz to results/reads/c02492_49/c02492_49_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499457_SRR3050895_2.fastq.gz to results/reads/C00026338/C00026338_2.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499625_SRR3051063_2.fastq.gz to results/reads/c02492_49/c02492_49_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499545_SRR3050983_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499545_SRR3050983_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499545_SRR3050983_1.fastq.gz to results/reads/C00026430/C00026430_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499545_SRR3050983_2.fastq.gz to results/reads/C00026430/C00026430_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499627_SRR3051065_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499627_SRR3051065_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499627_SRR3051065_1.fastq.gz to results/reads/c02492_54/c02492_54_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499627_SRR3051065_2.fastq.gz to results/reads/c02492_54/c02492_54_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499442_SRR3050880_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499442_SRR3050880_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499442_SRR3050880_1.fastq.gz to results/reads/C00026323/C00026323_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499442_SRR3050880_2.fastq.gz to results/reads/C00026323/C00026323_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499554_SRR3050992_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499554_SRR3050992_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499554_SRR3050992_1.fastq.gz to results/reads/C00026439/C00026439_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499554_SRR3050992_2.fastq.gz to results/reads/C00026439/C00026439_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499451_SRR3050889_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499451_SRR3050889_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499451_SRR3050889_1.fastq.gz to results/reads/C00026332/C00026332_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499451_SRR3050889_2.fastq.gz to results/reads/C00026332/C00026332_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499619_SRR3051057_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499619_SRR3051057_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499619_SRR3051057_1.fastq.gz to results/reads/c02492_21/c02492_21_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499619_SRR3051057_2.fastq.gz to results/reads/c02492_21/c02492_21_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499453_SRR3050891_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499453_SRR3050891_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499453_SRR3050891_1.fastq.gz to results/reads/C00026334/C00026334_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499453_SRR3050891_2.fastq.gz to results/reads/C00026334/C00026334_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499525_SRR3050963_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499525_SRR3050963_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499525_SRR3050963_1.fastq.gz to results/reads/C00026410/C00026410_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499525_SRR3050963_2.fastq.gz to results/reads/C00026410/C00026410_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499504_SRR3050942_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499504_SRR3050942_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499504_SRR3050942_1.fastq.gz to results/reads/C00026387/C00026387_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499504_SRR3050942_2.fastq.gz to results/reads/C00026387/C00026387_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499620_SRR3051058_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499620_SRR3051058_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499620_SRR3051058_1.fastq.gz to results/reads/c02492_24/c02492_24_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499620_SRR3051058_2.fastq.gz to results/reads/c02492_24/c02492_24_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499564_SRR3051002_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499564_SRR3051002_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499564_SRR3051002_1.fastq.gz to results/reads/C00026450/C00026450_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499564_SRR3051002_2.fastq.gz to results/reads/C00026450/C00026450_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499452_SRR3050890_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499452_SRR3050890_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499452_SRR3050890_1.fastq.gz to results/reads/C00026333/C00026333_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499452_SRR3050890_2.fastq.gz to results/reads/C00026333/C00026333_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499507_SRR3050945_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499507_SRR3050945_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499507_SRR3050945_1.fastq.gz to results/reads/C00026390/C00026390_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499507_SRR3050945_2.fastq.gz to results/reads/C00026390/C00026390_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499621_SRR3051059_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499621_SRR3051059_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499621_SRR3051059_1.fastq.gz to results/reads/c02492_26/c02492_26_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499621_SRR3051059_2.fastq.gz to results/reads/c02492_26/c02492_26_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499614_SRR3051052_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499614_SRR3051052_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499614_SRR3051052_1.fastq.gz to results/reads/C00026688/C00026688_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499614_SRR3051052_2.fastq.gz to results/reads/C00026688/C00026688_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499508_SRR3050946_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499508_SRR3050946_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499508_SRR3050946_1.fastq.gz to results/reads/C00026391/C00026391_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499508_SRR3050946_2.fastq.gz to results/reads/C00026391/C00026391_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499501_SRR3050939_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499501_SRR3050939_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499501_SRR3050939_1.fastq.gz to results/reads/C00026384/C00026384_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499501_SRR3050939_2.fastq.gz to results/reads/C00026384/C00026384_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499561_SRR3050999_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499561_SRR3050999_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499561_SRR3050999_1.fastq.gz to results/reads/C00026446/C00026446_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/ecoli_test/fastq/SRX1499561_SRR3050999_2.fastq.gz to results/reads/C00026446/C00026446_2.fastq.gz
+Checking if all required files are provided...
+	All required files are present!
+Error! The Snakemake workflow aborted.
+Detailed performance metrics for this job will be available at https://metrics.hpc.arizona.edu/#job_viewer?action=show&realm=SUPREMM&resource_id=73&local_job_id=8490242 by 8am on 2023/10/31.

@@ -1,0 +1,4 @@
+WorkflowError in file /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/Snakefile, line 13:
+Workflow defines configfile config/config.yaml but it is not present or accessible (full checked path: /xdisk/rpalaniv/cjperkins1/kgwasflow/test/config/config.yaml).
+  File "/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/Snakefile", line 13, in <module>
+ERROR:root:Error running Snakemake: Command '['snakemake', '--use-conda', '--conda-frontend', 'conda', '--cores', '16', '--snakefile', '/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/Snakefile', '--rerun-triggers', 'mtime', 'params', 'input', 'software-env', 'code', '--rerun-incomplete', '--printshellcmds', '--nolock', '--show-failed-logs']' returned non-zero exit status 1.

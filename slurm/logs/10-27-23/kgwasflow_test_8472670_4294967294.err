@@ -1,0 +1,517 @@
+# ================================================================================== #
+      _     _______          __      _____  __ _                 
+     | |   / ____\ \        / /\    / ____|/ _| |                
+     | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __  
+     | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /  
+     |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V /   
+     |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/    
+
+     kGWASflow: A Snakemake Workflow for k-mers Based GWAS                            
+                                                                                      
+     Date:            2023-10-27 14:11:42
+     Author:          Adnan Kivanc Corut
+     kGWASflow version:          v1.3
+     Snakemake version:          7.25.0
+     Python version:             3.11.6
+
+     Snakefile:          /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk
+     Base directory:     /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow
+     Working directory:  /xdisk/rpalaniv/cjperkins1/kgwasflow
+     Config files:       config/config.yaml
+                                                                                      
+# ================================================================================== #
+
+     If you use kGWASflow, please cite:                                            
+
+     * Corut, A. K. & Wallace, J. G. kGWASflow: a modular, flexible,                   
+     and reproducible Snakemake workflow for k-mers-based GWAS.                        
+     bioRxiv (2023). https://doi.org/10.1101/2023.07.10.548365                         
+
+     * Voichek, Y., Weigel, D. Identifying genetic variants underlying                  
+     phenotypic variation in plants without complete genomes.                         
+     Nat Genet 52, 534–540 (2020). https://doi.org/10.1038/s41588-020-0612-7          
+
+# ================================================================================== #
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Singularity containers: ignored
+Job stats:
+job                              count    min threads    max threads
+-----------------------------  -------  -------------  -------------
+all                                  1              1              1
+combine_and_filter                   1              1              1
+create_kmers_table                   1              1              1
+create_symlink                       5              1              1
+download_kmersGWAS                   1              1              1
+extract_kmersGWAS                    1              1              1
+fastqc                               5              8              8
+generate_input_lists                 5              1              1
+generate_kmers_kinship_matrix        1              1              1
+generate_kmers_list_paths            1              1              1
+generate_results_summary             2              1              1
+kmc_canonical                        5              8              8
+kmc_non_canonical                    5              8              8
+kmer_stats                           1              1              1
+merge_kmers                          5              8              8
+multiqc                              1              1              1
+plot_kmer_allele_counts              1              1              1
+run_kmers_gwas                       2              8              8
+total                               44              1              8
+
+Select jobs to execute...
+
+[Fri Oct 27 14:11:46 2023]
+Job 5: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007902/CW0012_fastqc.zip
+
+[Fri Oct 27 14:11:46 2023]
+Job 2: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007865/CW0090_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Oct 27 14:17:39 2023]
+Finished job 5.
+1 of 44 steps (2%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:17:39 2023]
+Job 4: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007875/CW0095_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Oct 27 14:18:57 2023]
+Finished job 2.
+2 of 44 steps (5%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:18:57 2023]
+Job 6: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183064_SRR7279727_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/Voyage/CW0026_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Oct 27 14:20:11 2023]
+Finished job 4.
+3 of 44 steps (7%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:20:11 2023]
+Job 3: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183068_SRR7279723_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007872/CW0121_fastqc.zip
+
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+[Fri Oct 27 14:21:44 2023]
+Finished job 6.
+4 of 44 steps (9%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:21:44 2023]
+Job 13: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007902/CW0012_2.fastq.gz, results/reads/BGV007902/CW0012_1.fastq.gz
+
+
+[Fri Oct 27 14:21:44 2023]
+Job 14: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/Voyage/CW0026_2.fastq.gz, results/reads/Voyage/CW0026_1.fastq.gz
+
+
+[Fri Oct 27 14:21:44 2023]
+Job 32: Downloading kmersGWAS source code...
+Reason: Missing output files: scripts/external/kmers_gwas/v0.3-beta.zip
+
+Activating conda environment: .snakemake/conda/2552139212129fe0189830de51886e5d_
+
+[Fri Oct 27 14:21:44 2023]
+Job 11: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007872/CW0121_2.fastq.gz, results/reads/BGV007872/CW0121_1.fastq.gz
+
+
+[Fri Oct 27 14:21:44 2023]
+Job 12: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007875/CW0095_1.fastq.gz, results/reads/BGV007875/CW0095_2.fastq.gz
+
+
+[Fri Oct 27 14:21:44 2023]
+Job 10: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007865/CW0090_2.fastq.gz, results/reads/BGV007865/CW0090_1.fastq.gz
+
+[Fri Oct 27 14:21:44 2023]
+Finished job 13.
+5 of 44 steps (11%) done
+[Fri Oct 27 14:21:44 2023]
+Finished job 14.
+6 of 44 steps (14%) done
+[Fri Oct 27 14:21:44 2023]
+Finished job 11.
+7 of 44 steps (16%) done
+[Fri Oct 27 14:21:44 2023]
+Finished job 12.
+8 of 44 steps (18%) done
+[Fri Oct 27 14:21:44 2023]
+Finished job 10.
+9 of 44 steps (20%) done
+[Fri Oct 27 14:21:45 2023]
+Finished job 32.
+10 of 44 steps (23%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:21:45 2023]
+Job 31: Unzipping kmersGWAS source code...
+Reason: Missing output files: scripts/external/kmers_gwas/kmers_gwas.py, scripts/external/kmers_gwas/bin; Input files updated by another job: scripts/external/kmers_gwas/v0.3-beta.zip
+
+Activating conda environment: .snakemake/conda/2552139212129fe0189830de51886e5d_
+[Fri Oct 27 14:21:48 2023]
+Finished job 31.
+11 of 44 steps (25%) done
+Removing temporary output scripts/external/kmers_gwas/v0.3-beta.zip.
+[Fri Oct 27 14:21:56 2023]
+Finished job 3.
+12 of 44 steps (27%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:21:56 2023]
+Job 1: Performing MultiQC on the FastQC results...
+Reason: Missing output files: results/qc/multiqc.html; Input files updated by another job: results/qc/fastqc/BGV007872/CW0121_fastqc.zip, results/qc/fastqc/BGV007865/CW0090_fastqc.zip, results/qc/fastqc/BGV007902/CW0012_fastqc.zip, results/qc/fastqc/Voyage/CW0026_fastqc.zip, results/qc/fastqc/BGV007875/CW0095_fastqc.zip
+
+Activating conda environment: .snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_
+Activating conda environment: .snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_
+[Fri Oct 27 14:22:03 2023]
+Finished job 1.
+13 of 44 steps (30%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:22:03 2023]
+Job 16: Generating input list files...
+Reason: Missing output files: results/reads/BGV007872/input_files.txt; Input files updated by another job: results/reads/BGV007872/CW0121_2.fastq.gz, results/qc/multiqc.html, results/reads/BGV007872/CW0121_1.fastq.gz, results/reads/BGV007865/CW0090_2.fastq.gz, results/reads/Voyage/CW0026_1.fastq.gz, results/reads/BGV007875/CW0095_1.fastq.gz, results/reads/BGV007902/CW0012_1.fastq.gz, results/reads/BGV007865/CW0090_1.fastq.gz, results/reads/BGV007875/CW0095_2.fastq.gz, results/reads/Voyage/CW0026_2.fastq.gz, results/reads/BGV007902/CW0012_2.fastq.gz
+
+[Fri Oct 27 14:22:03 2023]
+Job 22: Generating input list files...
+Reason: Missing output files: results/reads/Voyage/input_files.txt; Input files updated by another job: results/reads/BGV007872/CW0121_2.fastq.gz, results/qc/multiqc.html, results/reads/BGV007872/CW0121_1.fastq.gz, results/reads/BGV007865/CW0090_2.fastq.gz, results/reads/Voyage/CW0026_1.fastq.gz, results/reads/BGV007875/CW0095_1.fastq.gz, results/reads/BGV007902/CW0012_1.fastq.gz, results/reads/BGV007865/CW0090_1.fastq.gz, results/reads/BGV007875/CW0095_2.fastq.gz, results/reads/Voyage/CW0026_2.fastq.gz, results/reads/BGV007902/CW0012_2.fastq.gz
+
+[Fri Oct 27 14:22:03 2023]
+Job 20: Generating input list files...
+Reason: Missing output files: results/reads/BGV007902/input_files.txt; Input files updated by another job: results/reads/BGV007872/CW0121_2.fastq.gz, results/qc/multiqc.html, results/reads/BGV007872/CW0121_1.fastq.gz, results/reads/BGV007865/CW0090_2.fastq.gz, results/reads/Voyage/CW0026_1.fastq.gz, results/reads/BGV007875/CW0095_1.fastq.gz, results/reads/BGV007902/CW0012_1.fastq.gz, results/reads/BGV007865/CW0090_1.fastq.gz, results/reads/BGV007875/CW0095_2.fastq.gz, results/reads/Voyage/CW0026_2.fastq.gz, results/reads/BGV007902/CW0012_2.fastq.gz
+
+[Fri Oct 27 14:22:03 2023]
+Job 9: Generating input list files...
+Reason: Missing output files: results/reads/BGV007865/input_files.txt; Input files updated by another job: results/reads/BGV007872/CW0121_2.fastq.gz, results/qc/multiqc.html, results/reads/BGV007872/CW0121_1.fastq.gz, results/reads/BGV007865/CW0090_2.fastq.gz, results/reads/Voyage/CW0026_1.fastq.gz, results/reads/BGV007875/CW0095_1.fastq.gz, results/reads/BGV007902/CW0012_1.fastq.gz, results/reads/BGV007865/CW0090_1.fastq.gz, results/reads/BGV007875/CW0095_2.fastq.gz, results/reads/Voyage/CW0026_2.fastq.gz, results/reads/BGV007902/CW0012_2.fastq.gz
+
+[Fri Oct 27 14:22:03 2023]
+Job 18: Generating input list files...
+Reason: Missing output files: results/reads/BGV007875/input_files.txt; Input files updated by another job: results/reads/BGV007872/CW0121_2.fastq.gz, results/qc/multiqc.html, results/reads/BGV007872/CW0121_1.fastq.gz, results/reads/BGV007865/CW0090_2.fastq.gz, results/reads/Voyage/CW0026_1.fastq.gz, results/reads/BGV007875/CW0095_1.fastq.gz, results/reads/BGV007902/CW0012_1.fastq.gz, results/reads/BGV007865/CW0090_1.fastq.gz, results/reads/BGV007875/CW0095_2.fastq.gz, results/reads/Voyage/CW0026_2.fastq.gz, results/reads/BGV007902/CW0012_2.fastq.gz
+
+[Fri Oct 27 14:22:05 2023]
+Finished job 16.
+14 of 44 steps (32%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:22:05 2023]
+Job 24: Running KMC to count k-mers with canonization...
+Reason: Missing output files: results/kmers_count/BGV007872/kmc_canonical.done, results/kmers_count/BGV007872/output_kmc_canon.kmc_suf, results/kmers_count/BGV007872/output_kmc_canon.kmc_pre; Input files updated by another job: results/reads/BGV007872/input_files.txt
+
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+[Fri Oct 27 14:22:05 2023]
+Finished job 20.
+15 of 44 steps (34%) done
+[Fri Oct 27 14:22:05 2023]
+Finished job 9.
+16 of 44 steps (36%) done
+[Fri Oct 27 14:22:05 2023]
+Finished job 18.
+17 of 44 steps (39%) done
+[Fri Oct 27 14:22:05 2023]
+Finished job 22.
+18 of 44 steps (41%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:22:05 2023]
+Job 23: Running KMC to count k-mers with canonization...
+Reason: Missing output files: results/kmers_count/BGV007865/output_kmc_canon.kmc_pre, results/kmers_count/BGV007865/output_kmc_canon.kmc_suf, results/kmers_count/BGV007865/kmc_canonical.done; Input files updated by another job: results/reads/BGV007865/input_files.txt
+
+Select jobs to execute...
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+Touching output file results/kmers_count/BGV007872/kmc_canonical.done.
+[Fri Oct 27 14:22:52 2023]
+Finished job 24.
+19 of 44 steps (43%) done
+
+[Fri Oct 27 14:22:53 2023]
+Job 27: Running KMC to count k-mers with canonization...
+Reason: Missing output files: logs/count_kmers/kmc/Voyage/kmc_canon.log, results/kmers_count/Voyage/kmc_canonical.done, results/kmers_count/Voyage/output_kmc_canon.kmc_suf, results/kmers_count/Voyage/output_kmc_canon.kmc_pre; Input files updated by another job: results/reads/Voyage/input_files.txt
+
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+Touching output file results/kmers_count/Voyage/kmc_canonical.done.
+[Fri Oct 27 14:24:02 2023]
+Finished job 27.
+20 of 44 steps (45%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:24:02 2023]
+Job 26: Running KMC to count k-mers with canonization...
+Reason: Missing output files: results/kmers_count/BGV007902/output_kmc_canon.kmc_pre, results/kmers_count/BGV007902/output_kmc_canon.kmc_suf, logs/count_kmers/kmc/BGV007902/kmc_canon.log, results/kmers_count/BGV007902/kmc_canonical.done; Input files updated by another job: results/reads/BGV007902/input_files.txt
+
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+Touching output file results/kmers_count/BGV007865/kmc_canonical.done.
+[Fri Oct 27 14:24:48 2023]
+Finished job 23.
+21 of 44 steps (48%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:24:48 2023]
+Job 25: Running KMC to count k-mers with canonization...
+Reason: Missing output files: logs/count_kmers/kmc/BGV007875/kmc_canon.log, results/kmers_count/BGV007875/kmc_canonical.done, results/kmers_count/BGV007875/output_kmc_canon.kmc_pre, results/kmers_count/BGV007875/output_kmc_canon.kmc_suf; Input files updated by another job: results/reads/BGV007875/input_files.txt
+
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+Touching output file results/kmers_count/BGV007875/kmc_canonical.done.
+[Fri Oct 27 14:25:58 2023]
+Finished job 25.
+22 of 44 steps (50%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:25:58 2023]
+Job 17: Running KMC to count k-mers without canonization...
+Reason: Missing output files: results/kmers_count/BGV007875/output_kmc_all.kmc_pre, results/kmers_count/BGV007875/kmc_non-canonical.done, logs/count_kmers/kmc/BGV007875/kmc_all.log, results/kmers_count/BGV007875/output_kmc_all.kmc_suf; Input files updated by another job: results/reads/BGV007875/input_files.txt
+
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+Touching output file results/kmers_count/BGV007902/kmc_canonical.done.
+[Fri Oct 27 14:26:20 2023]
+Finished job 26.
+23 of 44 steps (52%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:26:20 2023]
+Job 15: Running KMC to count k-mers without canonization...
+Reason: Missing output files: results/kmers_count/BGV007872/kmc_non-canonical.done, logs/count_kmers/kmc/BGV007872/kmc_all.log, results/kmers_count/BGV007872/output_kmc_all.kmc_pre, results/kmers_count/BGV007872/output_kmc_all.kmc_suf; Input files updated by another job: results/reads/BGV007872/input_files.txt
+
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+Touching output file results/kmers_count/BGV007875/kmc_non-canonical.done.
+[Fri Oct 27 14:27:03 2023]
+Finished job 17.
+24 of 44 steps (55%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:27:03 2023]
+Job 21: Running KMC to count k-mers without canonization...
+Reason: Missing output files: results/kmers_count/Voyage/kmc_non-canonical.done, results/kmers_count/Voyage/output_kmc_all.kmc_suf, results/kmers_count/Voyage/output_kmc_all.kmc_pre, logs/count_kmers/kmc/Voyage/kmc_all.log; Input files updated by another job: results/reads/Voyage/input_files.txt
+
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+Touching output file results/kmers_count/BGV007872/kmc_non-canonical.done.
+[Fri Oct 27 14:27:13 2023]
+Finished job 15.
+25 of 44 steps (57%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:27:13 2023]
+Job 19: Running KMC to count k-mers without canonization...
+Reason: Missing output files: logs/count_kmers/kmc/BGV007902/kmc_all.log, results/kmers_count/BGV007902/output_kmc_all.kmc_suf, results/kmers_count/BGV007902/output_kmc_all.kmc_pre, results/kmers_count/BGV007902/kmc_non-canonical.done; Input files updated by another job: results/reads/BGV007902/input_files.txt
+
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+Touching output file results/kmers_count/Voyage/kmc_non-canonical.done.
+[Fri Oct 27 14:28:13 2023]
+Finished job 21.
+26 of 44 steps (59%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:28:13 2023]
+Job 8: Running KMC to count k-mers without canonization...
+Reason: Missing output files: results/kmers_count/BGV007865/kmc_non-canonical.done, logs/count_kmers/kmc/BGV007865/kmc_all.log, results/kmers_count/BGV007865/output_kmc_all.kmc_suf, results/kmers_count/BGV007865/output_kmc_all.kmc_pre; Input files updated by another job: results/reads/BGV007865/input_files.txt
+
+Activating conda environment: .snakemake/conda/cab3840f33626cd7fff4fefb51012428_
+Touching output file results/kmers_count/BGV007902/kmc_non-canonical.done.
+[Fri Oct 27 14:29:26 2023]
+Finished job 19.
+27 of 44 steps (61%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:29:26 2023]
+Job 35: Merging outputs from two KMC k-mers counting results into one list for each sample/individual...
+Reason: Missing output files: results/kmers_count/BGV007902/kmers_with_strand; Input files updated by another job: results/kmers_count/BGV007902/output_kmc_canon.kmc_pre, results/kmers_count/BGV007902/output_kmc_all.kmc_suf, scripts/external/kmers_gwas/bin, results/kmers_count/BGV007902/output_kmc_canon.kmc_suf, results/kmers_count/BGV007902/output_kmc_all.kmc_pre, results/kmers_count/BGV007902/kmc_non-canonical.done, results/kmers_count/BGV007902/kmc_canonical.done
+
+Activating conda environment: .snakemake/conda/23ffccc052181e287adeb2946636e62b_
+Touching output file results/kmers_count/BGV007865/kmc_non-canonical.done.
+[Fri Oct 27 14:31:08 2023]
+Finished job 8.
+28 of 44 steps (64%) done
+Select jobs to execute...
+
+[Fri Oct 27 14:31:08 2023]
+Job 30: Merging outputs from two KMC k-mers counting results into one list for each sample/individual...
+Reason: Missing output files: results/kmers_count/BGV007865/kmers_with_strand; Input files updated by another job: results/kmers_count/BGV007865/output_kmc_all.kmc_pre, results/kmers_count/BGV007865/output_kmc_canon.kmc_pre, results/kmers_count/BGV007865/kmc_canonical.done, results/kmers_count/BGV007865/kmc_non-canonical.done, results/kmers_count/BGV007865/output_kmc_all.kmc_suf, scripts/external/kmers_gwas/bin, results/kmers_count/BGV007865/output_kmc_canon.kmc_suf
+
+Activating conda environment: .snakemake/conda/23ffccc052181e287adeb2946636e62b_
+/usr/bin/bash: line 3: 46889 Killed                  scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007902/output_kmc_canon -n results/kmers_count/BGV007902/output_kmc_all -k 31 -o results/kmers_count/BGV007902/kmers_with_strand > logs/count_kmers/kmc/BGV007902/add_strand.log.out
+[Fri Oct 27 14:31:52 2023]
+Error in rule merge_kmers:
+    jobid: 35
+    input: results/kmers_count/BGV007902/output_kmc_canon.kmc_suf, results/kmers_count/BGV007902/output_kmc_canon.kmc_pre, results/kmers_count/BGV007902/output_kmc_all.kmc_suf, results/kmers_count/BGV007902/output_kmc_all.kmc_pre, results/kmers_count/BGV007902/kmc_canonical.done, results/kmers_count/BGV007902/kmc_non-canonical.done, scripts/external/kmers_gwas/bin
+    output: results/kmers_count/BGV007902/kmers_with_strand, results/kmers_count/BGV007902/kmers_add_strand_information.done
+    log: logs/count_kmers/kmc/BGV007902/add_strand.log.out (check log file(s) for error details)
+    conda-env: /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/23ffccc052181e287adeb2946636e62b_
+    shell:
+        
+        export LD_LIBRARY_PATH=$CONDA_PREFIX/lib
+
+        scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007902/output_kmc_canon -n results/kmers_count/BGV007902/output_kmc_all -k 31 -o results/kmers_count/BGV007902/kmers_with_strand > logs/count_kmers/kmc/BGV007902/add_strand.log.out
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Trying to restart job 35.
+Select jobs to execute...
+
+[Fri Oct 27 14:31:53 2023]
+Job 35: Merging outputs from two KMC k-mers counting results into one list for each sample/individual...
+Reason: Missing output files: results/kmers_count/BGV007902/kmers_with_strand; Input files updated by another job: results/kmers_count/BGV007902/output_kmc_canon.kmc_pre, results/kmers_count/BGV007902/output_kmc_all.kmc_suf, scripts/external/kmers_gwas/bin, results/kmers_count/BGV007902/output_kmc_canon.kmc_suf, results/kmers_count/BGV007902/output_kmc_all.kmc_pre, results/kmers_count/BGV007902/kmc_non-canonical.done, results/kmers_count/BGV007902/kmc_canonical.done
+
+Activating conda environment: .snakemake/conda/23ffccc052181e287adeb2946636e62b_
+/usr/bin/bash: line 3: 49162 Killed                  scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007865/output_kmc_canon -n results/kmers_count/BGV007865/output_kmc_all -k 31 -o results/kmers_count/BGV007865/kmers_with_strand > logs/count_kmers/kmc/BGV007865/add_strand.log.out
+[Fri Oct 27 14:32:59 2023]
+Error in rule merge_kmers:
+    jobid: 30
+    input: results/kmers_count/BGV007865/output_kmc_canon.kmc_suf, results/kmers_count/BGV007865/output_kmc_canon.kmc_pre, results/kmers_count/BGV007865/output_kmc_all.kmc_suf, results/kmers_count/BGV007865/output_kmc_all.kmc_pre, results/kmers_count/BGV007865/kmc_canonical.done, results/kmers_count/BGV007865/kmc_non-canonical.done, scripts/external/kmers_gwas/bin
+    output: results/kmers_count/BGV007865/kmers_with_strand, results/kmers_count/BGV007865/kmers_add_strand_information.done
+    log: logs/count_kmers/kmc/BGV007865/add_strand.log.out (check log file(s) for error details)
+    conda-env: /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/23ffccc052181e287adeb2946636e62b_
+    shell:
+        
+        export LD_LIBRARY_PATH=$CONDA_PREFIX/lib
+
+        scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007865/output_kmc_canon -n results/kmers_count/BGV007865/output_kmc_all -k 31 -o results/kmers_count/BGV007865/kmers_with_strand > logs/count_kmers/kmc/BGV007865/add_strand.log.out
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Trying to restart job 30.
+Select jobs to execute...
+
+[Fri Oct 27 14:32:59 2023]
+Job 30: Merging outputs from two KMC k-mers counting results into one list for each sample/individual...
+Reason: Missing output files: results/kmers_count/BGV007865/kmers_with_strand; Input files updated by another job: results/kmers_count/BGV007865/output_kmc_all.kmc_pre, results/kmers_count/BGV007865/output_kmc_canon.kmc_pre, results/kmers_count/BGV007865/kmc_canonical.done, results/kmers_count/BGV007865/kmc_non-canonical.done, results/kmers_count/BGV007865/output_kmc_all.kmc_suf, scripts/external/kmers_gwas/bin, results/kmers_count/BGV007865/output_kmc_canon.kmc_suf
+
+Activating conda environment: .snakemake/conda/23ffccc052181e287adeb2946636e62b_
+/usr/bin/bash: line 3: 49205 Killed                  scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007902/output_kmc_canon -n results/kmers_count/BGV007902/output_kmc_all -k 31 -o results/kmers_count/BGV007902/kmers_with_strand > logs/count_kmers/kmc/BGV007902/add_strand.log.out
+[Fri Oct 27 14:33:32 2023]
+Error in rule merge_kmers:
+    jobid: 35
+    input: results/kmers_count/BGV007902/output_kmc_canon.kmc_suf, results/kmers_count/BGV007902/output_kmc_canon.kmc_pre, results/kmers_count/BGV007902/output_kmc_all.kmc_suf, results/kmers_count/BGV007902/output_kmc_all.kmc_pre, results/kmers_count/BGV007902/kmc_canonical.done, results/kmers_count/BGV007902/kmc_non-canonical.done, scripts/external/kmers_gwas/bin
+    output: results/kmers_count/BGV007902/kmers_with_strand, results/kmers_count/BGV007902/kmers_add_strand_information.done
+    log: logs/count_kmers/kmc/BGV007902/add_strand.log.out (check log file(s) for error details)
+    conda-env: /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/23ffccc052181e287adeb2946636e62b_
+    shell:
+        
+        export LD_LIBRARY_PATH=$CONDA_PREFIX/lib
+
+        scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007902/output_kmc_canon -n results/kmers_count/BGV007902/output_kmc_all -k 31 -o results/kmers_count/BGV007902/kmers_with_strand > logs/count_kmers/kmc/BGV007902/add_strand.log.out
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Trying to restart job 35.
+Select jobs to execute...
+
+[Fri Oct 27 14:33:32 2023]
+Job 35: Merging outputs from two KMC k-mers counting results into one list for each sample/individual...
+Reason: Missing output files: results/kmers_count/BGV007902/kmers_with_strand; Input files updated by another job: results/kmers_count/BGV007902/output_kmc_canon.kmc_pre, results/kmers_count/BGV007902/output_kmc_all.kmc_suf, scripts/external/kmers_gwas/bin, results/kmers_count/BGV007902/output_kmc_canon.kmc_suf, results/kmers_count/BGV007902/output_kmc_all.kmc_pre, results/kmers_count/BGV007902/kmc_non-canonical.done, results/kmers_count/BGV007902/kmc_canonical.done
+
+Activating conda environment: .snakemake/conda/23ffccc052181e287adeb2946636e62b_
+/usr/bin/bash: line 3: 49302 Killed                  scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007865/output_kmc_canon -n results/kmers_count/BGV007865/output_kmc_all -k 31 -o results/kmers_count/BGV007865/kmers_with_strand > logs/count_kmers/kmc/BGV007865/add_strand.log.out
+[Fri Oct 27 14:34:39 2023]
+Error in rule merge_kmers:
+    jobid: 30
+    input: results/kmers_count/BGV007865/output_kmc_canon.kmc_suf, results/kmers_count/BGV007865/output_kmc_canon.kmc_pre, results/kmers_count/BGV007865/output_kmc_all.kmc_suf, results/kmers_count/BGV007865/output_kmc_all.kmc_pre, results/kmers_count/BGV007865/kmc_canonical.done, results/kmers_count/BGV007865/kmc_non-canonical.done, scripts/external/kmers_gwas/bin
+    output: results/kmers_count/BGV007865/kmers_with_strand, results/kmers_count/BGV007865/kmers_add_strand_information.done
+    log: logs/count_kmers/kmc/BGV007865/add_strand.log.out (check log file(s) for error details)
+    conda-env: /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/23ffccc052181e287adeb2946636e62b_
+    shell:
+        
+        export LD_LIBRARY_PATH=$CONDA_PREFIX/lib
+
+        scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007865/output_kmc_canon -n results/kmers_count/BGV007865/output_kmc_all -k 31 -o results/kmers_count/BGV007865/kmers_with_strand > logs/count_kmers/kmc/BGV007865/add_strand.log.out
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Trying to restart job 30.
+Select jobs to execute...
+
+[Fri Oct 27 14:34:39 2023]
+Job 30: Merging outputs from two KMC k-mers counting results into one list for each sample/individual...
+Reason: Missing output files: results/kmers_count/BGV007865/kmers_with_strand; Input files updated by another job: results/kmers_count/BGV007865/output_kmc_all.kmc_pre, results/kmers_count/BGV007865/output_kmc_canon.kmc_pre, results/kmers_count/BGV007865/kmc_canonical.done, results/kmers_count/BGV007865/kmc_non-canonical.done, results/kmers_count/BGV007865/output_kmc_all.kmc_suf, scripts/external/kmers_gwas/bin, results/kmers_count/BGV007865/output_kmc_canon.kmc_suf
+
+Activating conda environment: .snakemake/conda/23ffccc052181e287adeb2946636e62b_
+/usr/bin/bash: line 3: 49347 Killed                  scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007902/output_kmc_canon -n results/kmers_count/BGV007902/output_kmc_all -k 31 -o results/kmers_count/BGV007902/kmers_with_strand > logs/count_kmers/kmc/BGV007902/add_strand.log.out
+[Fri Oct 27 14:35:11 2023]
+Error in rule merge_kmers:
+    jobid: 35
+    input: results/kmers_count/BGV007902/output_kmc_canon.kmc_suf, results/kmers_count/BGV007902/output_kmc_canon.kmc_pre, results/kmers_count/BGV007902/output_kmc_all.kmc_suf, results/kmers_count/BGV007902/output_kmc_all.kmc_pre, results/kmers_count/BGV007902/kmc_canonical.done, results/kmers_count/BGV007902/kmc_non-canonical.done, scripts/external/kmers_gwas/bin
+    output: results/kmers_count/BGV007902/kmers_with_strand, results/kmers_count/BGV007902/kmers_add_strand_information.done
+    log: logs/count_kmers/kmc/BGV007902/add_strand.log.out (check log file(s) for error details)
+    conda-env: /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/23ffccc052181e287adeb2946636e62b_
+    shell:
+        
+        export LD_LIBRARY_PATH=$CONDA_PREFIX/lib
+
+        scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007902/output_kmc_canon -n results/kmers_count/BGV007902/output_kmc_all -k 31 -o results/kmers_count/BGV007902/kmers_with_strand > logs/count_kmers/kmc/BGV007902/add_strand.log.out
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Trying to restart job 35.
+Select jobs to execute...
+
+[Fri Oct 27 14:35:12 2023]
+Job 35: Merging outputs from two KMC k-mers counting results into one list for each sample/individual...
+Reason: Missing output files: results/kmers_count/BGV007902/kmers_with_strand; Input files updated by another job: results/kmers_count/BGV007902/output_kmc_canon.kmc_pre, results/kmers_count/BGV007902/output_kmc_all.kmc_suf, scripts/external/kmers_gwas/bin, results/kmers_count/BGV007902/output_kmc_canon.kmc_suf, results/kmers_count/BGV007902/output_kmc_all.kmc_pre, results/kmers_count/BGV007902/kmc_non-canonical.done, results/kmers_count/BGV007902/kmc_canonical.done
+
+Activating conda environment: .snakemake/conda/23ffccc052181e287adeb2946636e62b_
+/usr/bin/bash: line 3: 49408 Killed                  scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007865/output_kmc_canon -n results/kmers_count/BGV007865/output_kmc_all -k 31 -o results/kmers_count/BGV007865/kmers_with_strand > logs/count_kmers/kmc/BGV007865/add_strand.log.out
+[Fri Oct 27 14:36:19 2023]
+Error in rule merge_kmers:
+    jobid: 30
+    input: results/kmers_count/BGV007865/output_kmc_canon.kmc_suf, results/kmers_count/BGV007865/output_kmc_canon.kmc_pre, results/kmers_count/BGV007865/output_kmc_all.kmc_suf, results/kmers_count/BGV007865/output_kmc_all.kmc_pre, results/kmers_count/BGV007865/kmc_canonical.done, results/kmers_count/BGV007865/kmc_non-canonical.done, scripts/external/kmers_gwas/bin
+    output: results/kmers_count/BGV007865/kmers_with_strand, results/kmers_count/BGV007865/kmers_add_strand_information.done
+    log: logs/count_kmers/kmc/BGV007865/add_strand.log.out (check log file(s) for error details)
+    conda-env: /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/23ffccc052181e287adeb2946636e62b_
+    shell:
+        
+        export LD_LIBRARY_PATH=$CONDA_PREFIX/lib
+
+        scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007865/output_kmc_canon -n results/kmers_count/BGV007865/output_kmc_all -k 31 -o results/kmers_count/BGV007865/kmers_with_strand > logs/count_kmers/kmc/BGV007865/add_strand.log.out
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Trying to restart job 30.
+Select jobs to execute...
+
+[Fri Oct 27 14:36:19 2023]
+Job 30: Merging outputs from two KMC k-mers counting results into one list for each sample/individual...
+Reason: Missing output files: results/kmers_count/BGV007865/kmers_with_strand; Input files updated by another job: results/kmers_count/BGV007865/output_kmc_all.kmc_pre, results/kmers_count/BGV007865/output_kmc_canon.kmc_pre, results/kmers_count/BGV007865/kmc_canonical.done, results/kmers_count/BGV007865/kmc_non-canonical.done, results/kmers_count/BGV007865/output_kmc_all.kmc_suf, scripts/external/kmers_gwas/bin, results/kmers_count/BGV007865/output_kmc_canon.kmc_suf
+
+Activating conda environment: .snakemake/conda/23ffccc052181e287adeb2946636e62b_
+/usr/bin/bash: line 3: 49455 Killed                  scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007902/output_kmc_canon -n results/kmers_count/BGV007902/output_kmc_all -k 31 -o results/kmers_count/BGV007902/kmers_with_strand > logs/count_kmers/kmc/BGV007902/add_strand.log.out
+[Fri Oct 27 14:36:51 2023]
+Error in rule merge_kmers:
+    jobid: 35
+    input: results/kmers_count/BGV007902/output_kmc_canon.kmc_suf, results/kmers_count/BGV007902/output_kmc_canon.kmc_pre, results/kmers_count/BGV007902/output_kmc_all.kmc_suf, results/kmers_count/BGV007902/output_kmc_all.kmc_pre, results/kmers_count/BGV007902/kmc_canonical.done, results/kmers_count/BGV007902/kmc_non-canonical.done, scripts/external/kmers_gwas/bin
+    output: results/kmers_count/BGV007902/kmers_with_strand, results/kmers_count/BGV007902/kmers_add_strand_information.done
+    log: logs/count_kmers/kmc/BGV007902/add_strand.log.out (check log file(s) for error details)
+    conda-env: /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/23ffccc052181e287adeb2946636e62b_
+    shell:
+        
+        export LD_LIBRARY_PATH=$CONDA_PREFIX/lib
+
+        scripts/external/kmers_gwas/bin/kmers_add_strand_information -c results/kmers_count/BGV007902/output_kmc_canon -n results/kmers_count/BGV007902/output_kmc_all -k 31 -o results/kmers_count/BGV007902/kmers_with_strand > logs/count_kmers/kmc/BGV007902/add_strand.log.out
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Touching output file results/kmers_count/BGV007865/kmers_add_strand_information.done.
+[Fri Oct 27 14:48:32 2023]
+Finished job 30.
+29 of 44 steps (66%) done
+Removing temporary output results/kmers_count/BGV007865/output_kmc_canon.kmc_pre.
+Removing temporary output results/kmers_count/BGV007865/output_kmc_canon.kmc_suf.
+Removing temporary output results/kmers_count/BGV007865/output_kmc_all.kmc_suf.
+Removing temporary output results/kmers_count/BGV007865/output_kmc_all.kmc_pre.
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-10-27T141139.685041.snakemake.log
+ERROR:root:Error running Snakemake: Command '['snakemake', '--use-conda', '--conda-frontend', 'conda', '--cores', '16', '--snakefile', '/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/Snakefile', '--rerun-triggers', 'mtime', 'params', 'input', 'software-env', 'code']' returned non-zero exit status 1.
+Oct 27 14:48:34.261751 25932 slurmstepd   0x2ad3429c6a00: error: Detected 7 oom_kill events in StepId=8472670.batch. Some of the step tasks have been OOM Killed.

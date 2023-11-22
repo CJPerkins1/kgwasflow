@@ -1,0 +1,47 @@
+# ================================================================================== #
+      _     _______          __      _____  __ _                 
+     | |   / ____\ \        / /\    / ____|/ _| |                
+     | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __  
+     | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /  
+     |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V /   
+     |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/    
+
+     kGWASflow: A Snakemake Workflow for k-mers Based GWAS                            
+                                                                                      
+     Date:            2023-11-13 12:54:25
+     Author:          Adnan Kivanc Corut
+     kGWASflow version:          v1.3
+     Snakemake version:          7.25.0
+     Python version:             3.11.6
+
+     Snakefile:          /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk
+     Base directory:     /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow
+     Working directory:  /xdisk/rpalaniv/cjperkins1/kgwasflow/config
+     Config files:       /xdisk/rpalaniv/cjperkins1/kgwasflow/config/config.yaml
+                                                                                      
+# ================================================================================== #
+
+     If you use kGWASflow, please cite:                                            
+
+     * Corut, A. K. & Wallace, J. G. kGWASflow: a modular, flexible,                   
+     and reproducible Snakemake workflow for k-mers-based GWAS.                        
+     bioRxiv (2023). https://doi.org/10.1101/2023.07.10.548365                         
+
+     * Voichek, Y., Weigel, D. Identifying genetic variants underlying                  
+     phenotypic variation in plants without complete genomes.                         
+     Nat Genet 52, 534–540 (2020). https://doi.org/10.1038/s41588-020-0612-7          
+
+# ================================================================================== #
+
+Building DAG of jobs...
+InputFunctionException in rule fastqc in file /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/qc.smk, line 5:
+Error:
+  ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+Wildcards:
+  sample=BGV004584
+  library=CW0151
+Traceback:
+  File "/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk", line 167, in get_individual_fastq
+  File "/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk", line 155, in is_sra_se
+  File "/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk", line 151, in sra_only
+  File "/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/pandas/core/generic.py", line 1527, in __nonzero__

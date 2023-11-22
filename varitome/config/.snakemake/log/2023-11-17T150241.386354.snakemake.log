@@ -1,0 +1,36 @@
+# ================================================================================== #
+      _     _______          __      _____  __ _                 
+     | |   / ____\ \        / /\    / ____|/ _| |                
+     | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __  
+     | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /  
+     |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V /   
+     |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/    
+
+     kGWASflow: A Snakemake Workflow for k-mers Based GWAS                            
+                                                                                      
+     Date:            2023-11-17 15:02:43
+     Author:          Adnan Kivanc Corut
+     kGWASflow version:          v1.3
+     Snakemake version:          7.25.0
+     Python version:             3.11.6
+
+     Snakefile:          /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk
+     Base directory:     /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow
+     Working directory:  /xdisk/rpalaniv/cjperkins1/kgwasflow/config
+     Config files:       /xdisk/rpalaniv/cjperkins1/kgwasflow/config/config.yaml
+                                                                                      
+# ================================================================================== #
+
+     If you use kGWASflow, please cite:                                            
+
+     * Corut, A. K. & Wallace, J. G. kGWASflow: a modular, flexible,                   
+     and reproducible Snakemake workflow for k-mers-based GWAS.                        
+     bioRxiv (2023). https://doi.org/10.1101/2023.07.10.548365                         
+
+     * Voichek, Y., Weigel, D. Identifying genetic variants underlying                  
+     phenotypic variation in plants without complete genomes.                         
+     Nat Genet 52, 534–540 (2020). https://doi.org/10.1038/s41588-020-0612-7          
+
+# ================================================================================== #
+
+Unlocking working directory.

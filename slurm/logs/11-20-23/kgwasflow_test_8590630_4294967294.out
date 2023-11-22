@@ -1,0 +1,787 @@
+
+               
+     _     _______          __      _____  __ _               
+    | |   / ____\ \        / /\    / ____|/ _| |              
+    | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __
+    | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /
+    |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V / 
+    |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/  
+    
+    kGWASflow: A Snakemake Workflow for k-mers Based GWAS
+    
+
+               
+     _     _______          __      _____  __ _               
+    | |   / ____\ \        / /\    / ____|/ _| |              
+    | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __
+    | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /
+    |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V / 
+    |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/  
+    
+    kGWASflow: A Snakemake Workflow for k-mers Based GWAS
+    
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183213_SRR7279578_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183213_SRR7279578_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183213_SRR7279578_1.fastq.gz to results/reads/BGV007935/CW0125_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183213_SRR7279578_2.fastq.gz to results/reads/BGV007935/CW0125_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183306_SRR7279485_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183306_SRR7279485_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183306_SRR7279485_1.fastq.gz to results/reads/BGV006232/CW0104_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183306_SRR7279485_2.fastq.gz to results/reads/BGV006232/CW0104_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183137_SRR7279654_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183137_SRR7279654_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183137_SRR7279654_1.fastq.gz to results/reads/BGV007854/CW0122_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183137_SRR7279654_2.fastq.gz to results/reads/BGV007854/CW0122_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183282_SRR7279509_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183282_SRR7279509_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183282_SRR7279509_1.fastq.gz to results/reads/BGV006175/CW0083_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183282_SRR7279509_2.fastq.gz to results/reads/BGV006175/CW0083_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183217_SRR7279574_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183217_SRR7279574_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183217_SRR7279574_1.fastq.gz to results/reads/BGV008223/CW0034_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183217_SRR7279574_2.fastq.gz to results/reads/BGV008223/CW0034_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183151_SRR7279640_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183151_SRR7279640_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183151_SRR7279640_1.fastq.gz to results/reads/BGV006865/CW0157_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183151_SRR7279640_2.fastq.gz to results/reads/BGV006865/CW0157_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183219_SRR7279572_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183219_SRR7279572_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183219_SRR7279572_1.fastq.gz to results/reads/BGV007934/CW0021_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183219_SRR7279572_2.fastq.gz to results/reads/BGV007934/CW0021_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183293_SRR7279498_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183293_SRR7279498_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183293_SRR7279498_1.fastq.gz to results/reads/BGV015726/CW0109_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183293_SRR7279498_2.fastq.gz to results/reads/BGV015726/CW0109_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183176_SRR7279615_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183176_SRR7279615_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183176_SRR7279615_1.fastq.gz to results/reads/BGV008042/CW0126_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183176_SRR7279615_2.fastq.gz to results/reads/BGV008042/CW0126_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183310_SRR7279481_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183310_SRR7279481_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183310_SRR7279481_1.fastq.gz to results/reads/BGV005912/CW0123_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183310_SRR7279481_2.fastq.gz to results/reads/BGV005912/CW0123_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183275_SRR7279516_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183275_SRR7279516_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183275_SRR7279516_1.fastq.gz to results/reads/BGV006347/CW1035_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183275_SRR7279516_2.fastq.gz to results/reads/BGV006347/CW1035_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183183_SRR7279608_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183183_SRR7279608_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183183_SRR7279608_1.fastq.gz to results/reads/BGV007927/CW0176_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183183_SRR7279608_2.fastq.gz to results/reads/BGV007927/CW0176_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183258_SRR7279533_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183258_SRR7279533_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183258_SRR7279533_1.fastq.gz to results/reads/BGV008218/CW0029_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183258_SRR7279533_2.fastq.gz to results/reads/BGV008218/CW0029_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183300_SRR7279491_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183300_SRR7279491_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183300_SRR7279491_1.fastq.gz to results/reads/BGV005895/CW0139_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183300_SRR7279491_2.fastq.gz to results/reads/BGV005895/CW0139_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183145_SRR7279646_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183145_SRR7279646_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183145_SRR7279646_1.fastq.gz to results/reads/BGV006828/CW0164_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183145_SRR7279646_2.fastq.gz to results/reads/BGV006828/CW0164_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183261_SRR7279530_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183261_SRR7279530_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183261_SRR7279530_1.fastq.gz to results/reads/BGV008037/CW0119_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183261_SRR7279530_2.fastq.gz to results/reads/BGV008037/CW0119_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183245_SRR7279546_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183245_SRR7279546_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183245_SRR7279546_1.fastq.gz to results/reads/BGV012613/CW0099_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183245_SRR7279546_2.fastq.gz to results/reads/BGV012613/CW0099_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183240_SRR7279551_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183240_SRR7279551_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183240_SRR7279551_1.fastq.gz to results/reads/BGV012626/CW0062_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183240_SRR7279551_2.fastq.gz to results/reads/BGV012626/CW0062_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183154_SRR7279637_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183154_SRR7279637_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183154_SRR7279637_1.fastq.gz to results/reads/BGV007876/CW0112_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183154_SRR7279637_2.fastq.gz to results/reads/BGV007876/CW0112_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183140_SRR7279651_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183140_SRR7279651_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183140_SRR7279651_1.fastq.gz to results/reads/BGV006931/CW0120_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183140_SRR7279651_2.fastq.gz to results/reads/BGV006931/CW0120_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183095_SRR7279696_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183095_SRR7279696_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183095_SRR7279696_1.fastq.gz to results/reads/BGV015380/CW1002_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183095_SRR7279696_2.fastq.gz to results/reads/BGV015380/CW1002_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183292_SRR7279499_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183292_SRR7279499_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183292_SRR7279499_1.fastq.gz to results/reads/PI129088/CW0096_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183292_SRR7279499_2.fastq.gz to results/reads/PI129088/CW0096_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183070_SRR7279721_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183070_SRR7279721_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183070_SRR7279721_1.fastq.gz to results/reads/BGV007339/CW1026_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183070_SRR7279721_2.fastq.gz to results/reads/BGV007339/CW1026_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183182_SRR7279609_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183182_SRR7279609_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183182_SRR7279609_1.fastq.gz to results/reads/BGV008219/CW0155_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183182_SRR7279609_2.fastq.gz to results/reads/BGV008219/CW0155_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183168_SRR7279623_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183168_SRR7279623_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183168_SRR7279623_1.fastq.gz to results/reads/BGV006327/CW1032_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183168_SRR7279623_2.fastq.gz to results/reads/BGV006327/CW1032_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183091_SRR7279700_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183091_SRR7279700_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183091_SRR7279700_1.fastq.gz to results/reads/BGV007366/CW1009_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183091_SRR7279700_2.fastq.gz to results/reads/BGV007366/CW1009_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183153_SRR7279638_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183153_SRR7279638_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183153_SRR7279638_1.fastq.gz to results/reads/BGV007198/CW1031_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183153_SRR7279638_2.fastq.gz to results/reads/BGV007198/CW1031_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183169_SRR7279622_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183169_SRR7279622_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183169_SRR7279622_1.fastq.gz to results/reads/BGV008051/CW0054_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183169_SRR7279622_2.fastq.gz to results/reads/BGV008051/CW0054_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183125_SRR7279666_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183125_SRR7279666_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183125_SRR7279666_1.fastq.gz to results/reads/BGV006353/CW1003_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183125_SRR7279666_2.fastq.gz to results/reads/BGV006353/CW1003_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183267_SRR7279524_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183267_SRR7279524_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183267_SRR7279524_1.fastq.gz to results/reads/BGV015734/CW0059_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183267_SRR7279524_2.fastq.gz to results/reads/BGV015734/CW0059_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183144_SRR7279647_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183144_SRR7279647_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183144_SRR7279647_1.fastq.gz to results/reads/BGV006867/CW0146_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183144_SRR7279647_2.fastq.gz to results/reads/BGV006867/CW0146_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183239_SRR7279552_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183239_SRR7279552_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183239_SRR7279552_1.fastq.gz to results/reads/BGV012615/CW0061_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183239_SRR7279552_2.fastq.gz to results/reads/BGV012615/CW0061_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183138_SRR7279653_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183138_SRR7279653_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183138_SRR7279653_1.fastq.gz to results/reads/BGV007860/CW0085_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183138_SRR7279653_2.fastq.gz to results/reads/BGV007860/CW0085_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183123_SRR7279668_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183123_SRR7279668_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183123_SRR7279668_1.fastq.gz to results/reads/BGV006235/CW0177_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183123_SRR7279668_2.fastq.gz to results/reads/BGV006235/CW0177_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183289_SRR7279502_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183289_SRR7279502_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183289_SRR7279502_1.fastq.gz to results/reads/LA0767/CW0165_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183289_SRR7279502_2.fastq.gz to results/reads/LA0767/CW0165_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183244_SRR7279547_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183244_SRR7279547_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183244_SRR7279547_1.fastq.gz to results/reads/BGV008224/CW0010_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183244_SRR7279547_2.fastq.gz to results/reads/BGV008224/CW0010_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183133_SRR7279658_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183133_SRR7279658_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183133_SRR7279658_1.fastq.gz to results/reads/PI487625/CW0103_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183133_SRR7279658_2.fastq.gz to results/reads/PI487625/CW0103_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183206_SRR7279585_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183206_SRR7279585_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183206_SRR7279585_1.fastq.gz to results/reads/BGV006825/CW0082_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183206_SRR7279585_2.fastq.gz to results/reads/BGV006825/CW0082_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183082_SRR7279709_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183082_SRR7279709_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183082_SRR7279709_1.fastq.gz to results/reads/BGV006934/CW0129_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183082_SRR7279709_2.fastq.gz to results/reads/BGV006934/CW0129_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183212_SRR7279579_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183212_SRR7279579_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183212_SRR7279579_1.fastq.gz to results/reads/BGV007921/CW0107_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183212_SRR7279579_2.fastq.gz to results/reads/BGV007921/CW0107_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183277_SRR7279514_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183277_SRR7279514_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183277_SRR7279514_1.fastq.gz to results/reads/BGV008058/CW0181_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183277_SRR7279514_2.fastq.gz to results/reads/BGV008058/CW0181_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183272_SRR7279519_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183272_SRR7279519_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183272_SRR7279519_1.fastq.gz to results/reads/BGV014522/CW0018_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183272_SRR7279519_2.fastq.gz to results/reads/BGV014522/CW0018_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183180_SRR7279611_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183180_SRR7279611_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183180_SRR7279611_1.fastq.gz to results/reads/BGV006852/CW0108_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183180_SRR7279611_2.fastq.gz to results/reads/BGV006852/CW0108_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183254_SRR7279537_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183254_SRR7279537_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183254_SRR7279537_1.fastq.gz to results/reads/BGV008189/CW0156_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183254_SRR7279537_2.fastq.gz to results/reads/BGV008189/CW0156_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183093_SRR7279698_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183093_SRR7279698_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183093_SRR7279698_1.fastq.gz to results/reads/BGV015382/CW1025_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183093_SRR7279698_2.fastq.gz to results/reads/BGV015382/CW1025_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183236_SRR7279555_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183236_SRR7279555_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183236_SRR7279555_1.fastq.gz to results/reads/BGV012639/CW0039_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183236_SRR7279555_2.fastq.gz to results/reads/BGV012639/CW0039_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183211_SRR7279580_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183211_SRR7279580_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183211_SRR7279580_1.fastq.gz to results/reads/BGV006363/CW1011_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183211_SRR7279580_2.fastq.gz to results/reads/BGV006363/CW1011_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183100_SRR7279691_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183100_SRR7279691_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183100_SRR7279691_1.fastq.gz to results/reads/BGV007894/CW0024_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183100_SRR7279691_2.fastq.gz to results/reads/BGV007894/CW0024_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183142_SRR7279649_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183142_SRR7279649_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183142_SRR7279649_1.fastq.gz to results/reads/BGV007015/CW0145_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183142_SRR7279649_2.fastq.gz to results/reads/BGV007015/CW0145_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183181_SRR7279610_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183181_SRR7279610_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183181_SRR7279610_1.fastq.gz to results/reads/BGV012627/CW0071_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183181_SRR7279610_2.fastq.gz to results/reads/BGV012627/CW0071_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183097_SRR7279694_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183097_SRR7279694_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183097_SRR7279694_1.fastq.gz to results/reads/BGV007194/CW1013_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183097_SRR7279694_2.fastq.gz to results/reads/BGV007194/CW1013_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183131_SRR7279660_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183131_SRR7279660_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183131_SRR7279660_1.fastq.gz to results/reads/BGV007857/CW0077_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183131_SRR7279660_2.fastq.gz to results/reads/BGV007857/CW0077_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183283_SRR7279508_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183283_SRR7279508_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183283_SRR7279508_1.fastq.gz to results/reads/BGV006225/CW0117_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183283_SRR7279508_2.fastq.gz to results/reads/BGV006225/CW0117_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183224_SRR7279567_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183224_SRR7279567_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183224_SRR7279567_1.fastq.gz to results/reads/BGV006906/CW0020_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183224_SRR7279567_2.fastq.gz to results/reads/BGV006906/CW0020_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183296_SRR7279495_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183296_SRR7279495_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183296_SRR7279495_1.fastq.gz to results/reads/BGV015727/CW0168_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183296_SRR7279495_2.fastq.gz to results/reads/BGV015727/CW0168_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183235_SRR7279556_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183235_SRR7279556_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183235_SRR7279556_1.fastq.gz to results/reads/BGV007933/CW0149_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183235_SRR7279556_2.fastq.gz to results/reads/BGV007933/CW0149_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183204_SRR7279587_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183204_SRR7279587_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183204_SRR7279587_1.fastq.gz to results/reads/BGV006927/CW0161_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183204_SRR7279587_2.fastq.gz to results/reads/BGV006927/CW0161_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183210_SRR7279581_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183210_SRR7279581_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183210_SRR7279581_1.fastq.gz to results/reads/BGV007872/CW0121_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183210_SRR7279581_2.fastq.gz to results/reads/BGV007872/CW0121_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183250_SRR7279541_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183250_SRR7279541_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183250_SRR7279541_1.fastq.gz to results/reads/BGV007017/CW0154_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183250_SRR7279541_2.fastq.gz to results/reads/BGV007017/CW0154_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183309_SRR7279482_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183309_SRR7279482_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183309_SRR7279482_1.fastq.gz to results/reads/BGV006904/CW0084_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183309_SRR7279482_2.fastq.gz to results/reads/BGV006904/CW0084_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183069_SRR7279722_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183069_SRR7279722_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183069_SRR7279722_1.fastq.gz to results/reads/BGV007878/CW0079_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183069_SRR7279722_2.fastq.gz to results/reads/BGV007878/CW0079_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183223_SRR7279568_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183223_SRR7279568_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183223_SRR7279568_1.fastq.gz to results/reads/BGV006859/CW0069_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183223_SRR7279568_2.fastq.gz to results/reads/BGV006859/CW0069_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183241_SRR7279550_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183241_SRR7279550_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183241_SRR7279550_1.fastq.gz to results/reads/BGV007931/CW0014_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183241_SRR7279550_2.fastq.gz to results/reads/BGV007931/CW0014_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183184_SRR7279607_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183184_SRR7279607_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183184_SRR7279607_1.fastq.gz to results/reads/BGV008225/CW0093_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183184_SRR7279607_2.fastq.gz to results/reads/BGV008225/CW0093_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183308_SRR7279483_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183308_SRR7279483_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183308_SRR7279483_1.fastq.gz to results/reads/BGV006148/CW1024_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183308_SRR7279483_2.fastq.gz to results/reads/BGV006148/CW1024_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183143_SRR7279648_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183143_SRR7279648_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183143_SRR7279648_1.fastq.gz to results/reads/BGV006910/CW0163_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183143_SRR7279648_2.fastq.gz to results/reads/BGV006910/CW0163_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183190_SRR7279601_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183190_SRR7279601_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183190_SRR7279601_1.fastq.gz to results/reads/BGV008221/CW0132_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183190_SRR7279601_2.fastq.gz to results/reads/BGV008221/CW0132_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183187_SRR7279604_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183187_SRR7279604_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183187_SRR7279604_1.fastq.gz to results/reads/BGV007920/CW0042_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183187_SRR7279604_2.fastq.gz to results/reads/BGV007920/CW0042_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183186_SRR7279605_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183186_SRR7279605_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183186_SRR7279605_1.fastq.gz to results/reads/BGV012640/CW0153_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183186_SRR7279605_2.fastq.gz to results/reads/BGV012640/CW0153_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183208_SRR7279583_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183208_SRR7279583_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183208_SRR7279583_1.fastq.gz to results/reads/BGV006370/CW1037_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183208_SRR7279583_2.fastq.gz to results/reads/BGV006370/CW1037_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183101_SRR7279690_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183101_SRR7279690_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183101_SRR7279690_1.fastq.gz to results/reads/BGV007895/CW0065_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183101_SRR7279690_2.fastq.gz to results/reads/BGV007895/CW0065_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183221_SRR7279570_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183221_SRR7279570_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183221_SRR7279570_1.fastq.gz to results/reads/BGV013134/CW0166_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183221_SRR7279570_2.fastq.gz to results/reads/BGV013134/CW0166_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183171_SRR7279620_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183171_SRR7279620_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183171_SRR7279620_1.fastq.gz to results/reads/BGV008061/CW0038_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183171_SRR7279620_2.fastq.gz to results/reads/BGV008061/CW0038_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183257_SRR7279534_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183257_SRR7279534_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183257_SRR7279534_1.fastq.gz to results/reads/BGV008106/CW0169_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183257_SRR7279534_2.fastq.gz to results/reads/BGV008106/CW0169_2.fastq.gz
+Archive:  scripts/external/kmers_gwas/v0.3-beta.zip
+   creating: scripts/external/kmers_gwas/bin/
+  inflating: scripts/external/kmers_gwas/bin/emma_kinship_kmers  
+  inflating: scripts/external/kmers_gwas/bin/histogram_KMC_kmers_counts  
+  inflating: scripts/external/kmers_gwas/bin/kmers_add_strand_information  
+  inflating: scripts/external/kmers_gwas/bin/associate_kmers  
+  inflating: scripts/external/kmers_gwas/bin/associate_snps  
+  inflating: scripts/external/kmers_gwas/bin/emma_kinship  
+  inflating: scripts/external/kmers_gwas/bin/filter_kmers  
+  inflating: scripts/external/kmers_gwas/bin/kmers_table_to_bed  
+  inflating: scripts/external/kmers_gwas/bin/build_kmers_table  
+  inflating: scripts/external/kmers_gwas/bin/list_kmers_found_in_multiple_samples  
+   creating: scripts/external/kmers_gwas/build/
+  inflating: scripts/external/kmers_gwas/build/kmc_file.d  
+  inflating: scripts/external/kmers_gwas/build/kmc_file.o  
+  inflating: scripts/external/kmers_gwas/build/kmer_api.d  
+  inflating: scripts/external/kmers_gwas/build/kmer_api.o  
+  inflating: scripts/external/kmers_gwas/build/mmer.d  
+  inflating: scripts/external/kmers_gwas/build/mmer.o  
+  inflating: scripts/external/kmers_gwas/build/best_associations_heap.d  
+  inflating: scripts/external/kmers_gwas/build/best_associations_heap.o  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183252_SRR7279539_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183252_SRR7279539_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183252_SRR7279539_1.fastq.gz to results/reads/BGV007918/CW0113_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/build/kmer_general.d  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183252_SRR7279539_2.fastq.gz to results/reads/BGV007918/CW0113_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/build/kmer_general.o  
+  inflating: scripts/external/kmers_gwas/build/kmers_merge_multiple_databaes.d  
+  inflating: scripts/external/kmers_gwas/build/kmers_merge_multiple_databaes.o  
+  inflating: scripts/external/kmers_gwas/build/kmers_multiple_databases.d  
+  inflating: scripts/external/kmers_gwas/build/kmers_multiple_databases.o  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183285_SRR7279506_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183285_SRR7279506_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183285_SRR7279506_1.fastq.gz to results/reads/BGV006457/CW1022_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/build/kmers_single_database.d  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183285_SRR7279506_2.fastq.gz to results/reads/BGV006457/CW1022_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/build/kmers_single_database.o  
+  inflating: scripts/external/kmers_gwas/build/snps_multiple_databases.d  
+  inflating: scripts/external/kmers_gwas/build/snps_multiple_databases.o  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183271_SRR7279520_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183271_SRR7279520_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183271_SRR7279520_1.fastq.gz to results/reads/PI406890/CW0131_1.fastq.gz
+   creating: scripts/external/kmers_gwas/examples/
+   creating: scripts/external/kmers_gwas/examples/flowering_time_arabidopsis/
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183271_SRR7279520_2.fastq.gz to results/reads/PI406890/CW0131_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/examples/flowering_time_arabidopsis/FT10.pheno  
+  inflating: scripts/external/kmers_gwas/examples/flowering_time_arabidopsis/run_example.sh  
+   creating: scripts/external/kmers_gwas/examples/resistence_e_coli/
+  inflating: scripts/external/kmers_gwas/examples/resistence_e_coli/resistence.pheno  
+  inflating: scripts/external/kmers_gwas/examples/resistence_e_coli/run_example.sh  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183158_SRR7279633_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183158_SRR7279633_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183158_SRR7279633_1.fastq.gz to results/reads/BGV008348/CW0058_1.fastq.gz
+   creating: scripts/external/kmers_gwas/external_programs/
+  inflating: scripts/external/kmers_gwas/external_programs/gemma_0_96  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183158_SRR7279633_2.fastq.gz to results/reads/BGV008348/CW0058_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183295_SRR7279496_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183295_SRR7279496_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183295_SRR7279496_1.fastq.gz to results/reads/BGV014519/CW0051_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183295_SRR7279496_2.fastq.gz to results/reads/BGV014519/CW0051_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/external_programs/kmc_v3  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183086_SRR7279705_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183086_SRR7279705_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183086_SRR7279705_1.fastq.gz to results/reads/BGV006806/CW0053_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183086_SRR7279705_2.fastq.gz to results/reads/BGV006806/CW0053_2.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/
+ extracting: scripts/external/kmers_gwas/include/.gitignore  
+   creating: scripts/external/kmers_gwas/include/CTPL/
+  inflating: scripts/external/kmers_gwas/include/CTPL/.git  
+  inflating: scripts/external/kmers_gwas/include/CTPL/LICENSE  
+  inflating: scripts/external/kmers_gwas/include/CTPL/README.md  
+  inflating: scripts/external/kmers_gwas/include/CTPL/ctpl.h  
+  inflating: scripts/external/kmers_gwas/include/CTPL/ctpl_stl.h  
+  inflating: scripts/external/kmers_gwas/include/CTPL/example.cpp  
+   creating: scripts/external/kmers_gwas/include/KMC/
+  inflating: scripts/external/kmers_gwas/include/KMC/.git  
+  inflating: scripts/external/kmers_gwas/include/KMC/.gitattributes  
+  inflating: scripts/external/kmers_gwas/include/KMC/.gitignore  
+  inflating: scripts/external/kmers_gwas/include/KMC/API.pdf  
+  inflating: scripts/external/kmers_gwas/include/KMC/README.md  
+   creating: scripts/external/kmers_gwas/include/KMC/doc/
+   creating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/complex.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/filter_operation.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/intro.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/kmc_tools.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/simple.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/transform.tex  
+  inflating: scripts/external/kmers_gwas/include/KMC/doc/kmc_tools/usage.tex  
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_api/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmc_file.cpp  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183215_SRR7279576_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183215_SRR7279576_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183215_SRR7279576_1.fastq.gz to results/reads/BGV008354/CW0174_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmc_file.h  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183215_SRR7279576_2.fastq.gz to results/reads/BGV008354/CW0174_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmer_api.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmer_api.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/kmer_defs.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/mmer.cpp  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183146_SRR7279645_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183146_SRR7279645_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183146_SRR7279645_1.fastq.gz to results/reads/BGV006901/CW0086_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/mmer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_api/stdafx.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183146_SRR7279645_2.fastq.gz to results/reads/BGV006901/CW0086_2.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_dump/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/kmc_dump.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/kmc_dump.vcxproj  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/nc_utils.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/nc_utils.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/stdafx.cpp  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183227_SRR7279564_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183227_SRR7279564_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183227_SRR7279564_1.fastq.gz to results/reads/BGV007990/CW0162_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/stdafx.h  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183227_SRR7279564_2.fastq.gz to results/reads/BGV007990/CW0162_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump/targetver.h  
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/kmc_dump_sample.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/kmc_dump_sample.vcxproj  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/stdafx.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/stdafx.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183246_SRR7279545_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183246_SRR7279545_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183246_SRR7279545_1.fastq.gz to results/reads/PI129033/CW0135_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_dump_sample/targetver.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools.pdf  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183246_SRR7279545_2.fastq.gz to results/reads/PI129033/CW0135_2.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_tools/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/bundle.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/check_kmer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/config.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183113_SRR7279678_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183113_SRR7279678_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183113_SRR7279678_1.fastq.gz to results/reads/BGV007863/CW0049_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/defs.h  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183113_SRR7279678_2.fastq.gz to results/reads/BGV007863/CW0049_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/develop.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/dump_writer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/expression_node.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_filter.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_filter.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183116_SRR7279675_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183116_SRR7279675_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183116_SRR7279675_1.fastq.gz to results/reads/Tegucigalpa/CW0008_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_reader.cpp  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183116_SRR7279675_2.fastq.gz to results/reads/Tegucigalpa/CW0008_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_writer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/fastq_writer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/histogram_writer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc1_db_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc1_db_writer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc2_db_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_header.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_header.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_tools.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_tools.vcxproj  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmc_tools.vcxproj.filters  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/kmer.h  
+   creating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/bzlib.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/bzlib_private.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libbz2.1.0.5.dylib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libbz2.a  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libbzip2.lib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libz.1.2.5.dylib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/libz.a  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/zconf.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/zlib.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/libs/zlibstat.lib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/meta_oper.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/nc_utils.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/nc_utils.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/operations.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/output_parser.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/parameters_parser.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/parameters_parser.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/parser.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/parser.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/percent_progress.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/percent_progress.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/queues.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/stdafx.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/stdafx.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/targetver.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/thread_watch.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/thread_watch.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/timer.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183196_SRR7279595_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183196_SRR7279595_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183196_SRR7279595_1.fastq.gz to results/reads/BGV008036/CW0159_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/tokenizer.cpp  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183196_SRR7279595_2.fastq.gz to results/reads/BGV008036/CW0159_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmc_tools/tokenizer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter.sln  
+   creating: scripts/external/kmers_gwas/include/KMC/kmer_counter/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bam_utils.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/binary_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_merger.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183150_SRR7279641_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183150_SRR7279641_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183150_SRR7279641_1.fastq.gz to results/reads/BGV008067/CW0141_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_reader.cpp  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183150_SRR7279641_2.fastq.gz to results/reads/BGV008067/CW0141_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_sorter.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_subbin.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_uncompactor.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183141_SRR7279650_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183141_SRR7279650_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183141_SRR7279650_1.fastq.gz to results/reads/BGV008108/CW0178_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_writer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/bkb_writer.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183141_SRR7279650_2.fastq.gz to results/reads/BGV008108/CW0178_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/cpu_info.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/cpu_info.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/defs.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/develop.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/develop.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183126_SRR7279665_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183126_SRR7279665_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183126_SRR7279665_1.fastq.gz to results/reads/BGV006454/CW1023_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/fastq_reader.cpp  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183126_SRR7279665_2.fastq.gz to results/reads/BGV006454/CW1023_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/fastq_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/first_dispatch.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/intr_copy.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_collector.cpp  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183110_SRR7279681_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183110_SRR7279681_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183110_SRR7279681_1.fastq.gz to results/reads/BGV007899/CW0102_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_collector.h  
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183110_SRR7279681_2.fastq.gz to results/reads/BGV007899/CW0102_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_completer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_completer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_reader.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_sorter.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_storer.cpp  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183109_SRR7279682_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183109_SRR7279682_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183109_SRR7279682_1.fastq.gz to results/reads/BGV007023/CW0137_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kb_storer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmc.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183109_SRR7279682_2.fastq.gz to results/reads/BGV007023/CW0137_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer_counter.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer_counter.vcxproj  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kmer_counter.vcxproj.filters  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/kxmer_set.h  
+   creating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/bzlib.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/bzlib_private.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libbz2.1.0.5.dylib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libbz2.a  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libbzip2.lib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libz.1.2.5.dylib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/libz.a  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/zconf.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/zlib.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/libs/zlibstat.lib  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/mem_disk_file.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/mem_disk_file.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/meta_oper.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/mmer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/mmer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/params.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/queues.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/percent_progress.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/radix.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_avx.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_avx2.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_impl.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_sse2.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/raduls_sse41.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/rev_byte.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/rev_byte.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/s_mapper.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/small_k_buf.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/small_sort.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/splitter.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/splitter.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/stdafx.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/stdafx.h  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183242_SRR7279549_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183242_SRR7279549_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183242_SRR7279549_1.fastq.gz to results/reads/BGV013161/CW0040_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/targetver.h  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183242_SRR7279549_2.fastq.gz to results/reads/BGV013161/CW0040_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/timer.cpp  
+  inflating: scripts/external/kmers_gwas/include/KMC/kmer_counter/timer.h  
+  inflating: scripts/external/kmers_gwas/include/KMC/makefile  
+  inflating: scripts/external/kmers_gwas/include/KMC/makefile_mac  
+   creating: scripts/external/kmers_gwas/include/cxxopts/
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183075_SRR7279716_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183075_SRR7279716_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183075_SRR7279716_1.fastq.gz to results/reads/BGV008065/CW0028_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/cxxopts/.git  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/.gitignore  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183075_SRR7279716_2.fastq.gz to results/reads/BGV008065/CW0028_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/cxxopts/.travis.yml  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/CHANGELOG.md  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/CMakeLists.txt  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/INSTALL  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183108_SRR7279683_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183108_SRR7279683_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183108_SRR7279683_1.fastq.gz to results/reads/BGV007109/CW1039_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/cxxopts/LICENSE  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/README.md  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183108_SRR7279683_2.fastq.gz to results/reads/BGV007109/CW1039_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/cxxopts/cxxopts-config.cmake.in  
+   creating: scripts/external/kmers_gwas/include/cxxopts/include/
+  inflating: scripts/external/kmers_gwas/include/cxxopts/include/cxxopts.hpp  
+   creating: scripts/external/kmers_gwas/include/cxxopts/src/
+ extracting: scripts/external/kmers_gwas/include/cxxopts/src/.gitignore  Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183194_SRR7279597_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183194_SRR7279597_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183194_SRR7279597_1.fastq.gz to results/reads/BGV006881/CW0045_1.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/cxxopts/src/CMakeLists.txt  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183194_SRR7279597_2.fastq.gz to results/reads/BGV006881/CW0045_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/include/cxxopts/src/example.cpp  
+   creating: scripts/external/kmers_gwas/include/cxxopts/test/
+ extracting: scripts/external/kmers_gwas/include/cxxopts/test/.gitignore  
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/CMakeLists.txt  
+   creating: scripts/external/kmers_gwas/include/cxxopts/test/add-subdirectory-test/
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/add-subdirectory-test/CMakeLists.txt  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183305_SRR7279486_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183305_SRR7279486_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183305_SRR7279486_1.fastq.gz to results/reads/BGV006234/CW0023_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/catch.hpp  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183305_SRR7279486_2.fastq.gz to results/reads/BGV006234/CW0023_2.fastq.gz
+
+   creating: scripts/external/kmers_gwas/include/cxxopts/test/find-package-test/
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/find-package-test/CMakeLists.txt  
+ extracting: scripts/external/kmers_gwas/include/cxxopts/test/link_a.cpp  
+ extracting: scripts/external/kmers_gwas/include/cxxopts/test/link_b.cpp  
+ extracting: scripts/external/kmers_gwas/include/cxxopts/test/main.cpp  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183111_SRR7279680_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183111_SRR7279680_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183111_SRR7279680_1.fastq.gz to results/reads/BGV007901/CW0143_1.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/cxxopts/test/options.cpp  
+   creating: scripts/external/kmers_gwas/include/sparsehash/
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183111_SRR7279680_2.fastq.gz to results/reads/BGV007901/CW0143_2.fastq.gz
+  inflating: scripts/external/kmers_gwas/include/sparsehash/dense_hash_map  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/dense_hash_set  
+   creating: scripts/external/kmers_gwas/include/sparsehash/internal/
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/densehashtable.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/hashtable-common.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/libc_allocator_with_realloc.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/sparseconfig.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/internal/sparsehashtable.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/sparse_hash_map  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/sparse_hash_set  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/sparsetable  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/template_util.h  
+  inflating: scripts/external/kmers_gwas/include/sparsehash/type_traits.h  
+  inflating: scripts/external/kmers_gwas/kmers_gwas.py  
+  inflating: scripts/external/kmers_gwas/LICENSE  
+  inflating: scripts/external/kmers_gwas/Makefile  
+  inflating: scripts/external/kmers_gwas/manual.pdf  
+  inflating: scripts/external/kmers_gwas/README.md  
+   creating: scripts/external/kmers_gwas/src/
+   creating: scripts/external/kmers_gwas/src/R/
+  inflating: scripts/external/kmers_gwas/src/R/emma.R  
+  inflating: scripts/external/kmers_gwas/src/R/transform_and_permute_phenotypes.R  
+  inflating: scripts/external/kmers_gwas/src/associate_kmers.cpp  
+  inflating: scripts/external/kmers_gwas/src/associate_snps.cpp  
+   creating: scripts/external/kmers_gwas/src/awk/
+  inflating: scripts/external/kmers_gwas/src/awk/average_phenotypes.awk  
+  inflating: scripts/external/kmers_gwas/src/best_associations_heap.cpp  
+  inflating: scripts/external/kmers_gwas/src/best_associations_heap.h  
+  inflating: scripts/external/kmers_gwas/src/build_kmers_table.cpp  
+  inflating: scripts/external/kmers_gwas/src/emma_kinship.cpp  
+  inflating: scripts/external/kmers_gwas/src/emma_kinship_kmers.cpp  
+  inflating: scripts/external/kmers_gwas/src/filter_kmers.cpp  
+  inflating: scripts/external/kmers_gwas/src/histogram_KMC_kmers_counts.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmer_general.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmer_general.h  
+  inflating: scripts/external/kmers_gwas/src/kmers_add_strand_information.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmers_merge_multiple_databaes.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmers_merge_multiple_databaes.h  
+  inflating: scripts/external/kmers_gwas/src/kmers_multiple_databases.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmers_multiple_databases.h  
+  inflating: scripts/external/kmers_gwas/src/kmers_single_database.cpp  
+  inflating: scripts/external/kmers_gwas/src/kmers_single_database.h  
+  inflating: scripts/external/kmers_gwas/src/kmers_table_to_bed.cpp  
+  inflating: scripts/external/kmers_gwas/src/list_kmers_found_in_multiple_samples.cpp  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183299_SRR7279492_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183299_SRR7279492_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183299_SRR7279492_1.fastq.gz to results/reads/BGV004584/CW0151_1.fastq.gz
+   creating: scripts/external/kmers_gwas/src/py/
+  inflating: scripts/external/kmers_gwas/src/py/align_kinship_phenotype.py  Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183299_SRR7279492_2.fastq.gz to results/reads/BGV004584/CW0151_2.fastq.gz
+
+  inflating: scripts/external/kmers_gwas/src/py/functions.py  
+  inflating: scripts/external/kmers_gwas/src/py/pipeline_parser.py  
+  inflating: scripts/external/kmers_gwas/src/snps_multiple_databases.cpp  
+  inflating: scripts/external/kmers_gwas/src/snps_multiple_databases.h  
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183281_SRR7279510_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183281_SRR7279510_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183281_SRR7279510_1.fastq.gz to results/reads/BGV006231/CW0048_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183281_SRR7279510_2.fastq.gz to results/reads/BGV006231/CW0048_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_1.fastq.gz to results/reads/BGV007865/CW0090_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_2.fastq.gz to results/reads/BGV007865/CW0090_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183157_SRR7279634_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183157_SRR7279634_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183157_SRR7279634_1.fastq.gz to results/reads/BGV013945/CW0160_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183157_SRR7279634_2.fastq.gz to results/reads/BGV013945/CW0160_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183071_SRR7279720_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183071_SRR7279720_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183071_SRR7279720_1.fastq.gz to results/reads/BGV007149/CW1021_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183071_SRR7279720_2.fastq.gz to results/reads/BGV007149/CW1021_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183230_SRR7279561_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183230_SRR7279561_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183230_SRR7279561_1.fastq.gz to results/reads/BGV007992/CW0052_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183230_SRR7279561_2.fastq.gz to results/reads/BGV007992/CW0052_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183266_SRR7279525_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183266_SRR7279525_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183266_SRR7279525_1.fastq.gz to results/reads/BGV014518/CW0179_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183266_SRR7279525_2.fastq.gz to results/reads/BGV014518/CW0179_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183085_SRR7279706_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183085_SRR7279706_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183085_SRR7279706_1.fastq.gz to results/reads/BGV006792/CW0064_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183085_SRR7279706_2.fastq.gz to results/reads/BGV006792/CW0064_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_1.fastq.gz to results/reads/BGV007902/CW0012_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_2.fastq.gz to results/reads/BGV007902/CW0012_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183105_SRR7279686_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183105_SRR7279686_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183105_SRR7279686_1.fastq.gz to results/reads/BGV007181/CW1012_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183105_SRR7279686_2.fastq.gz to results/reads/BGV007181/CW1012_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183249_SRR7279542_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183249_SRR7279542_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183249_SRR7279542_1.fastq.gz to results/reads/BGV008095/CW0073_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183249_SRR7279542_2.fastq.gz to results/reads/BGV008095/CW0073_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183080_SRR7279711_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183080_SRR7279711_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183080_SRR7279711_1.fastq.gz to results/reads/BGV007871/CW0130_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183080_SRR7279711_2.fastq.gz to results/reads/BGV007871/CW0130_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183302_SRR7279489_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183302_SRR7279489_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183302_SRR7279489_1.fastq.gz to results/reads/BGV006229/CW0075_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183302_SRR7279489_2.fastq.gz to results/reads/BGV006229/CW0075_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183164_SRR7279627_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183164_SRR7279627_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183164_SRR7279627_1.fastq.gz to results/reads/BGV008077/CW0087_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183164_SRR7279627_2.fastq.gz to results/reads/BGV008077/CW0087_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183114_SRR7279677_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183114_SRR7279677_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183114_SRR7279677_1.fastq.gz to results/reads/BGV007111/CW1000_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183114_SRR7279677_2.fastq.gz to results/reads/BGV007111/CW1000_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183278_SRR7279513_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183278_SRR7279513_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183278_SRR7279513_1.fastq.gz to results/reads/BGV006753/CW0074_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183278_SRR7279513_2.fastq.gz to results/reads/BGV006753/CW0074_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183170_SRR7279621_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183170_SRR7279621_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183170_SRR7279621_1.fastq.gz to results/reads/BGV008041/CW0055_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183170_SRR7279621_2.fastq.gz to results/reads/BGV008041/CW0055_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183248_SRR7279543_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183248_SRR7279543_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183248_SRR7279543_1.fastq.gz to results/reads/BGV012614/CW0144_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183248_SRR7279543_2.fastq.gz to results/reads/BGV012614/CW0144_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183188_SRR7279603_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183188_SRR7279603_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183188_SRR7279603_1.fastq.gz to results/reads/BGV013175/CW0097_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183188_SRR7279603_2.fastq.gz to results/reads/BGV013175/CW0097_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183279_SRR7279512_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183279_SRR7279512_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183279_SRR7279512_1.fastq.gz to results/reads/BGV006767/CW0098_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183279_SRR7279512_2.fastq.gz to results/reads/BGV006767/CW0098_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183136_SRR7279655_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183136_SRR7279655_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183136_SRR7279655_1.fastq.gz to results/reads/BGV007864/CW0056_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183136_SRR7279655_2.fastq.gz to results/reads/BGV007864/CW0056_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183298_SRR7279493_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183298_SRR7279493_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183298_SRR7279493_1.fastq.gz to results/reads/BGV008096/CW0118_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183298_SRR7279493_2.fastq.gz to results/reads/BGV008096/CW0118_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183098_SRR7279693_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183098_SRR7279693_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183098_SRR7279693_1.fastq.gz to results/reads/BGV007151/CW1005_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183098_SRR7279693_2.fastq.gz to results/reads/BGV007151/CW1005_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183139_SRR7279652_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183139_SRR7279652_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183139_SRR7279652_1.fastq.gz to results/reads/BGV006768/CW0111_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183139_SRR7279652_2.fastq.gz to results/reads/BGV006768/CW0111_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183216_SRR7279575_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183216_SRR7279575_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183216_SRR7279575_1.fastq.gz to results/reads/BGV007908/CW0148_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183216_SRR7279575_2.fastq.gz to results/reads/BGV007908/CW0148_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183078_SRR7279713_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183078_SRR7279713_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183078_SRR7279713_1.fastq.gz to results/reads/BGV014508/CW0091_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183078_SRR7279713_2.fastq.gz to results/reads/BGV014508/CW0091_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183220_SRR7279571_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183220_SRR7279571_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183220_SRR7279571_1.fastq.gz to results/reads/BGV008345/CW0180_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183220_SRR7279571_2.fastq.gz to results/reads/BGV008345/CW0180_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183274_SRR7279517_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183274_SRR7279517_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183274_SRR7279517_1.fastq.gz to results/reads/LA1712/CW0016_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183274_SRR7279517_2.fastq.gz to results/reads/LA1712/CW0016_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183173_SRR7279618_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183173_SRR7279618_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183173_SRR7279618_1.fastq.gz to results/reads/BGV007989/CW0043_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183173_SRR7279618_2.fastq.gz to results/reads/BGV007989/CW0043_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183128_SRR7279663_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183128_SRR7279663_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183128_SRR7279663_1.fastq.gz to results/reads/LA2309/CW0063_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183128_SRR7279663_2.fastq.gz to results/reads/LA2309/CW0063_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183218_SRR7279573_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183218_SRR7279573_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183218_SRR7279573_1.fastq.gz to results/reads/BGV014514/CW0167_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183218_SRR7279573_2.fastq.gz to results/reads/BGV014514/CW0167_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183280_SRR7279511_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183280_SRR7279511_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183280_SRR7279511_1.fastq.gz to results/reads/BGV006230/CW0019_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183280_SRR7279511_2.fastq.gz to results/reads/BGV006230/CW0019_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183149_SRR7279642_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183149_SRR7279642_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183149_SRR7279642_1.fastq.gz to results/reads/BGV006899/CW0076_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183149_SRR7279642_2.fastq.gz to results/reads/BGV006899/CW0076_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183124_SRR7279667_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183124_SRR7279667_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183124_SRR7279667_1.fastq.gz to results/reads/BGV006336/CW1028_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183124_SRR7279667_2.fastq.gz to results/reads/BGV006336/CW1028_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183166_SRR7279625_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183166_SRR7279625_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183166_SRR7279625_1.fastq.gz to results/reads/BGV006907/CW0124_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183166_SRR7279625_2.fastq.gz to results/reads/BGV006907/CW0124_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183130_SRR7279661_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183130_SRR7279661_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183130_SRR7279661_1.fastq.gz to results/reads/BGV006896/CW0088_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183130_SRR7279661_2.fastq.gz to results/reads/BGV006896/CW0088_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183198_SRR7279593_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183198_SRR7279593_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183198_SRR7279593_1.fastq.gz to results/reads/BGV007981/CW0106_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183198_SRR7279593_2.fastq.gz to results/reads/BGV007981/CW0106_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183162_SRR7279629_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183162_SRR7279629_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183162_SRR7279629_1.fastq.gz to results/reads/BGV008070/CW0011_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183162_SRR7279629_2.fastq.gz to results/reads/BGV008070/CW0011_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183197_SRR7279594_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183197_SRR7279594_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183197_SRR7279594_1.fastq.gz to results/reads/BGV006777/CW0060_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183197_SRR7279594_2.fastq.gz to results/reads/BGV006777/CW0060_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183286_SRR7279505_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183286_SRR7279505_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183286_SRR7279505_1.fastq.gz to results/reads/BGV006478/CW1030_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183286_SRR7279505_2.fastq.gz to results/reads/BGV006478/CW1030_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183092_SRR7279699_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183092_SRR7279699_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183092_SRR7279699_1.fastq.gz to results/reads/BGV007862/CW0115_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183092_SRR7279699_2.fastq.gz to results/reads/BGV007862/CW0115_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183120_SRR7279671_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183120_SRR7279671_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183120_SRR7279671_1.fastq.gz to results/reads/BGV007900/CW0101_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183120_SRR7279671_2.fastq.gz to results/reads/BGV007900/CW0101_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_1.fastq.gz to results/reads/BGV007875/CW0095_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_2.fastq.gz to results/reads/BGV007875/CW0095_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183185_SRR7279606_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183185_SRR7279606_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183185_SRR7279606_1.fastq.gz to results/reads/BGV007909/CW0094_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183185_SRR7279606_2.fastq.gz to results/reads/BGV007909/CW0094_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183073_SRR7279718_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183073_SRR7279718_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183073_SRR7279718_1.fastq.gz to results/reads/BGV014516/CW0133_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183073_SRR7279718_2.fastq.gz to results/reads/BGV014516/CW0133_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183200_SRR7279591_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183200_SRR7279591_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183200_SRR7279591_1.fastq.gz to results/reads/BGV007936/CW0027_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183200_SRR7279591_2.fastq.gz to results/reads/BGV007936/CW0027_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183099_SRR7279692_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183099_SRR7279692_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183099_SRR7279692_1.fastq.gz to results/reads/BGV007152/CW1027_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183099_SRR7279692_2.fastq.gz to results/reads/BGV007152/CW1027_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183161_SRR7279630_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183161_SRR7279630_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183161_SRR7279630_1.fastq.gz to results/reads/BGV012625/CW0022_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183161_SRR7279630_2.fastq.gz to results/reads/BGV012625/CW0022_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183253_SRR7279538_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183253_SRR7279538_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183253_SRR7279538_1.fastq.gz to results/reads/BGV007910/CW0081_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183253_SRR7279538_2.fastq.gz to results/reads/BGV007910/CW0081_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183222_SRR7279569_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183222_SRR7279569_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183222_SRR7279569_1.fastq.gz to results/reads/BGV014515/CW0080_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183222_SRR7279569_2.fastq.gz to results/reads/BGV014515/CW0080_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183191_SRR7279600_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183191_SRR7279600_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183191_SRR7279600_1.fastq.gz to results/reads/BGV006775/CW1018_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183191_SRR7279600_2.fastq.gz to results/reads/BGV006775/CW1018_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183201_SRR7279590_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183201_SRR7279590_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183201_SRR7279590_1.fastq.gz to results/reads/BGV008100/CW0047_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183201_SRR7279590_2.fastq.gz to results/reads/BGV008100/CW0047_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183159_SRR7279632_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183159_SRR7279632_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183159_SRR7279632_1.fastq.gz to results/reads/BGV007911/CW0140_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183159_SRR7279632_2.fastq.gz to results/reads/BGV007911/CW0140_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183193_SRR7279598_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183193_SRR7279598_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183193_SRR7279598_1.fastq.gz to results/reads/BGV008098/CW0089_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183193_SRR7279598_2.fastq.gz to results/reads/BGV008098/CW0089_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183119_SRR7279672_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183119_SRR7279672_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183119_SRR7279672_1.fastq.gz to results/reads/BGV007169/CW1007_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183119_SRR7279672_2.fastq.gz to results/reads/BGV007169/CW1007_2.fastq.gz
+Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183104_SRR7279687_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183104_SRR7279687_2.fastq.gz
+Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183104_SRR7279687_1.fastq.gz to results/reads/BGV007161/CW1029_1.fastq.gz
+Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183104_SRR7279687_2.fastq.gz to results/reads/BGV007161/CW1029_2.fastq.gz
+Checking if all required files are provided...
+	All required files are present!
+Error! The Snakemake workflow aborted.
+Detailed performance metrics for this job will be available at https://metrics.hpc.arizona.edu/#job_viewer?action=show&realm=SUPREMM&resource_id=73&local_job_id=8590630 by 8am on 2023/11/21.

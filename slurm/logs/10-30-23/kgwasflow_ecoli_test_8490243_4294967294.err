@@ -1,0 +1,42 @@
+Config file config/config.yaml is extended by additional config specified via the command line.
+# ================================================================================== #
+      _     _______          __      _____  __ _                 
+     | |   / ____\ \        / /\    / ____|/ _| |                
+     | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __  
+     | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /  
+     |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V /   
+     |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/    
+
+     kGWASflow: A Snakemake Workflow for k-mers Based GWAS                            
+                                                                                      
+     Date:            2023-10-30 15:08:56
+     Author:          Adnan Kivanc Corut
+     kGWASflow version:          v1.3
+     Snakemake version:          7.25.0
+     Python version:             3.11.6
+
+     Snakefile:          /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk
+     Base directory:     /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow
+     Working directory:  /xdisk/rpalaniv/cjperkins1/kgwasflow/test
+     Config files:       /xdisk/rpalaniv/cjperkins1/kgwasflow/test/config/config.yaml, config/config.yaml
+                                                                                      
+# ================================================================================== #
+
+     If you use kGWASflow, please cite:                                            
+
+     * Corut, A. K. & Wallace, J. G. kGWASflow: a modular, flexible,                   
+     and reproducible Snakemake workflow for k-mers-based GWAS.                        
+     bioRxiv (2023). https://doi.org/10.1101/2023.07.10.548365                         
+
+     * Voichek, Y., Weigel, D. Identifying genetic variants underlying                  
+     phenotypic variation in plants without complete genomes.                         
+     Nat Genet 52, 534–540 (2020). https://doi.org/10.1038/s41588-020-0612-7          
+
+# ================================================================================== #
+
+Building DAG of jobs...
+LockException:
+Error: Directory cannot be locked. Please make sure that no other Snakemake process is trying to create the same files in the following directory:
+/xdisk/rpalaniv/cjperkins1/kgwasflow/test
+If you are sure that no other instances of snakemake are running on this directory, the remaining lock was likely caused by a kill signal or a power loss. It can be removed with the --unlock argument.
+ERROR:root:Error running Snakemake: Command '['snakemake', '--use-conda', '--conda-frontend', 'conda', '--cores', '16', '--snakefile', '/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/Snakefile', '--configfile', '/xdisk/rpalaniv/cjperkins1/kgwasflow/test/config/config.yaml', '--rerun-triggers', 'mtime', 'params', 'input', 'software-env', 'code']' returned non-zero exit status 1.

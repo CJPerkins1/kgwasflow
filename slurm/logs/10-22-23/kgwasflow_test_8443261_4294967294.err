@@ -1,0 +1,272 @@
+# ================================================================================== #
+      _     _______          __      _____  __ _                 
+     | |   / ____\ \        / /\    / ____|/ _| |                
+     | | _| |  __ \ \  /\  / /  \  | (___ | |_| | _____      __  
+     | |/ / | |_ | \ \/  \/ / /\ \  \___ \|  _| |/ _ \ \ /\ / /  
+     |   <| |__| |  \  /\  / ____ \ ____) | | | | (_) \ V  V /   
+     |_|\_\_____|   \/  \/_/    \_\_____/|_| |_|\___/ \_/\_/    
+
+     kGWASflow: A Snakemake Workflow for k-mers Based GWAS                            
+                                                                                      
+     Date:            2023-10-22 01:47:53
+     Author:          Adnan Kivanc Corut
+     kGWASflow version:          v1.3
+     Snakemake version:          7.25.0
+     Python version:             3.11.6
+
+     Snakefile:          /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/rules/common.smk
+     Base directory:     /groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow
+     Working directory:  /xdisk/rpalaniv/cjperkins1/kgwasflow
+     Config files:       config/config.yaml
+                                                                                      
+# ================================================================================== #
+
+     If you use kGWASflow, please cite:                                            
+
+     * Corut, A. K. & Wallace, J. G. kGWASflow: a modular, flexible,                   
+     and reproducible Snakemake workflow for k-mers-based GWAS.                        
+     bioRxiv (2023). https://doi.org/10.1101/2023.07.10.548365                         
+
+     * Voichek, Y., Weigel, D. Identifying genetic variants underlying                  
+     phenotypic variation in plants without complete genomes.                         
+     Nat Genet 52, 534–540 (2020). https://doi.org/10.1038/s41588-020-0612-7          
+
+# ================================================================================== #
+
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Singularity containers: ignored
+Job stats:
+job                              count    min threads    max threads
+-----------------------------  -------  -------------  -------------
+all                                  1              1              1
+combine_and_filter                   1              1              1
+create_kmers_table                   1              1              1
+create_symlink                       5              1              1
+download_kmersGWAS                   1              1              1
+extract_kmersGWAS                    1              1              1
+fastqc                               4              8              8
+generate_input_lists                 5              1              1
+generate_kmers_kinship_matrix        1              1              1
+generate_kmers_list_paths            1              1              1
+generate_results_summary             2              1              1
+kmc_canonical                        5              8              8
+kmc_non_canonical                    5              8              8
+kmer_stats                           1              1              1
+merge_kmers                          5              8              8
+multiqc                              1              1              1
+plot_kmer_allele_counts              1              1              1
+run_kmers_gwas                       2              8              8
+total                               43              1              8
+
+Select jobs to execute...
+
+[Sun Oct 22 01:47:57 2023]
+Job 6: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183064_SRR7279727_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/Voyage/CW0026_fastqc.zip
+
+[Sun Oct 22 01:47:57 2023]
+Job 2: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007865/CW0090_fastqc.zip
+
+/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/bin/python3.1 /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/scripts/tmpjd9hcute.wrapper.py
+/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/bin/python3.1 /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/scripts/tmp011juajz.wrapper.py
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+fastqc  -t 8 --outdir /tmp/tmpmklp9qjf /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183064_SRR7279727_2.fastq.gz  > logs/qc/fastqc/Voyage/CW0026.log 2>&1
+fastqc  -t 8 --outdir /tmp/tmp2xlhb0rw /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_2.fastq.gz  > logs/qc/fastqc/BGV007865/CW0090.log 2>&1
+mv /tmp/tmpmklp9qjf/SRX4183064_SRR7279727_2_fastqc.html results/qc/fastqc/Voyage/CW0026_fastqc.html
+mv /tmp/tmpmklp9qjf/SRX4183064_SRR7279727_2_fastqc.zip results/qc/fastqc/Voyage/CW0026_fastqc.zip
+[Sun Oct 22 01:51:01 2023]
+Finished job 6.
+1 of 43 steps (2%) done
+Select jobs to execute...
+
+[Sun Oct 22 01:51:01 2023]
+Job 3: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183068_SRR7279723_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007872/CW0121_fastqc.zip
+
+/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/bin/python3.1 /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/scripts/tmpse27m_g5.wrapper.py
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+fastqc  -t 8 --outdir /tmp/tmp6vmxpkmz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183068_SRR7279723_2.fastq.gz  > logs/qc/fastqc/BGV007872/CW0121.log 2>&1
+mv /tmp/tmp6vmxpkmz/SRX4183068_SRR7279723_2_fastqc.html results/qc/fastqc/BGV007872/CW0121_fastqc.html
+mv /tmp/tmp6vmxpkmz/SRX4183068_SRR7279723_2_fastqc.zip results/qc/fastqc/BGV007872/CW0121_fastqc.zip
+[Sun Oct 22 01:52:55 2023]
+Finished job 3.
+2 of 43 steps (5%) done
+Select jobs to execute...
+
+[Sun Oct 22 01:52:55 2023]
+Job 4: Performing quality control analysis using FastQC on the following files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_2.fastq.gz
+Reason: Missing output files: results/qc/fastqc/BGV007875/CW0095_fastqc.zip
+
+/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/bin/python3.1 /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/scripts/tmpd3px2s8p.wrapper.py
+Activating conda environment: .snakemake/conda/4df445b7394ede5757813ea36a2c4eac_
+fastqc  -t 8 --outdir /tmp/tmpyvmrsm9e /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_2.fastq.gz  > logs/qc/fastqc/BGV007875/CW0095.log 2>&1
+mv /tmp/tmp2xlhb0rw/SRX4183066_SRR7279725_2_fastqc.html results/qc/fastqc/BGV007865/CW0090_fastqc.html
+mv /tmp/tmp2xlhb0rw/SRX4183066_SRR7279725_2_fastqc.zip results/qc/fastqc/BGV007865/CW0090_fastqc.zip
+[Sun Oct 22 01:55:26 2023]
+Finished job 2.
+3 of 43 steps (7%) done
+Select jobs to execute...
+
+[Sun Oct 22 01:55:26 2023]
+Job 14: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/Voyage/CW0026_1.fastq.gz, results/reads/Voyage/CW0026_2.fastq.gz
+
+
+            echo Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183064_SRR7279727_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183064_SRR7279727_2.fastq.gz
+            echo Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183064_SRR7279727_1.fastq.gz to results/reads/Voyage/CW0026_1.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183064_SRR7279727_1.fastq.gz results/reads/Voyage/CW0026_1.fastq.gz 2> logs/count_kmers/create_symlink/Voyage/Voyage_CW0026_1.fastq.create_symlink.log
+            echo Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183064_SRR7279727_2.fastq.gz to results/reads/Voyage/CW0026_2.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183064_SRR7279727_2.fastq.gz results/reads/Voyage/CW0026_2.fastq.gz 2> logs/count_kmers/create_symlink/Voyage/Voyage_CW0026_2.fastq.create_symlink.log
+            
+
+[Sun Oct 22 01:55:26 2023]
+Job 13: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007902/CW0012_2.fastq.gz, results/reads/BGV007902/CW0012_1.fastq.gz
+
+
+            echo Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_2.fastq.gz
+            echo Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_1.fastq.gz to results/reads/BGV007902/CW0012_1.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_1.fastq.gz results/reads/BGV007902/CW0012_1.fastq.gz 2> logs/count_kmers/create_symlink/BGV007902/BGV007902_CW0012_1.fastq.create_symlink.log
+            echo Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_2.fastq.gz to results/reads/BGV007902/CW0012_2.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183065_SRR7279726_2.fastq.gz results/reads/BGV007902/CW0012_2.fastq.gz 2> logs/count_kmers/create_symlink/BGV007902/BGV007902_CW0012_2.fastq.create_symlink.log
+            
+
+[Sun Oct 22 01:55:26 2023]
+Job 32: Downloading kmersGWAS source code...
+Reason: Missing output files: scripts/external/kmers_gwas/v0.3-beta.zip
+
+wget https://github.com/voichek/kmersGWAS/releases/download/v0.3-beta/v0_3_beta.zip -O scripts/external/kmers_gwas/v0.3-beta.zip 2> logs/build_kmers_gwas/download_kmersGWAS.wget.log
+Activating conda environment: .snakemake/conda/2552139212129fe0189830de51886e5d_
+
+[Sun Oct 22 01:55:26 2023]
+Job 11: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007872/CW0121_1.fastq.gz, results/reads/BGV007872/CW0121_2.fastq.gz
+
+
+            echo Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183068_SRR7279723_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183068_SRR7279723_2.fastq.gz
+            echo Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183068_SRR7279723_1.fastq.gz to results/reads/BGV007872/CW0121_1.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183068_SRR7279723_1.fastq.gz results/reads/BGV007872/CW0121_1.fastq.gz 2> logs/count_kmers/create_symlink/BGV007872/BGV007872_CW0121_1.fastq.create_symlink.log
+            echo Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183068_SRR7279723_2.fastq.gz to results/reads/BGV007872/CW0121_2.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183068_SRR7279723_2.fastq.gz results/reads/BGV007872/CW0121_2.fastq.gz 2> logs/count_kmers/create_symlink/BGV007872/BGV007872_CW0121_2.fastq.create_symlink.log
+            
+
+[Sun Oct 22 01:55:26 2023]
+Job 12: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007875/CW0095_2.fastq.gz, results/reads/BGV007875/CW0095_1.fastq.gz
+
+
+            echo Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_2.fastq.gz
+            echo Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_1.fastq.gz to results/reads/BGV007875/CW0095_1.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_1.fastq.gz results/reads/BGV007875/CW0095_1.fastq.gz 2> logs/count_kmers/create_symlink/BGV007875/BGV007875_CW0095_1.fastq.create_symlink.log
+            echo Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_2.fastq.gz to results/reads/BGV007875/CW0095_2.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183067_SRR7279724_2.fastq.gz results/reads/BGV007875/CW0095_2.fastq.gz 2> logs/count_kmers/create_symlink/BGV007875/BGV007875_CW0095_2.fastq.create_symlink.log
+            
+
+[Sun Oct 22 01:55:26 2023]
+Job 10: Creating symbolic links for fastq files...
+Reason: Missing output files: results/reads/BGV007865/CW0090_1.fastq.gz, results/reads/BGV007865/CW0090_2.fastq.gz
+
+
+            echo Working on fastq files: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_1.fastq.gz /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_2.fastq.gz
+            echo Symlink -fastq1: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_1.fastq.gz to results/reads/BGV007865/CW0090_1.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_1.fastq.gz results/reads/BGV007865/CW0090_1.fastq.gz 2> logs/count_kmers/create_symlink/BGV007865/BGV007865_CW0090_1.fastq.create_symlink.log
+            echo Symlink -fastq2: /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_2.fastq.gz to results/reads/BGV007865/CW0090_2.fastq.gz
+            ln -rs /xdisk/rpalaniv/cedar/kmers-gwas/genomes/varitome/fastq/SRX4183066_SRR7279725_2.fastq.gz results/reads/BGV007865/CW0090_2.fastq.gz 2> logs/count_kmers/create_symlink/BGV007865/BGV007865_CW0090_2.fastq.create_symlink.log
+            
+[Sun Oct 22 01:55:26 2023]
+Finished job 14.
+4 of 43 steps (9%) done
+[Sun Oct 22 01:55:26 2023]
+Finished job 13.
+5 of 43 steps (12%) done
+[Sun Oct 22 01:55:26 2023]
+Finished job 11.
+6 of 43 steps (14%) done
+[Sun Oct 22 01:55:26 2023]
+Finished job 10.
+7 of 43 steps (16%) done
+[Sun Oct 22 01:55:26 2023]
+Finished job 12.
+8 of 43 steps (19%) done
+[Sun Oct 22 01:55:27 2023]
+Finished job 32.
+9 of 43 steps (21%) done
+Select jobs to execute...
+
+[Sun Oct 22 01:55:27 2023]
+Job 31: Unzipping kmersGWAS source code...
+Reason: Missing output files: scripts/external/kmers_gwas/kmers_gwas.py, scripts/external/kmers_gwas/bin; Input files updated by another job: scripts/external/kmers_gwas/v0.3-beta.zip
+
+unzip scripts/external/kmers_gwas/v0.3-beta.zip -d scripts/external/kmers_gwas 2> logs/build_kmers_gwas/extract_kmersGWAS.unzip.log
+Activating conda environment: .snakemake/conda/2552139212129fe0189830de51886e5d_
+[Sun Oct 22 01:55:29 2023]
+Finished job 31.
+10 of 43 steps (23%) done
+Removing temporary output scripts/external/kmers_gwas/v0.3-beta.zip.
+mv /tmp/tmpyvmrsm9e/SRX4183067_SRR7279724_2_fastqc.html results/qc/fastqc/BGV007875/CW0095_fastqc.html
+mv /tmp/tmpyvmrsm9e/SRX4183067_SRR7279724_2_fastqc.zip results/qc/fastqc/BGV007875/CW0095_fastqc.zip
+[Sun Oct 22 01:55:37 2023]
+Finished job 4.
+11 of 43 steps (26%) done
+Select jobs to execute...
+
+[Sun Oct 22 01:55:37 2023]
+Job 1: Performing MultiQC on the FastQC results...
+Reason: Missing output files: results/qc/multiqc.html; Input files updated by another job: results/qc/fastqc/BGV007865/CW0090_fastqc.zip, results/qc/fastqc/BGV007872/CW0121_fastqc.zip, results/qc/fastqc/Voyage/CW0026_fastqc.zip, results/qc/fastqc/BGV007875/CW0095_fastqc.zip
+
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+Activating conda environment: .snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_
+python /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/scripts/tmpeq0ypjx4.wrapper.py
+Activating conda environment: .snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_
+/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/snakemake/workflow.py:1184: SyntaxWarning: invalid escape sequence '\w'
+  if re.match("^\w+$", envvar, flags=re.ASCII) is None
+/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/snakemake/workflow.py:1269: SyntaxWarning: invalid escape sequence '\d'
+  self.global_wildcard_constraints(scatteritem="\d+-of-\d+")
+/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/snakemake/sourcecache.py:347: SyntaxWarning: invalid escape sequence '\d'
+  "https://raw.githubusercontent.com/snakemake/snakemake-wrappers/\d+\.\d+.\d+"
+/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/snakemake/deployment/conda.py:763: SyntaxWarning: invalid escape sequence '\d'
+  version_matches = re.findall("\d+.\d+.\d+", version)
+multiqc  --force -o results/qc -n multiqc.html results/qc/fastqc/BGV007875 results/qc/fastqc/BGV007865 results/qc/fastqc/BGV007872 results/qc/fastqc/BGV007902 results/qc/fastqc/Voyage  > logs/qc/multiqc/multiqc.log 2>&1
+Traceback (most recent call last):
+  File "/xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/scripts/tmpeq0ypjx4.wrapper.py", line 32, in <module>
+    shell(
+  File "/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/snakemake/shell.py", line 300, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  multiqc  --force -o results/qc -n multiqc.html results/qc/fastqc/BGV007875 results/qc/fastqc/BGV007865 results/qc/fastqc/BGV007872 results/qc/fastqc/BGV007902 results/qc/fastqc/Voyage  > logs/qc/multiqc/multiqc.log 2>&1' returned non-zero exit status 1.
+[Sun Oct 22 01:55:42 2023]
+Error in rule multiqc:
+    jobid: 1
+    input: results/qc/fastqc/BGV007865/CW0090_fastqc.zip, results/qc/fastqc/BGV007872/CW0121_fastqc.zip, results/qc/fastqc/BGV007875/CW0095_fastqc.zip, results/qc/fastqc/BGV007902/CW0012_fastqc.zip, results/qc/fastqc/Voyage/CW0026_fastqc.zip
+    output: results/qc/multiqc.html
+    log: logs/qc/multiqc/multiqc.log (check log file(s) for error details)
+    conda-env: /xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_
+Logfile logs/qc/multiqc/multiqc.log:
+================================================================================
+Traceback (most recent call last):
+  File "/xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_/bin/multiqc", line 6, in <module>
+    from multiqc.__main__ import multiqc
+  File "/xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_/lib/python3.12/site-packages/multiqc/__init__.py", line 16, in <module>
+    from .multiqc import run
+  File "/xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_/lib/python3.12/site-packages/multiqc/multiqc.py", line 42, in <module>
+    from .plots import table
+  File "/xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_/lib/python3.12/site-packages/multiqc/plots/table.py", line 9, in <module>
+    from multiqc.utils import config, report, util_functions, mqc_colour
+  File "/xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_/lib/python3.12/site-packages/multiqc/utils/report.py", line 13, in <module>
+    import lzstring
+  File "/xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_/lib/python3.12/site-packages/lzstring/__init__.py", line 11, in <module>
+    from future import standard_library
+  File "/xdisk/rpalaniv/cjperkins1/kgwasflow/.snakemake/conda/e5cb2c3f0984484d93517e6b4579125d_/lib/python3.12/site-packages/future/standard_library/__init__.py", line 65, in <module>
+    import imp
+ModuleNotFoundError: No module named 'imp'
+================================================================================
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-10-22T014750.963270.snakemake.log
+ERROR:root:Error running Snakemake: Command '['snakemake', '--use-conda', '--conda-frontend', 'conda', '--cores', '16', '--snakefile', '/groups/rpalaniv/calvin/opt/conda/envs/kgwasflow/lib/python3.11/site-packages/workflow/Snakefile', '--rerun-triggers', 'mtime', 'params', 'input', 'software-env', 'code', '--rerun-incomplete', '--printshellcmds', '--nolock', '--show-failed-logs']' returned non-zero exit status 1.
