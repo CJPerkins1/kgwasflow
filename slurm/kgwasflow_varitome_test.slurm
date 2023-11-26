@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=kgwasflow_test
+#SBATCH --job-name=kgwasflow_varitome
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=64
@@ -19,11 +19,11 @@ source /home/u28/cjperkins1/.bashrc
 conda activate kgwasflow
 
 # Getting to working directory
-cd /xdisk/rpalaniv/cjperkins1/kgwasflow
+cd /xdisk/rpalaniv/cjperkins1/kgwasflow1
 
 # unlock the directory
 
-kgwasflow run -t 16 -c /xdisk/rpalaniv/cjperkins1/kgwasflow/config/config.yaml --unlock 
+kgwasflow run -t 64 -c /xdisk/rpalaniv/cjperkins1/kgwasflow1/varitome/config/config.yaml --unlock 
 
 # Run kGWASflow with the default config file default arguments and 16 threads
-kgwasflow run -t 16 -c /xdisk/rpalaniv/cjperkins1/kgwasflow/config/config.yaml
+kgwasflow run -t 64 -c /xdisk/rpalaniv/cjperkins1/kgwasflow1/varitome/config/config.yaml
